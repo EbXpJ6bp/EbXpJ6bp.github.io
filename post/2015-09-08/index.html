@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    Windows環境でHugoを使ってサイトを開く | EbXpJ6bp&#39;s Blog
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ebxpj6bp.github.io/post/2015-09-08/"/>
+
+  
+  <link rel="stylesheet" href="/css/sanitize.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/highlight_monokai.css">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  
+  
+  <link href="http://ebxpj6bp.github.io/index.xml" rel="alternate" type="application/rss+xml" title="EbXpJ6bp&#39;s Blog" />
+  <link href="http://ebxpj6bp.github.io/index.xml" rel="feed" type="application/rss+xml" title="EbXpJ6bp&#39;s Blog" />
+
+  
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "2b9fffc6-b3fe-4988-a0ef-4f9dcce98eaa", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="http://ebxpj6bp.github.io/">EbXpJ6bp&#39;s Blog</a></h1>
+        <h2>10を聞いて1も理解できない</h2>
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          <li><a href="https://twitter.com/EbXpJ6bp" target="_blank">Twitter</a></li>
+          
+          <li><a href="https://github.com/EbXpJ6bp" target="_blank">GitHub</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>Windows環境でHugoを使ってサイトを開く</h1>
+      <div class="meta">
+        Sep 8, 2015 &nbsp;
+        
+          #<a href="/tags/blog">Blog</a>&nbsp;
+        
+          #<a href="/tags/hugo">Hugo</a>&nbsp;
+        
+          #<a href="/tags/windows">Windows</a>&nbsp;
+        
+      </div>
+    </div>
+    <article>
+      
+
+<h3 id="windows環境でhugoを使ってサイトを開く:b0c2b5364734f17ee6dd5e6e7cd1b86b"><strong>Windows環境でHugoを使ってサイトを開く</strong></h3>
+
+<p>WindowsでLocalにサイトを開くまでの方法です<br />
+とても簡単なので知識がなくても簡単にできます</p>
+
+<hr />
+
+<h4 id="step1-hugo-https-github-com-spf13-hugo-にアクセスして-release-からwindowcmd用ファイルを入手する:b0c2b5364734f17ee6dd5e6e7cd1b86b"><strong>Step1.</strong><a href="https://github.com/spf13/hugo">Hugo</a>にアクセスして&rsquo;release&rsquo;からwindowcmd用ファイルを入手する</h4>
+
+<p>・今回は&rsquo;hugo_0.14_windows_amd64.zip&rsquo;を入手します</p>
+
+<h4 id="step2-zipを任意の場所に展開する:b0c2b5364734f17ee6dd5e6e7cd1b86b"><strong>Step2.</strong>Zipを任意の場所に展開する</h4>
+
+<p>・今回は&rsquo;C:\Hugo\bin&rsquo;に展開し &lsquo;hugo_0.14_windows_amd64.exe&rsquo;を&rsquo;hugo.exe&rsquo;に名前を変更する</p>
+
+<p><strong>Tree</strong></p>
+
+<pre><code>C:
+└─Hugo
+    ├─bin
+    │      hugo.exe
+    │      LICENSE.md
+    │      README.md
+</code></pre>
+
+<h4 id="step3-今後のために環境変数をいじっておく:b0c2b5364734f17ee6dd5e6e7cd1b86b"><strong>Step3.</strong>今後のために環境変数をいじっておく</h4>
+
+<p>・環境変数に値&rsquo;C:\Hugo\bin&rsquo;を指定する</p>
+
+<h4 id="step4-サイトを作る:b0c2b5364734f17ee6dd5e6e7cd1b86b"><strong>Step4.</strong>サイトを作る</h4>
+
+<p>・CMDを開き任意の場所で</p>
+
+<pre><code>hugo new site &lt;yoursitename&gt;
+</code></pre>
+
+<p><strong>Tree</strong></p>
+
+<pre><code>C:
+└─Hugo
+    └─Blog
+        ├── archetypes
+        ├── config.toml
+        ├── content
+        ├── layouts
+        └── static
+</code></pre>
+
+<p>これでサイトの元が作られました
+あとは<a href="http://gohugo.io/overview/introduction/">公式ガイド</a>に従ってごにょごにょすれば終わりです</p>
+
+<hr />
+
+<p>最後によく使うコマンドをまとめておきます</p>
+
+<h4 id="postを作成:b0c2b5364734f17ee6dd5e6e7cd1b86b">Postを作成</h4>
+
+<pre><code>hugo new post/hogehoge.md
+</code></pre>
+
+<h4 id="localにサーバーを開く-リアルタイム更新:b0c2b5364734f17ee6dd5e6e7cd1b86b">Localにサーバーを開く(リアルタイム更新)</h4>
+
+<pre><code>hugo server --buildDrafts --watch
+</code></pre>
+
+<h4 id="publicに出力する:b0c2b5364734f17ee6dd5e6e7cd1b86b">publicに出力する</h4>
+
+<pre><code>hugo    
+</code></pre>
+
+      
+      
+      <div id="share-this" class="col span_10">
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_googleplus_large' displayText='Google +'></span>
+        <span class='st_pocket_large' displayText='Pocket'></span>
+        <span class='st_sharethis_large' displayText='ShareThis'></span>
+        <span class='st_email_large' displayText='Email'></span>  
+      </div>
+    </article>
+    
+ <aside><div id="disqus_thread"></div></aside> 
+
+<script type="text/javascript">
+     
+    var disqus_shortname = 'ebxpj6bpblog';
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  </main>
+  
+  <nav class="pagination">
+    
+      <span class="previous">&larr; <a href="http://ebxpj6bp.github.io/about/me/" rel="prev">me</a></span>
+    
+    
+      <span class="next"><a href="http://ebxpj6bp.github.io/post/2015-10-03/" rel="next">Aboutmeを作り直した話</a> &rarr;</span>
+    
+  </nav>
+
+
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      <img src="/images/profile.png" width="64" height="64"><br>
+      ©Copyright 2015 EbXpJ6bp
+    </div>
+  </footer>
+
+
+</div>
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-64047084-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+

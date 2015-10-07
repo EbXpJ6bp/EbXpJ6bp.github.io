@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on EbXpJ6bp&#39;s Blog</title>
+    <link>http://ebxpj6bp.github.io/post/</link>
+    <description>Recent content in Posts on EbXpJ6bp&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Oct 2015 18:21:13 +0900</lastBuildDate>
+    <atom:link href="http://ebxpj6bp.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>URLが変わった話</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-04-02/</link>
+      <pubDate>Sun, 04 Oct 2015 18:21:13 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-04-02/</guid>
+      <description>
+
+&lt;h1 id=&#34;urlが変わりました:1e9c328162a7f30170a3587d73b18a58&#34;&gt;URLが変わりました&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Github Student Pack まとめ</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-04/</link>
+      <pubDate>Sun, 04 Oct 2015 11:39:54 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-04/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-developer-pack-https-education-github-com-pack:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;&lt;a href=&#34;https://education.github.com/pack&#34;&gt;Student Developer Pack&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;student-developer-pack-とは:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Student Developer Pack とは&lt;/h1&gt;
+
+&lt;p&gt;GitHubが提供する 学生向けに開発ツールパッケージGitHub Student Developer Pack&lt;/p&gt;
+
+&lt;p&gt;Githubアカウントを持ち 学生であることを証明することで入手出来ます&lt;/p&gt;
+
+&lt;h1 id=&#34;ライセンス合計金額:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;ライセンス合計金額&lt;/h1&gt;
+
+&lt;p&gt;14種類すべてのサービスを使うと&lt;strong&gt;$3,032.99(363,624円)/year+$1000(119,930円)&lt;/strong&gt;分が学生のうちは利用可能です&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;student-developer-packから得られる多彩なライセンス詳細:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Student Developer Packから得られる多彩なライセンス詳細&lt;/h1&gt;
+
+&lt;h2 id=&#34;atom:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;ATOM&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-01.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;Gtihub製のテキストエディター&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;none&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A hackable text editor for the 21st Century&lt;/p&gt;
+
+&lt;p&gt;Open Source by GitHub, free for everyone&lt;/p&gt;
+
+&lt;h2 id=&#34;bitnami:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;bitnami&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-02.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;Webアプリケーションや開発環境などをオールインワンでインストール出来るパッケージを配布しているサービス&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Business 3 Plan $49/month が一年分が利用可能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Install cloud applications in a single click&lt;/p&gt;
+
+&lt;p&gt;Business 3 plan (normally $49/month) for one year&lt;/p&gt;
+
+&lt;h2 id=&#34;crowdflower:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;CrowdFlower&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-03.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;タスクをクラウドソースして管理するサービス&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Crowdflower platform $2500/month $50分が利用可能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crowdsourcing and data enrichment platform&lt;/p&gt;
+
+&lt;p&gt;Access to the Crowdflower platform&lt;/p&gt;
+
+&lt;h2 id=&#34;digitalocean:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;DigitalOcean&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-04.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;デベロッパのためのシンプルなクラウドホスティングするサービス&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$50分が利用可能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Simple cloud hosting, built for developers&lt;/p&gt;
+
+&lt;p&gt;$50 in platform credit for new users&lt;/p&gt;
+
+&lt;h2 id=&#34;dnsimple:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;dnsimple&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-05.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;ワンクリックのサービスと堅牢なAPIでシンプルなDNS管理するサービス&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bronze $3/month 2年分が利用可能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Simple DNS management with one-click services and a robust API&lt;/p&gt;
+
+&lt;p&gt;Bronze hosted DNS plan (normally $3/month) for two years&lt;/p&gt;
+
+&lt;h2 id=&#34;github:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Github&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-06.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;強力なコラボレーションとコードリビューとコード管理でオープンソースとプライベートプロジェクトを支援するサービス&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$7/month プライベートレジストリ(5つ) が利用可能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Powerful collaboration, code review, and code management&lt;/p&gt;
+
+&lt;p&gt;Micro account (normally $7/month) with five private repositories while you&amp;rsquo;re a student&lt;/p&gt;
+
+&lt;h2 id=&#34;hackhands:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;HACKHANDS&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-07.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;24/7ライブで利用できるプログラミングヘルプ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$25 が利用可能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Live programming help available &lt;sup&gt;24&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;$25 in platform credit&lt;/p&gt;
+
+&lt;h2 id=&#34;visualstudio:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;VisualStudio&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-08.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;Visual Studio IDE を含むマイクロソフト開発ツールのスイート&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Visual Studio Community 2013 と Dreamspark&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A suite of Microsoft developer tools including the Visual Studio IDE&lt;/p&gt;
+
+&lt;p&gt;Visual Studio Community 2013 and the rest of the DreamSpark collection while you’re a student&lt;/p&gt;
+
+&lt;h2 id=&#34;namecheap:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;namecheap&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-09.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;ドメイン登録とSSL証明&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;.meドメイン$8.99/year, SSL証明$9/year が利用可能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Affordable registration, hosting, and domain management&lt;/p&gt;
+
+&lt;p&gt;One year domain name registration on the .me TLD (normally $8.99/year), One year SSL certificate (normally $9/year)&lt;/p&gt;
+
+&lt;h2 id=&#34;orchestrate:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;ORCHESTRATE&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-10.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;キー/ヴァリュー、グラフなど、各種データベース&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$49/month が利用可能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A complete database portfolio that includes search, time-series events, geolocation and graph queries through an API&lt;/p&gt;
+
+&lt;p&gt;Developer account (normally $49/month) while you&amp;rsquo;re a student&lt;/p&gt;
+
+&lt;h2 id=&#34;sendgrid:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;SendGrid&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-11.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;チームのコラボレーションのためのスクリーン共有&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$49/month が利用可能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Email infrastructure as a service&lt;/p&gt;
+
+&lt;p&gt;Student plan 15K free emails/month (normally limited to 200 free emails/day) while you&amp;rsquo;re a student&lt;/p&gt;
+
+&lt;h2 id=&#34;stripe:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;stripe&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-12.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;Webとモバイルの支払決済、デベロッパ向け&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;最初の売上$1000手数料 が無料&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Web and mobile payments, built for developers&lt;/p&gt;
+
+&lt;p&gt;Waived transaction fees on first $1000 in revenue processed&lt;/p&gt;
+
+&lt;h2 id=&#34;traviscl:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;TravisCL&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-13.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;オープンソースとプライベートプロジェクトのための継続的インテグレーション&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Private builds $69/month が無料&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Continuous integration platform for open source and private projects&lt;/p&gt;
+
+&lt;p&gt;Private builds (normally $69/month) while you&amp;rsquo;re a student&lt;/p&gt;
+
+&lt;h2 id=&#34;unreal-engine:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Unreal Engine&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-14.jpg&#34; alt=&#34;&#34; /&gt;
+
+&lt;strong&gt;Epic Gamesより開発されたゲームエンジン&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$19/month が無料&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A complete suite of game development tools for PC, console, mobile, web and VR&lt;/p&gt;
+
+&lt;p&gt;Unreal Engine while you&amp;rsquo;re a student&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;情報はすべて編集時時点&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Aboutmeを作り直してレスポンシブに対応させる話</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-03-02/</link>
+      <pubDate>Sat, 03 Oct 2015 20:37:29 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-03-02/</guid>
+      <description>
+
+&lt;h2 id=&#34;目的:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;目的&lt;/h2&gt;
+
+&lt;p&gt;CSS練習, レスポンシブ練習&lt;/p&gt;
+
+&lt;h2 id=&#34;前回の反省点と今回の比較:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;前回の反省点と今回の比較&lt;/h2&gt;
+
+&lt;p&gt;CSSコードの統一 → 統一&lt;/p&gt;
+
+&lt;p&gt;スマホ対応 → 非効率的なスマホ,タブレット対応&lt;/p&gt;
+
+&lt;h2 id=&#34;得られたもの:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;得られたもの&lt;/h2&gt;
+
+&lt;p&gt;レスポンシブの主な書き方, 読み込み速度低下&lt;/p&gt;
+
+&lt;h2 id=&#34;今後の改善点:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;今後の改善点&lt;/h2&gt;
+
+&lt;p&gt;レスポンシブが非効率 → 効率的に書き直す&lt;/p&gt;
+
+&lt;p&gt;CSSの使い方がひどすぎる → 用勉強&lt;/p&gt;
+
+&lt;h2 id=&#34;参考:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;参考&lt;/h2&gt;
+
+&lt;p&gt;作成時間 30分程度&lt;/p&gt;
+
+&lt;h2 id=&#34;画像小さくできなかった-上から-default-tablet-smart:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;画像小さくできなかった(上から Default, Tablet, Smart)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-03-01.png&#34; alt=&#34;&#34; /&gt;
+
+&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-03-02.png&#34; alt=&#34;&#34; /&gt;
+
+&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-03-03.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Aboutmeを作り直した話</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-03/</link>
+      <pubDate>Sat, 03 Oct 2015 13:14:22 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-03/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/newdesign.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;目的:bf4074c80ad75b6072e9c1cf8f0bba85&#34;&gt;目的&lt;/h2&gt;
+
+&lt;p&gt;一から作ることによるCSSの勉強, CSSを一つにまとめることによる読み速度の向上, 過去のデザインとの別れ&lt;/p&gt;
+
+&lt;h2 id=&#34;テーマ-後付け:bf4074c80ad75b6072e9c1cf8f0bba85&#34;&gt;テーマ(後付け)&lt;/h2&gt;
+
+&lt;p&gt;よく使うMONOの配色を利用&lt;/p&gt;
+
+&lt;h2 id=&#34;得られたもの:bf4074c80ad75b6072e9c1cf8f0bba85&#34;&gt;得られたもの&lt;/h2&gt;
+
+&lt;p&gt;CSSの主な書き方, 読み込み速度の向上&lt;/p&gt;
+
+&lt;h2 id=&#34;今後の改善点:bf4074c80ad75b6072e9c1cf8f0bba85&#34;&gt;今後の改善点&lt;/h2&gt;
+
+&lt;p&gt;CSSのコードが統一できていない → コーディングスタイルを決める&lt;/p&gt;
+
+&lt;p&gt;デザインがひどい → 他人のデザインを参考に勉強を進める&lt;/p&gt;
+
+&lt;p&gt;スマホ対応していない → CSSの勉強を進め 効率的なスマホ対応を実装していく&lt;/p&gt;
+
+&lt;h2 id=&#34;参考:bf4074c80ad75b6072e9c1cf8f0bba85&#34;&gt;参考&lt;/h2&gt;
+
+&lt;p&gt;製作時間 2時間程度&lt;/p&gt;
+
+&lt;p&gt;理解に時間がかかったもの margin &amp;amp; padding, position&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows環境でHugoを使ってサイトを開く</title>
+      <link>http://ebxpj6bp.github.io/post/2015-09-08/</link>
+      <pubDate>Tue, 08 Sep 2015 14:25:29 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-09-08/</guid>
+      <description>
+
+&lt;h3 id=&#34;windows環境でhugoを使ってサイトを開く:b0c2b5364734f17ee6dd5e6e7cd1b86b&#34;&gt;&lt;strong&gt;Windows環境でHugoを使ってサイトを開く&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;WindowsでLocalにサイトを開くまでの方法です&lt;br /&gt;
+とても簡単なので知識がなくても簡単にできます&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;step1-hugo-https-github-com-spf13-hugo-にアクセスして-release-からwindowcmd用ファイルを入手する:b0c2b5364734f17ee6dd5e6e7cd1b86b&#34;&gt;&lt;strong&gt;Step1.&lt;/strong&gt;&lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;Hugo&lt;/a&gt;にアクセスして&amp;rsquo;release&amp;rsquo;からwindowcmd用ファイルを入手する&lt;/h4&gt;
+
+&lt;p&gt;・今回は&amp;rsquo;hugo_0.14_windows_amd64.zip&amp;rsquo;を入手します&lt;/p&gt;
+
+&lt;h4 id=&#34;step2-zipを任意の場所に展開する:b0c2b5364734f17ee6dd5e6e7cd1b86b&#34;&gt;&lt;strong&gt;Step2.&lt;/strong&gt;Zipを任意の場所に展開する&lt;/h4&gt;
+
+&lt;p&gt;・今回は&amp;rsquo;C:\Hugo\bin&amp;rsquo;に展開し &amp;lsquo;hugo_0.14_windows_amd64.exe&amp;rsquo;を&amp;rsquo;hugo.exe&amp;rsquo;に名前を変更する&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tree&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;C:
+└─Hugo
+    ├─bin
+    │      hugo.exe
+    │      LICENSE.md
+    │      README.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;step3-今後のために環境変数をいじっておく:b0c2b5364734f17ee6dd5e6e7cd1b86b&#34;&gt;&lt;strong&gt;Step3.&lt;/strong&gt;今後のために環境変数をいじっておく&lt;/h4&gt;
+
+&lt;p&gt;・環境変数に値&amp;rsquo;C:\Hugo\bin&amp;rsquo;を指定する&lt;/p&gt;
+
+&lt;h4 id=&#34;step4-サイトを作る:b0c2b5364734f17ee6dd5e6e7cd1b86b&#34;&gt;&lt;strong&gt;Step4.&lt;/strong&gt;サイトを作る&lt;/h4&gt;
+
+&lt;p&gt;・CMDを開き任意の場所で&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new site &amp;lt;yoursitename&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Tree&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;C:
+└─Hugo
+    └─Blog
+        ├── archetypes
+        ├── config.toml
+        ├── content
+        ├── layouts
+        └── static
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これでサイトの元が作られました
+あとは&lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;公式ガイド&lt;/a&gt;に従ってごにょごにょすれば終わりです&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;最後によく使うコマンドをまとめておきます&lt;/p&gt;
+
+&lt;h4 id=&#34;postを作成:b0c2b5364734f17ee6dd5e6e7cd1b86b&#34;&gt;Postを作成&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new post/hogehoge.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;localにサーバーを開く-リアルタイム更新:b0c2b5364734f17ee6dd5e6e7cd1b86b&#34;&gt;Localにサーバーを開く(リアルタイム更新)&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server --buildDrafts --watch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;publicに出力する:b0c2b5364734f17ee6dd5e6e7cd1b86b&#34;&gt;publicに出力する&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo    
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FrainworksのComittRule</title>
+      <link>http://ebxpj6bp.github.io/post/2015-09-05-2/</link>
+      <pubDate>Sat, 05 Sep 2015 16:53:09 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-09-05-2/</guid>
+      <description>
+
+&lt;h3 id=&#34;frainworks内で決めたコミット時のルール:24ca34c955601a39ce5626c0e461bfe4&#34;&gt;Frainworks内で決めたコミット時のルール&lt;/h3&gt;
+
+&lt;p&gt;コミット時にどのような変更を行ったのかわかりやすいように名前を定めるFrainworks内でのルールが決まりました&lt;/p&gt;
+
+&lt;h4 id=&#34;commitrule-https-github-com-frainworks-nex-blob-master-commitrule-md:24ca34c955601a39ce5626c0e461bfe4&#34;&gt;&lt;a href=&#34;https://github.com/frainworks/nex/blob/master/CommitRule.md&#34;&gt;CommitRule&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&amp;rsquo;+&amp;rsquo;  &amp;lsquo;-&amp;rsquo;  &amp;lsquo;⟳&amp;rsquo; 等を使い一文字で内容の理解ができるようになっています&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HelloWorld</title>
+      <link>http://ebxpj6bp.github.io/post/2015-09-05/</link>
+      <pubDate>Sat, 05 Sep 2015 15:54:49 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-09-05/</guid>
+      <description>
+
+&lt;h3 id=&#34;前回のブログのデザインが気に入らなかったので作り直した話:398e62078320dfb78b409241376ca708&#34;&gt;前回のブログのデザインが気に入らなかったので作り直した話&lt;/h3&gt;
+
+&lt;p&gt;今回は&amp;rsquo;Hugo + GithubPages&amp;rsquo;を使ってみました&lt;/p&gt;
+
+&lt;p&gt;更新速度が速くて編集がとてもしやすいです&lt;/p&gt;
+
+&lt;p&gt;それだけです さようなら&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
