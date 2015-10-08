@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    URLが変わった話 | EbXpJ6bp&#39;s Blog
+    マウスオーバーで色が変わるボタン(Font Awesome) | EbXpJ6bp&#39;s Blog
   </title>
 
 
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
   
-  <link rel="canonical" href="http://ebxpj6bp.github.io/post/2015-10-04-02/"/>
+  <link rel="canonical" href="http://ebxpj6bp.github.io/post/2015-10-08/"/>
 
   
   <link rel="stylesheet" href="/css/sanitize.css">
@@ -62,18 +62,101 @@
   
   <main id="single" role="main">
     <div class="article-header">
-      <h1>URLが変わった話</h1>
+      <h1>マウスオーバーで色が変わるボタン(Font Awesome)</h1>
       <div class="meta">
-        Oct 4, 2015 &nbsp;
+        Oct 8, 2015 &nbsp;
         
           #<a href="/tags/blog">Blog</a>&nbsp;
+        
+          #<a href="/tags/css">CSS</a>&nbsp;
+        
+          #<a href="/tags/fontawesome">FontAwesome</a>&nbsp;
         
       </div>
     </div>
     <article>
       
 
-<h1 id="urlが変わりました:1e9c328162a7f30170a3587d73b18a58">URLが変わりました</h1>
+<p>FontAwesomeとCSSを使ったボタンの一種の例です</p>
+
+<p><a href="/demo/2015-10-08-demo.html">デモ</a></p>
+
+<h2 id="fontawesome:1a83f012dd114153cbd367421b34939c">FontAwesome</h2>
+
+<p>FontAwesomeを使うための準備</p>
+
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css&quot;&gt;
+</code></pre>
+
+<p><a href="http://fortawesome.github.io/Font-Awesome/icons/">FontAwesome</a></p>
+
+<h2 id="html:1a83f012dd114153cbd367421b34939c">HTML</h2>
+
+<p>HTMLコード</p>
+
+<pre><code>&lt;div id=&quot;hoge&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter fa-lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-github-alt fa-lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-bitbucket fa-lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-skype fa-lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;!-- &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-# falg&quot;&gt;&lt;/i&gt;&lt;/a&gt; --&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>&ldquo;fa-lg&rdquo;はサイズを調整するように入れています</p>
+
+<h2 id="css:1a83f012dd114153cbd367421b34939c">CSS</h2>
+
+<p>CSSコード</p>
+
+<pre><code>#hoge a {
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    padding: 0;
+    color: #fff;
+}
+
+#hoge i {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    background: #666;
+    line-height: 45px;
+    text-align: center;
+}
+
+    #hoge i:before {
+        padding: 0;
+        line-height: 45px;
+    }
+
+#hoge a:hover .fa-twitter {
+    background: #55acee;
+}
+
+#hoge a:hover .fa-github-alt {
+    background: #ff5722;
+}
+
+#hoge a:hover .fa-bitbucket {
+    background: #205081;
+}
+
+#hoge a:hover .fa-skype {
+    background: #12a5f4;
+}
+
+/*
+#hoge a:hover .fa-# {
+background: #fff;
+}
+*/
+</code></pre>
+
+<p>マウスオーバーで &ldquo;#hoge a:hover&rdquo; の背景色にすると同時にアイコンを白色に変えています</p>
+
+<p>マウスオーバー後の背景色はそのアイコンの<a href="http://brandcolors.net/">BrandColor</a>にするとわかりやすくなる.?</p>
 
       
       
@@ -106,10 +189,8 @@
   
   <nav class="pagination">
     
-      <span class="previous">&larr; <a href="http://ebxpj6bp.github.io/post/2015-10-04/" rel="prev">Github Student Pack まとめ</a></span>
+      <span class="previous">&larr; <a href="http://ebxpj6bp.github.io/post/2015-10-04-02/" rel="prev">URLが変わった話</a></span>
     
-    
-      <span class="next"><a href="http://ebxpj6bp.github.io/post/2015-10-08/" rel="next">マウスオーバーで色が変わるボタン(Font Awesome)</a> &rarr;</span>
     
   </nav>
 
