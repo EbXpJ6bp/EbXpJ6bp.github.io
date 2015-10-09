@@ -6,8 +6,58 @@
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2015 18:54:25 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2015 07:23:10 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>匿名OSTails</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-10/</link>
+      <pubDate>Sat, 10 Oct 2015 07:23:10 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-10/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://gigazine.net/news/20150825-torrent-tracker-ban-windows-10/&#34;&gt;Windows 10では著作権侵害行為に関する情報が外部に送信されているという疑念の声&lt;/a&gt;こんな記事が広まってから匿名の需要が高まってきました この記事が出る前にも政府機関が世界のネットワークを監視していることが一時期話題になったこともあります&lt;/p&gt;
+
+&lt;p&gt;ただ、完全な匿名で通信したいと思ってもすべて自前でやろうとするはあまりコスパがいいとは言えません 当然WindowsでTorを使っても匿名とは言えなくなってきました そこでおすすめするのは&lt;a href=&#34;https://tails.boum.org/&#34;&gt;tails&lt;/a&gt;(LinuxベースのOS)です&lt;/p&gt;
+
+&lt;h2 id=&#34;tails-https-tails-boum-org:007242a7141a39204898ccb0f4aa5409&#34;&gt;&lt;a href=&#34;https://tails.boum.org/&#34;&gt;TAILS&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;tailsはとても高い匿名性を持っていて &lt;strong&gt;Torを用いたオンラインでの匿名化, ほぼすべての場所でつかえ痕跡を残さない, 最新の暗号化&lt;/strong&gt;を備えています&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Tails is a live system that aims to preserve your privacy and anonymity. It helps you to use the Internet anonymously and circumvent censorship almost anywhere you go and on any computer but leaving no trace unless you ask it to explicitly. It is a complete operating system designed to be used from a DVD, USB stick, or SD card independently of the computer&amp;rsquo;s original operating system.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Tails is configured with special care to not use the computer&amp;rsquo;s hard-disks, even if there is some swap space on them. The only storage space used by Tails is the RAM, which is automatically erased when the computer shuts down. So you won&amp;rsquo;t leave any trace neither of the Tails system nor of what you did on the computer. That&amp;rsquo;s why we call it &amp;ldquo;amnesic&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;またtailsにはソフトウェアがいくつか標準装備されています&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;オンラインでの匿名性&lt;/strong&gt;：通信匿名化技術「Tor」を使った『Iceweasel』ブラウザを搭載、完全に匿名でのウェブブラウジングを実現しています。また、セキュリティも充実しており、通信の安全性を高める『HTTPS Everywhere』、広告をブロックする『Adblock Plus』、JavaやFlashをブロックする『 NoScript』などの拡張機能を備えています。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;暗号化されたメールとチャット&lt;/strong&gt;：OpenPGP技術を使ってメールを暗号化する『Clawsメールクライント』や、OTR暗号技術でメッセージを暗号化するIMクライアント『Pidgin』も標準搭載。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;ファイル暗号化&lt;/strong&gt;：LUKSと呼ばれる暗号技術を使って、ファイルを暗号化してUSBドライブに保存することが可能。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;編集ソフトも充実&lt;/strong&gt;：ウェブへのアクセスだけでなく、各種編集ソフトも利用可能。ドキュメント編集ソフト『Openoffice』、写真編集ソフト『Gimp』、サウンド編集ソフト『Audacity』、ほかにも様々なツールを標準搭載しています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;さいごに:007242a7141a39204898ccb0f4aa5409&#34;&gt;さいごに&lt;/h2&gt;
+
+&lt;p&gt;もちろんtailsにも弱点がいくつかあります弱点のないものなんてありません ですが&lt;strong&gt;OSデータの入った機器の盗難,紛失 他人に知られない,わからないパスワード 守りたい匿名情報を口にしない&lt;/strong&gt; などごく一般的な対応をすれば普通の人であれば十分だと思います&lt;/p&gt;
+
+&lt;p&gt;ダウンロードして試すのではなく 自分自身で安全性を調べ自分が安心して使えると思ってからインストールするようにしてください&lt;/p&gt;
+
+&lt;h2 id=&#34;参考文章:007242a7141a39204898ccb0f4aa5409&#34;&gt;参考文章&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.lifehacker.jp/2012/11/121128tails.html&#34;&gt;http://www.lifehacker.jp/2012/11/121128tails.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>マウスオーバーで色が変わるボタン(Font Awesome)</title>
@@ -472,54 +522,6 @@ background: #fff;
 
 &lt;pre&gt;&lt;code&gt;hugo    
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>me</title>
-      <link>http://ebxpj6bp.github.io/about/me/</link>
-      <pubDate>Sun, 06 Sep 2015 08:18:07 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/about/me/</guid>
-      <description>
-
-&lt;h3 id=&#34;about-me:bb648bec966dae0af211bdd2f5351101&#34;&gt;&lt;strong&gt;About me&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;どこかの高専の留年候補学生&lt;/p&gt;
-
-&lt;p&gt;C / C# +WPF の勉強してます&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;site-map:bb648bec966dae0af211bdd2f5351101&#34;&gt;&lt;strong&gt;Site map&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ebxpj6bp.me/tags/about/&#34;&gt;About&lt;/a&gt; ・ &lt;a href=&#34;http://ebxpj6bp.me/tags/blog/&#34;&gt;Blog&lt;/a&gt; ・ &lt;a href=&#34;http://http://ebxpj6bp.me/&#34;&gt;Home&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;site-info:bb648bec966dae0af211bdd2f5351101&#34;&gt;&lt;strong&gt;Site info&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;Hosting : &lt;a href=&#34;https://pages.github.com/&#34;&gt;Githubpages&lt;/a&gt; ・ Static Site Generator : &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; ・ Them : &lt;a href=&#34;https://github.com/keichi/vienna&#34;&gt;Vienna&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>links</title>
-      <link>http://ebxpj6bp.github.io/about/links/</link>
-      <pubDate>Sat, 05 Sep 2015 22:19:51 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/about/links/</guid>
-      <description>
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;snowhite-s-blog-http-blog-snowhite-tk:424069113a08a4256349764ee38dbbbf&#34;&gt;&lt;strong&gt;&lt;a href=&#34;http://blog.snowhite.tk/&#34;&gt;snowhite&amp;rsquo;s blog&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/snowhite0804&#34;&gt;@snowhite0804&lt;/a&gt;さんのブログ・Frainworksのオーナーでいつもお世話になっています&lt;/p&gt;
-
-&lt;h4 id=&#34;frainworks-http-frainworks-tk:424069113a08a4256349764ee38dbbbf&#34;&gt;&lt;strong&gt;&lt;a href=&#34;http://frainworks.tk/&#34;&gt;frainworks&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;Frainworksのサイト&lt;/p&gt;
 </description>
     </item>
     
