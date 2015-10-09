@@ -1,0 +1,14 @@
+baseurl = "http://ebxpj6bp.github.io/"
+languageCode = "en-us"
+title = "EbXpJ6bp's Blog"
+theme = "angels-ladder"
+disqusShortname = "ebxpj6bpblog"
+
+[Params]
+    subtitle = "10を聞いて1も理解できない"
+    copyright = "©Copyright 2015 EbXpJ6bp"
+    bio = "Test"
+    twitter = "EbXpJ6bp"
+    github = "EbXpJ6bp"
+    profile = "/images/profile.png"
+    analytics = "UA-64047084-1"
