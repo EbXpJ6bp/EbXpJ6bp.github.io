@@ -28,3 +28,62 @@ nav.pagination span.next {
 nav.pagination a {
   color: #29abe2;
 }
+
+ /* SocialIcons*/
+#social-icon a {
+	display: block;
+	float: left;
+	margin: 0 5px 5px 0;
+	padding: 0;
+	color: #fff;
+}
+
+#social-icon i {
+	width: 45px;
+	height: 45px;
+	margin: 0;
+	background: #666;
+	line-height: 0;
+	text-align: center;
+}
+
+	#social-icon i:before {
+		padding: 0;
+		line-height: 45px;
+	}
+
+#social-icon a:hover .fa-twitter {
+	background: #55acee;
+}
+
+#social-icon a:hover .fa-skype {
+	background: #12a5f4;
+}
+
+#social-icon a:hover .fa-envelope {
+	background: #79bd28;
+}
+
+#social-icon a:hover .fa-github-alt {
+	background: #ff5722;
+}
+
+#social-icon a:hover .fa-rss {
+	background: #ff8c00;
+}
+
+#social-icon a:hover .fa-amazon {
+	background: #ff9900;
+}
+
+#social-icon a:hover .fa-bitbucket {
+	background: #205081;
+}
+
+#social-icon a:hover .fa-link {
+	background: #1793d1;
+}
+
+#social-icon a:hover .fa-search {
+	background: #4cb10d
+}
