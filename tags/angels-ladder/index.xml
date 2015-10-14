@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angels Ladder on EbXpJ6bp&#39;s Blog</title>
+    <link>http://ebxpj6bp.github.io/tags/angels-ladder/</link>
+    <description>Recent content in Angels Ladder on EbXpJ6bp&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 14 Oct 2015 15:31:33 +0900</lastBuildDate>
+    <atom:link href="http://ebxpj6bp.github.io/tags/angels-ladder/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo Theme angels-ladder</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-14/</link>
+      <pubDate>Wed, 14 Oct 2015 15:31:33 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-14/</guid>
+      <description>
+
+&lt;h1 id=&#34;h1:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;H1&lt;/h1&gt;
+
+&lt;h2 id=&#34;h2:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;H2&lt;/h2&gt;
+
+&lt;h3 id=&#34;h3-h4-h5-h6:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;H3,H4,H5,H6&lt;/h3&gt;
+
+&lt;p&gt;default&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Emphasis&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is Code!&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is Code!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;script src=&#34;https://gist.github.com/EbXpJ6bp/0bbc4df5b511f18d8156.js&#34;&gt;&lt;/script&gt;
+ 
+
+&lt;blockquote&gt;
+&lt;p&gt;Blockquotes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Left align&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Right align&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Center align&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;This&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;This&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;This&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;column&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;column&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;column&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;will&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;will&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;will&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;be&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;be&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;be&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;left&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;right&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;center&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;aligned&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;aligned&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;aligned&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;link:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;Link&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://qiita.com/Qiita/items/c686397e4a0f4f11683d&#34;&gt;Markdown記法 チートシート&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tanksuzuki/angels-ladder&#34;&gt;tanksuzuki/angels-ladder&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

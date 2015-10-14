@@ -5,9 +5,152 @@
     <link>http://ebxpj6bp.github.io/</link>
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 11 Oct 2015 13:03:07 +0900</lastBuildDate>
+    <language>ja</language>
+    <lastBuildDate>Wed, 14 Oct 2015 15:31:33 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo Theme angels-ladder</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-14/</link>
+      <pubDate>Wed, 14 Oct 2015 15:31:33 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-14/</guid>
+      <description>
+
+&lt;h1 id=&#34;h1:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;H1&lt;/h1&gt;
+
+&lt;h2 id=&#34;h2:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;H2&lt;/h2&gt;
+
+&lt;h3 id=&#34;h3-h4-h5-h6:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;H3,H4,H5,H6&lt;/h3&gt;
+
+&lt;p&gt;default&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Emphasis&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is Code!&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is Code!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;script src=&#34;https://gist.github.com/EbXpJ6bp/0bbc4df5b511f18d8156.js&#34;&gt;&lt;/script&gt;
+ 
+
+&lt;blockquote&gt;
+&lt;p&gt;Blockquotes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Left align&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Right align&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Center align&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;This&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;This&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;This&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;column&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;column&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;column&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;will&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;will&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;will&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;be&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;be&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;be&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;left&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;right&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;center&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;aligned&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;aligned&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;aligned&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;link:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;Link&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://qiita.com/Qiita/items/c686397e4a0f4f11683d&#34;&gt;Markdown記法 チートシート&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tanksuzuki/angels-ladder&#34;&gt;tanksuzuki/angels-ladder&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Minecraftで出来るFPS</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-12/</link>
+      <pubDate>Mon, 12 Oct 2015 09:48:14 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-12/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-12.png&#34; alt=&#34;&#34; /&gt;
+
+何を書きたいのかわからない記事&lt;/p&gt;
+
+&lt;h2 id=&#34;refinefpsとは:0ea62ef95db9728c12a858c5f03ce084&#34;&gt;RefineFPSとは&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;RefineFPS Server とは11月3日にオープンβとしてサービス開始した
+Minecraft というサンドボックス型ゲームのマルチサーバーです。
+「洗練されたFPSゲーム」をコンセプトに運営しています(鯖名もその通り)。
+RefineFPSでは本格的なゲームをユーザーの皆様方に提供しております。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;del&gt;運営が働かないクソ鯖&lt;/del&gt;　民度がとてもよく「ha?」「uza」「shine」がよく飛び交う楽しいFPSサーバーです-　&lt;/p&gt;
+
+&lt;p&gt;武器の種類は大きく分けて8種類「AR, SR, SG, SMG, MG, HG, Grende, Knife」 ゲーム中のインベントリには「AR~MG, HG, Grende, Knife」の4種類が入ります&lt;/p&gt;
+
+&lt;h2 id=&#34;refinefpsの現状:0ea62ef95db9728c12a858c5f03ce084&#34;&gt;RefineFPSの現状&lt;/h2&gt;
+
+&lt;p&gt;2014/12/03 - 2014/12/21 に&lt;a href=&#34;http://fps.mcsv.jp/Event/1stAnniversarySlot&#34;&gt;アニバーサリスロット&lt;/a&gt;イベントが行われたのち約5ヵ月更新なし&lt;/p&gt;
+
+&lt;p&gt;2014/05/07 &lt;a href=&#34;http://fps.mcsv.jp/News/Index/57&#34;&gt;ガチャ&lt;/a&gt;の登場 登場し少し回せただけでイベントではなかった&lt;/p&gt;
+
+&lt;p&gt;2015/08/24 &lt;a href=&#34;http://fps.mcsv.jp/Event/Mallon2015&#34;&gt;栗をくりぃ&lt;/a&gt;約8ヵ月ぶりのイベントが行われた しかし本来であれば09/13まで行われるはずだったが08/27までの短縮になりイベントが行われたのは3日間だった&lt;/p&gt;
+
+&lt;p&gt;2015/10/12 更新なし&lt;/p&gt;
+
+&lt;p&gt;運営増やす予定なし&lt;/p&gt;
+
+&lt;h2 id=&#34;link:0ea62ef95db9728c12a858c5f03ce084&#34;&gt;Link&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://fps.mcsv.jp/&#34;&gt;RefineFPS-HP&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/RefineFPS&#34;&gt;RefineFPS-Twitter&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://refinefps.wiki.fc2.com/&#34;&gt;RefineFPS-Wiki&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>About</title>
