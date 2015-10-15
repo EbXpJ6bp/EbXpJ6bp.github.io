@@ -6,8 +6,40 @@
     <description>Recent content in Posts on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 14 Oct 2015 19:06:45 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2015 19:15:34 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugoのshortcodesでnicovideoの埋め込みを簡単にする</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-15/</link>
+      <pubDate>Thu, 15 Oct 2015 19:15:34 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-15/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/kounoike/items/cdbfaa2dab9bd3393a84&#34;&gt;Hugoのshortcodesでnicovideoの埋め込みを簡単にする&lt;/a&gt; Qiitaで面白い記事を見つけたので早速使ってみました Hugoの&lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;機能を利用して埋め込みを簡単にするようです&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;312&#34; height=&#34;200&#34; src=&#34;http://ext.nicovideo.jp/thumb/sm9&#34; scrolling=&#34;no&#34; style=&#34;border:solid 1px #CCC;&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;
+
+
+
+&lt;script type=&#34;text/javascript&#34; src=&#34;http://ext.nicovideo.jp/thumb_watch/sm9?w=490&amp;amp;h=307&#34;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;a href=&#34;http://www.nicovideo.jp/watch/sm9&#34;&gt;新・豪血寺一族 -煩悩解放 - レッツゴー！陰陽師&lt;/a&gt;&lt;/noscript&gt;&lt;/p&gt;
+
+&lt;p&gt;詳しい説明は &lt;strong&gt;&lt;a href=&#34;http://qiita.com/kounoike/items/cdbfaa2dab9bd3393a84&#34;&gt;Hugoのshortcodesでnicovideoの埋め込みを簡単にする&lt;/a&gt;&lt;/strong&gt; をご覧ください&lt;/p&gt;
+
+&lt;h2 id=&#34;link:35cdcb305d5f6a36204b574250e16183&#34;&gt;Link&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://qiita.com/kounoike/items/cdbfaa2dab9bd3393a84&#34;&gt;Hugoのshortcodesでnicovideoの埋め込みを簡単にする&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;Shortcodes&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>VSCode v0.9.1</title>
