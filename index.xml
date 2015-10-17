@@ -6,8 +6,42 @@
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 16 Oct 2015 18:09:22 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2015 16:12:53 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HugoのShortCodeでTwitterTweetの埋め込みをする</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-17/</link>
+      <pubDate>Sat, 17 Oct 2015 16:12:53 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-17/</guid>
+      <description>
+
+&lt;p&gt;このシリーズ無駄に3つ目 shortcode使うより埋め込むを利用した方が速い気がします&lt;/p&gt;
+
+&lt;p&gt;今回はTwitterのTweetを埋め込みます&lt;/p&gt;
+
+&lt;h2 id=&#34;デモ:ab327018fe4ea958a7b31d6c47785a29&#34;&gt;デモ&lt;/h2&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;a href=&#34;https://twitter.com/ebxpj6bp/status/655281242988933120&#34;&gt;&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;使用方法:ab327018fe4ea958a7b31d6c47785a29&#34;&gt;使用方法&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;{.{&amp;lt; twittertweet name=&amp;quot;twitter id,name&amp;quot; id=&amp;quot;tweet id&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ShortCode対策でリピオドを入れています&lt;/p&gt;
+
+&lt;h2 id=&#34;ソース:ab327018fe4ea958a7b31d6c47785a29&#34;&gt;ソース&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; lang=&amp;quot;ja&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;https://twitter.com/{{ .Get &amp;quot;name&amp;quot; }}/status/{{ .Get &amp;quot;id&amp;quot; }}&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>HugoのShortCodeでYoutubePlayerの埋め込みをする</title>
@@ -15,7 +49,11 @@
       <pubDate>Fri, 16 Oct 2015 18:09:22 +0900</pubDate>
       
       <guid>http://ebxpj6bp.github.io/post/2015-10-16/</guid>
-      <description>&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/SQfmvtO-U18&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+      <description>
+
+&lt;h2 id=&#34;デモ:d0abd677cd519e0eba22ff99135df0aa&#34;&gt;デモ&lt;/h2&gt;
+
+&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/SQfmvtO-U18&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;それだけです&lt;/p&gt;
@@ -31,6 +69,8 @@
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://qiita.com/kounoike/items/cdbfaa2dab9bd3393a84&#34;&gt;Hugoのshortcodesでnicovideoの埋め込みを簡単にする&lt;/a&gt; Qiitaで面白い記事を見つけたので早速使ってみました Hugoの&lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;機能を利用して埋め込みを簡単にするようです&lt;/p&gt;
+
+&lt;h2 id=&#34;デモ:35cdcb305d5f6a36204b574250e16183&#34;&gt;デモ&lt;/h2&gt;
 
 &lt;p&gt;&lt;iframe class=&#34;nicovideo&#34; type=&#34;text/html&#34; width=&#34;312&#34; height=&#34;200&#34; src=&#34;http://ext.nicovideo.jp/thumb/sm9&#34; scrolling=&#34;no&#34; style=&#34;border:solid 1px #CCC;&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;&lt;/p&gt;
@@ -850,24 +890,6 @@ background: #fff;
 &lt;h4 id=&#34;commitrule-https-github-com-frainworks-nex-blob-master-commitrule-md:24ca34c955601a39ce5626c0e461bfe4&#34;&gt;&lt;a href=&#34;https://github.com/frainworks/nex/blob/master/CommitRule.md&#34;&gt;CommitRule&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;&amp;rsquo;+&amp;rsquo;  &amp;lsquo;-&amp;rsquo;  &amp;lsquo;⟳&amp;rsquo; 等を使い一文字で内容の理解ができるようになっています&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>HelloWorld</title>
-      <link>http://ebxpj6bp.github.io/post/2015-09-05/</link>
-      <pubDate>Sat, 05 Sep 2015 15:54:49 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-09-05/</guid>
-      <description>
-
-&lt;h3 id=&#34;前回のブログのデザインが気に入らなかったので作り直した話:398e62078320dfb78b409241376ca708&#34;&gt;前回のブログのデザインが気に入らなかったので作り直した話&lt;/h3&gt;
-
-&lt;p&gt;今回は&amp;rsquo;Hugo + GithubPages&amp;rsquo;を使ってみました&lt;/p&gt;
-
-&lt;p&gt;更新速度が速くて編集がとてもしやすいです&lt;/p&gt;
-
-&lt;p&gt;それだけです さようなら&lt;/p&gt;
 </description>
     </item>
     

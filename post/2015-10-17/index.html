@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    HugoのShortCodeでYoutubePlayerの埋め込みをする | EbXpJ6bp&#39;s Blog
+    HugoのShortCodeでTwitterTweetの埋め込みをする | EbXpJ6bp&#39;s Blog
   </title>
 
 
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
   
-  <link rel="canonical" href="http://ebxpj6bp.github.io/post/2015-10-16/"/>
+  <link rel="canonical" href="http://ebxpj6bp.github.io/post/2015-10-17/"/>
 
   
   <link rel="stylesheet" href="/css/custom.css">
@@ -59,9 +59,9 @@
   
   <main id="single" role="main">
     <div class="article-header">
-      <h1>HugoのShortCodeでYoutubePlayerの埋め込みをする</h1>
+      <h1>HugoのShortCodeでTwitterTweetの埋め込みをする</h1>
       <div class="meta">
-        Oct 16, 2015 &nbsp;
+        Oct 17, 2015 &nbsp;
         
           #<a href="/tags/blog">Blog</a>&nbsp;
         
@@ -72,12 +72,29 @@
     <article>
       
 
-<h2 id="デモ:d0abd677cd519e0eba22ff99135df0aa">デモ</h2>
+<p>このシリーズ無駄に3つ目 shortcode使うより埋め込むを利用した方が速い気がします</p>
 
-<p><iframe class="youtubeplayer" type="text/html" width="500" height="315" src="http://www.youtube.com/embed/SQfmvtO-U18" allowfullscreen frameborder="0">
-</iframe></p>
+<p>今回はTwitterのTweetを埋め込みます</p>
 
-<p>それだけです</p>
+<h2 id="デモ:ab327018fe4ea958a7b31d6c47785a29">デモ</h2>
+
+<p><blockquote class="twitter-tweet" lang="ja"><a href="https://twitter.com/ebxpj6bp/status/655281242988933120"></a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<h2 id="使用方法:ab327018fe4ea958a7b31d6c47785a29">使用方法</h2>
+
+<pre><code>{.{&lt; twittertweet name=&quot;twitter id,name&quot; id=&quot;tweet id&quot; &gt;}}
+</code></pre>
+
+<p>ShortCode対策でリピオドを入れています</p>
+
+<h2 id="ソース:ab327018fe4ea958a7b31d6c47785a29">ソース</h2>
+
+<pre><code>&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;ja&quot;&gt;
+    &lt;a href=&quot;https://twitter.com/{{ .Get &quot;name&quot; }}/status/{{ .Get &quot;id&quot; }}&quot;&gt;&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+</code></pre>
 
     
  <aside><div id="disqus_thread"></div></aside> 
@@ -99,10 +116,8 @@
   
   <nav class="pagination">
     
-      <span class="previous">&larr; <a href="http://ebxpj6bp.github.io/post/2015-10-15/" rel="prev">Hugoのshortcodesでnicovideoの埋め込みを簡単にする</a></span>
+      <span class="previous">&larr; <a href="http://ebxpj6bp.github.io/post/2015-10-16/" rel="prev">HugoのShortCodeでYoutubePlayerの埋め込みをする</a></span>
     
-    
-      <span class="next"><a href="http://ebxpj6bp.github.io/post/2015-10-17/" rel="next">HugoのShortCodeでTwitterTweetの埋め込みをする</a> &rarr;</span>
     
   </nav>
 
