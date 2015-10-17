@@ -36,7 +36,7 @@
 &lt;pre&gt;&lt;code&gt;This is Code!
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/EbXpJ6bp/0bbc4df5b511f18d8156.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://gist.github.com/EbXpJ6bp/0bbc4df5b511f18d8156.js&#34;&gt;&lt;/script&gt;     
  
 
 &lt;blockquote&gt;
@@ -92,6 +92,26 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;h2 id=&#34;shortcodes:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;Shortcodes&lt;/h2&gt;
+
+&lt;p&gt;本家にはありません&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe class=&#34;nicovideo&#34; type=&#34;text/html&#34; width=&#34;312&#34; height=&#34;200&#34; src=&#34;http://ext.nicovideo.jp/thumb/sm9&#34; scrolling=&#34;no&#34; style=&#34;border:solid 1px #CCC;&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;
+
+
+
+&lt;script class=&#34;nicovideoplayer&#34; type=&#34;text/javascript&#34; src=&#34;http://ext.nicovideo.jp/thumb_watch/sm9?w=500&amp;amp;h=315&#34;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;a href=&#34;http://www.nicovideo.jp/watch/sm9&#34;&gt;新・豪血寺一族 -煩悩解放 - レッツゴー！陰陽師&lt;/a&gt;&lt;/noscript&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/SQfmvtO-U18&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;a href=&#34;https://twitter.com/ebxpj6bp/status/655281242988933120&#34;&gt;&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;link:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;Link&lt;/h2&gt;
 
