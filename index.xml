@@ -6,8 +6,38 @@
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 17 Oct 2015 16:12:53 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2015 14:31:25 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BattleField4 リコイルがひどかった</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-18/</link>
+      <pubDate>Sun, 18 Oct 2015 14:31:25 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-18/</guid>
+      <description>
+
+&lt;p&gt;BF4 の二点バースト日記&lt;/p&gt;
+
+&lt;h2 id=&#34;2015-06-15:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;2015-06-15&lt;/h2&gt;
+
+&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/6xhNgDcPBEk&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;POTATO GRIP(?), HEAVY BARREL&lt;/p&gt;
+
+&lt;h2 id=&#34;2015-10-18:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;2015-10-18&lt;/h2&gt;
+
+&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/uvz5ofWphtM&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;ERGO GRIP, HEAVY BARREL&lt;/p&gt;
+
+&lt;h2 id=&#34;感想:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;ヘリ楽&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>HugoのShortCodeでTwitterTweetの埋め込みをする</title>
@@ -23,7 +53,7 @@
 
 &lt;h2 id=&#34;デモ:ab327018fe4ea958a7b31d6c47785a29&#34;&gt;デモ&lt;/h2&gt;
 
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;a href=&#34;https://twitter.com/ebxpj6bp/status/655281242988933120&#34;&gt;&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;a href=&#34;https://twitter.com/jack/status/20&#34;&gt;&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;使用方法:ab327018fe4ea958a7b31d6c47785a29&#34;&gt;使用方法&lt;/h2&gt;
@@ -292,7 +322,7 @@
 &lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/SQfmvtO-U18&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;a href=&#34;https://twitter.com/ebxpj6bp/status/655281242988933120&#34;&gt;&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;a href=&#34;https://twitter.com/jack/status/20&#34;&gt;&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;link:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;Link&lt;/h2&gt;
@@ -892,24 +922,6 @@ background: #fff;
 
 &lt;pre&gt;&lt;code&gt;hugo    
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>FrainworksのComittRule</title>
-      <link>http://ebxpj6bp.github.io/post/2015-09-05-2/</link>
-      <pubDate>Sat, 05 Sep 2015 16:53:09 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-09-05-2/</guid>
-      <description>
-
-&lt;h3 id=&#34;frainworks内で決めたコミット時のルール:24ca34c955601a39ce5626c0e461bfe4&#34;&gt;Frainworks内で決めたコミット時のルール&lt;/h3&gt;
-
-&lt;p&gt;コミット時にどのような変更を行ったのかわかりやすいように名前を定めるFrainworks内でのルールが決まりました&lt;/p&gt;
-
-&lt;h4 id=&#34;commitrule-https-github-com-frainworks-nex-blob-master-commitrule-md:24ca34c955601a39ce5626c0e461bfe4&#34;&gt;&lt;a href=&#34;https://github.com/frainworks/nex/blob/master/CommitRule.md&#34;&gt;CommitRule&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;&amp;rsquo;+&amp;rsquo;  &amp;lsquo;-&amp;rsquo;  &amp;lsquo;⟳&amp;rsquo; 等を使い一文字で内容の理解ができるようになっています&lt;/p&gt;
 </description>
     </item>
     
