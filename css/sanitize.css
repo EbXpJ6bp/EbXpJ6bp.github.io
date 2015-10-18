@@ -1,29 +1,138 @@
-/*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
-pre,textarea{overflow:auto}
-[hidden],audio:not([controls]),template{display:none}
-details,main,summary{display:block}
-input[type=number]{width:auto}
-input[type=search]{-webkit-appearance:textfield}
-input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
-progress{display:inline-block}
-small{font-size:75%}
-textarea{resize:vertical}
-[unselectable]{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
-*,::after,::before{box-sizing:inherit;border-style:solid;border-width:0}
-*{font-size:inherit;line-height:inherit;margin:0;padding:0}
-::after,::before{text-decoration:inherit;vertical-align:inherit}
-:root{-ms-overflow-style:-ms-autohiding-scrollbar;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;box-sizing:border-box;cursor:default;font:16px/1.5 sans-serif;text-rendering:optimizeLegibility}
-a{text-decoration:none}
-audio,canvas,iframe,img,svg,video{vertical-align:middle}
-button,input,select,textarea{background-color:transparent;color:inherit;font-family:inherit;font-style:inherit;font-weight:inherit;min-height:1.5em}
-code,kbd,pre,samp{font-family:monospace,monospace}
-nav ol,nav ul{list-style:none}
-select{-moz-appearance:none;-webkit-appearance:none}
-select::-ms-expand{display:none}
-select::-ms-value{color:currentColor}
-table{border-collapse:collapse;border-spacing:0}
-::-moz-selection{background-color:#B3D4FC;text-shadow:none}
-::selection{background-color:#B3D4FC;text-shadow:none}
-@media screen{[hidden~=screen]{display:inherit}
-[hidden~=screen]:not(:active):not(:focus):not(:target){clip:rect(0 0 0 0)!important;position:absolute!important}
+pre {
+	overflow: auto;
+}
+textarea {
+	overflow: auto;
+}
+[hidden] {
+	display: none;
+}
+audio:not([controls]) {
+	display: none;
+}
+template {
+	display: none;
+}
+details {
+	display: block;
+}
+main {
+	display: block;
+}
+summary {
+	display: block;
+}
+input[type=number] {
+	width: auto;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+}
+progress {
+	display: inline-block;
+}
+small {
+	font-size: 75%;
+}
+textarea {
+	resize: vertical;
+}
+[unselectable] {
+	-ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none;
+}
+* {
+	border-width: 0px; border-style: solid; box-sizing: inherit;
+}
+::after {
+	border-width: 0px; border-style: solid; box-sizing: inherit;
+}
+::before {
+	border-width: 0px; border-style: solid; box-sizing: inherit;
+}
+* {
+	margin: 0px; padding: 0px; line-height: inherit; font-size: inherit;
+}
+::after {
+	text-decoration: inherit; vertical-align: inherit;
+}
+::before {
+	text-decoration: inherit; vertical-align: inherit;
+}
+:root {
+	font: 16px/1.5 sans-serif; cursor: default; -ms-overflow-y: scroll; box-sizing: border-box; font-size-adjust: none; font-stretch: normal; -ms-text-size-adjust: 100%; -ms-overflow-style: -ms-autohiding-scrollbar; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; text-rendering: optimizeLegibility;
+}
+a {
+	text-decoration: none;
+}
+audio {
+	vertical-align: middle;
+}
+canvas {
+	vertical-align: middle;
+}
+iframe {
+	vertical-align: middle;
+}
+img {
+	vertical-align: middle;
+}
+svg {
+	vertical-align: middle;
+}
+video {
+	vertical-align: middle;
+}
+button {
+	color: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; min-height: 1.5em; background-color: transparent;
+}
+input {
+	color: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; min-height: 1.5em; background-color: transparent;
+}
+select {
+	color: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; min-height: 1.5em; background-color: transparent;
+}
+textarea {
+	color: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; min-height: 1.5em; background-color: transparent;
+}
+code {
+	font-family: monospace,monospace;
+}
+kbd {
+	font-family: monospace,monospace;
+}
+pre {
+	font-family: monospace,monospace;
+}
+samp {
+	font-family: monospace,monospace;
+}
+nav ol {
+	list-style: none;
+}
+nav ul {
+	list-style: none;
+}
+select {
+	-webkit-appearance: none; -moz-appearance: none;
+}
+select::-ms-expand {
+	display: none;
+}
+select::-ms-value {
+	color: currentColor;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+::selection {
+	text-shadow: none; background-color: rgb(179, 212, 252);
+}
+@media screen
+{
+[hidden~=screen] {
+	display: inherit;
+}
+[hidden~=screen]:not(:target):not(:focus):not(:active) {
+	position: absolute !important; clip: rect(0px, 0px, 0px, 0px) !important;
+}
 }

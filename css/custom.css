@@ -1,32 +1,37 @@
-/* Image Center Alignment */
-article img {
-  display: block;
-  margin: 0 auto;
+td.line-data {
+	width: 100%;
+}
+body {
+	line-height: 2em;
+}
+
+nav a, nav a:visited{ color: #666; }
+
+nav a:hover{ color: @color; }
+
+/* Pager
+--------------------------------------------------*/
+nav ul.pagination{
+  font-size: 0;
   text-align: center;
+  margin: 0;
 }
 
-/* ShareThis Buttons */
-#share-this {
-  margin: 40px 0 40px 0;
+nav ul.pagination li{
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  padding: 3px 10px;
+  margin: 0 3px;
 }
 
-/* Pagination */
-nav.pagination {
-  padding: 20px 0 20px 0;
-  overflow: hidden;
+nav ul.pagination li.active{
+  border: 2px solid @color;
 }
-nav.pagination span.previous {
-  float:left;
-  padding: 10px 0 10px 0;
-  max-width: 300px;
-}
-nav.pagination span.next {
-  float:right;
-  padding: 10px 0 10px 0;
-  max-width: 300px;
-}
-nav.pagination a {
-  color: #29abe2;
+
+nav ul.pagination li:hover{
+  border-color: @color;
 }
 
  /* SocialIcons*/

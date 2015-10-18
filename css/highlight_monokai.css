@@ -1,128 +1,273 @@
-/*
-Monokai style - ported by Luigi Maselli - http://grigio.org
-*/
-
 .hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #272822;
-  -webkit-text-size-adjust: none;
+	background: rgb(39, 40, 34); padding: 0.5em; display: block; -ms-overflow-x: auto; -webkit-text-size-adjust: none;
 }
-
-.hljs-tag,
-.hljs-tag .hljs-title,
-.hljs-keyword,
-.hljs-literal,
-.hljs-strong,
-.hljs-change,
-.hljs-winutils,
-.hljs-flow,
-.nginx .hljs-title,
+.hljs-tag {
+	color: rgb(249, 38, 114);
+}
+.hljs-tag .hljs-title {
+	color: rgb(249, 38, 114);
+}
+.hljs-keyword {
+	color: rgb(249, 38, 114);
+}
+.hljs-literal {
+	color: rgb(249, 38, 114);
+}
+.hljs-strong {
+	color: rgb(249, 38, 114);
+}
+.hljs-change {
+	color: rgb(249, 38, 114);
+}
+.hljs-winutils {
+	color: rgb(249, 38, 114);
+}
+.hljs-flow {
+	color: rgb(249, 38, 114);
+}
+.nginx .hljs-title {
+	color: rgb(249, 38, 114);
+}
 .tex .hljs-special {
-  color: #f92672;
+	color: rgb(249, 38, 114);
 }
-
 .hljs {
-  color: #ddd;
+	color: rgb(221, 221, 221);
 }
-
-.hljs .hljs-constant,
-.asciidoc .hljs-code,
+.hljs .hljs-constant {
+	color: rgb(102, 217, 239);
+}
+.asciidoc .hljs-code {
+	color: rgb(102, 217, 239);
+}
 .markdown .hljs-code {
-	color: #66d9ef;
+	color: rgb(102, 217, 239);
 }
-
-.hljs-code,
-.hljs-class .hljs-title,
+.hljs-code {
+	color: white;
+}
+.hljs-class .hljs-title {
+	color: white;
+}
 .hljs-header {
 	color: white;
 }
-
-.hljs-link_label,
-.hljs-attribute,
-.hljs-symbol,
-.hljs-symbol .hljs-string,
-.hljs-value,
+.hljs-link_label {
+	color: rgb(191, 121, 219);
+}
+.hljs-attribute {
+	color: rgb(191, 121, 219);
+}
+.hljs-symbol {
+	color: rgb(191, 121, 219);
+}
+.hljs-symbol .hljs-string {
+	color: rgb(191, 121, 219);
+}
+.hljs-value {
+	color: rgb(191, 121, 219);
+}
 .hljs-regexp {
-	color: #bf79db;
+	color: rgb(191, 121, 219);
 }
-
-.hljs-link_url,
-.hljs-tag .hljs-value,
-.hljs-string,
-.hljs-bullet,
-.hljs-subst,
-.hljs-title,
-.hljs-emphasis,
-.hljs-type,
-.hljs-preprocessor,
-.hljs-pragma,
-.ruby .hljs-class .hljs-parent,
-.hljs-built_in,
-.django .hljs-template_tag,
-.django .hljs-variable,
-.smalltalk .hljs-class,
-.hljs-javadoc,
-.django .hljs-filter .hljs-argument,
-.smalltalk .hljs-localvars,
-.smalltalk .hljs-array,
-.hljs-attr_selector,
-.hljs-pseudo,
-.hljs-addition,
-.hljs-stream,
-.hljs-envvar,
-.apache .hljs-tag,
-.apache .hljs-cbracket,
-.tex .hljs-command,
-.hljs-prompt,
+.hljs-link_url {
+	color: rgb(166, 226, 46);
+}
+.hljs-tag .hljs-value {
+	color: rgb(166, 226, 46);
+}
+.hljs-string {
+	color: rgb(166, 226, 46);
+}
+.hljs-bullet {
+	color: rgb(166, 226, 46);
+}
+.hljs-subst {
+	color: rgb(166, 226, 46);
+}
+.hljs-title {
+	color: rgb(166, 226, 46);
+}
+.hljs-emphasis {
+	color: rgb(166, 226, 46);
+}
+.hljs-type {
+	color: rgb(166, 226, 46);
+}
+.hljs-preprocessor {
+	color: rgb(166, 226, 46);
+}
+.hljs-pragma {
+	color: rgb(166, 226, 46);
+}
+.ruby .hljs-class .hljs-parent {
+	color: rgb(166, 226, 46);
+}
+.hljs-built_in {
+	color: rgb(166, 226, 46);
+}
+.django .hljs-template_tag {
+	color: rgb(166, 226, 46);
+}
+.django .hljs-variable {
+	color: rgb(166, 226, 46);
+}
+.smalltalk .hljs-class {
+	color: rgb(166, 226, 46);
+}
+.hljs-javadoc {
+	color: rgb(166, 226, 46);
+}
+.django .hljs-filter .hljs-argument {
+	color: rgb(166, 226, 46);
+}
+.smalltalk .hljs-localvars {
+	color: rgb(166, 226, 46);
+}
+.smalltalk .hljs-array {
+	color: rgb(166, 226, 46);
+}
+.hljs-attr_selector {
+	color: rgb(166, 226, 46);
+}
+.hljs-pseudo {
+	color: rgb(166, 226, 46);
+}
+.hljs-addition {
+	color: rgb(166, 226, 46);
+}
+.hljs-stream {
+	color: rgb(166, 226, 46);
+}
+.hljs-envvar {
+	color: rgb(166, 226, 46);
+}
+.apache .hljs-tag {
+	color: rgb(166, 226, 46);
+}
+.apache .hljs-cbracket {
+	color: rgb(166, 226, 46);
+}
+.tex .hljs-command {
+	color: rgb(166, 226, 46);
+}
+.hljs-prompt {
+	color: rgb(166, 226, 46);
+}
 .hljs-name {
-  color: #a6e22e;
+	color: rgb(166, 226, 46);
 }
-
-.hljs-comment,
-.hljs-annotation,
-.smartquote,
-.hljs-blockquote,
-.hljs-horizontal_rule,
-.hljs-decorator,
-.hljs-pi,
-.hljs-doctype,
-.hljs-deletion,
-.hljs-shebang,
-.apache .hljs-sqbracket,
+.hljs-comment {
+	color: rgb(117, 113, 94);
+}
+.hljs-annotation {
+	color: rgb(117, 113, 94);
+}
+.smartquote {
+	color: rgb(117, 113, 94);
+}
+.hljs-blockquote {
+	color: rgb(117, 113, 94);
+}
+.hljs-horizontal_rule {
+	color: rgb(117, 113, 94);
+}
+.hljs-decorator {
+	color: rgb(117, 113, 94);
+}
+.hljs-pi {
+	color: rgb(117, 113, 94);
+}
+.hljs-doctype {
+	color: rgb(117, 113, 94);
+}
+.hljs-deletion {
+	color: rgb(117, 113, 94);
+}
+.hljs-shebang {
+	color: rgb(117, 113, 94);
+}
+.apache .hljs-sqbracket {
+	color: rgb(117, 113, 94);
+}
 .tex .hljs-formula {
-  color: #75715e;
+	color: rgb(117, 113, 94);
 }
-
-.hljs-keyword,
-.hljs-literal,
-.css .hljs-id,
-.hljs-phpdoc,
-.hljs-dartdoc,
-.hljs-title,
-.hljs-header,
-.hljs-type,
-.vbscript .hljs-built_in,
-.rsl .hljs-built_in,
-.smalltalk .hljs-class,
-.diff .hljs-header,
-.hljs-chunk,
-.hljs-winutils,
-.bash .hljs-variable,
-.apache .hljs-tag,
-.tex .hljs-special,
-.hljs-request,
+.hljs-keyword {
+	font-weight: bold;
+}
+.hljs-literal {
+	font-weight: bold;
+}
+.css .hljs-id {
+	font-weight: bold;
+}
+.hljs-phpdoc {
+	font-weight: bold;
+}
+.hljs-dartdoc {
+	font-weight: bold;
+}
+.hljs-title {
+	font-weight: bold;
+}
+.hljs-header {
+	font-weight: bold;
+}
+.hljs-type {
+	font-weight: bold;
+}
+.vbscript .hljs-built_in {
+	font-weight: bold;
+}
+.rsl .hljs-built_in {
+	font-weight: bold;
+}
+.smalltalk .hljs-class {
+	font-weight: bold;
+}
+.diff .hljs-header {
+	font-weight: bold;
+}
+.hljs-chunk {
+	font-weight: bold;
+}
+.hljs-winutils {
+	font-weight: bold;
+}
+.bash .hljs-variable {
+	font-weight: bold;
+}
+.apache .hljs-tag {
+	font-weight: bold;
+}
+.tex .hljs-special {
+	font-weight: bold;
+}
+.hljs-request {
+	font-weight: bold;
+}
 .hljs-status {
-  font-weight: bold;
+	font-weight: bold;
 }
-
-.coffeescript .javascript,
-.javascript .xml,
-.tex .hljs-formula,
-.xml .javascript,
-.xml .vbscript,
-.xml .css,
+.coffeescript .javascript {
+	opacity: 0.5;
+}
+.javascript .xml {
+	opacity: 0.5;
+}
+.tex .hljs-formula {
+	opacity: 0.5;
+}
+.xml .javascript {
+	opacity: 0.5;
+}
+.xml .vbscript {
+	opacity: 0.5;
+}
+.xml .css {
+	opacity: 0.5;
+}
 .xml .hljs-cdata {
-  opacity: 0.5;
+	opacity: 0.5;
 }
