@@ -6,8 +6,221 @@
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 25 Oct 2015 20:31:48 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2015 20:04:07 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Githubのコミット名とブランチ名を適当に考えてみる</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-30-02/</link>
+      <pubDate>Fri, 30 Oct 2015 20:04:07 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-30-02/</guid>
+      <description>
+
+&lt;p&gt;英語の場合のコミット名ブランチ名を適当に考えます。&lt;/p&gt;
+
+&lt;h1 id=&#34;コミットに求められること:22a8f9a59cbc32861b4c14b3e79e9c37&#34;&gt;コミットに求められること&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レビューするプロセスをスピードアップ&lt;/li&gt;
+&lt;li&gt;良いリリースノートを書く手助け&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;基本:22a8f9a59cbc32861b4c14b3e79e9c37&#34;&gt;基本&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;大文字で始める&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;動詞で始める&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ピリオドを付けない&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;動詞は過去形,現在系&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;過去形と現在系は両方を見ますがGoogle, Microsoftなどのコミット名を見ると過去形で始めているものは少なかったり、他のサイトと比較をしても現在系を進めている(誰かに命令しているように書く方が論理的という考え方の)サイトが多いのが現状です。ですが基本的にはそのディレクトリの方式に合わせるのが一番です。&lt;/p&gt;
+
+&lt;h3 id=&#34;よく使う動詞:22a8f9a59cbc32861b4c14b3e79e9c37&#34;&gt;よく使う動詞&lt;/h3&gt;
+
+&lt;p&gt;新規追加 add 改善 improve, improved&lt;/p&gt;
+
+&lt;p&gt;変更 change, changed&lt;/p&gt;
+
+&lt;p&gt;修正 modify, modified&lt;/p&gt;
+
+&lt;p&gt;バグフィックス fix, fixed&lt;/p&gt;
+
+&lt;p&gt;削除 remove, removed&lt;/p&gt;
+
+&lt;p&gt;取り消し revert, reverted&lt;/p&gt;
+
+&lt;p&gt;更新 update, updated&lt;/p&gt;
+
+&lt;p&gt;拡張 upgrade, upgraded&lt;/p&gt;
+
+&lt;p&gt;有効 enable, enabled&lt;/p&gt;
+
+&lt;p&gt;無効 disable, disabled&lt;/p&gt;
+
+&lt;p&gt;拡張 extend, extended&lt;/p&gt;
+
+&lt;p&gt;強化、向上 enhance, enhanced&lt;/p&gt;
+
+&lt;p&gt;実装 implement, implemented&lt;/p&gt;
+
+&lt;p&gt;リファクタ refactor, refactored&lt;/p&gt;
+
+&lt;p&gt;最適化 optimize, optimized&lt;/p&gt;
+
+&lt;p&gt;削減、切り詰め reduce, reduced&lt;/p&gt;
+
+&lt;h1 id=&#34;ブランチに求められるもの:22a8f9a59cbc32861b4c14b3e79e9c37&#34;&gt;ブランチに求められるもの&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;中央ブランチを決めそれを中心としてブランチを作成する&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;バグ編集等をしたいときにその時点の情報を保守したまま並行して編集をする&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;分岐したブランチは他のブランチの影響を受けないため、同じリポジトリ中で複数の変更を同時に進めていく&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;基本-1:22a8f9a59cbc32861b4c14b3e79e9c37&#34;&gt;基本&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;master,original(中央レポジトリ)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;リリース版が何時でも作成可能な状態。また、トピックブランチの分岐元としても使用します。そのため、安定した状態を保っておくことが重要。何らかの変更を行う場合は、トピックブランチを作成して作業を行うことが多い。Jenkins等のCIツールを使用した自動ビルドやテストはこのブランチを使って行う。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;develop(中央レポジトリ)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;開発用。masterから分岐し、release-とmasterへマージする。&lt;/p&gt;
+
+&lt;p&gt;先のリリースに向けた普段の開発で使用するブランチ。バグが存在する。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;feature&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;新機能の開発用。バグ修正を行う際にdevelopから分岐し、developへマージする。&lt;/p&gt;
+
+&lt;p&gt;フィーチャーブランチでの作業は基本的に共有する必要がないので、リモートでは管理しません。開発が完了したら、developブランチにマージを行うことで公開します。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;release-&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;次回リリースの準備用。developから分岐し、developとmasterへマージする。&lt;/p&gt;
+
+&lt;p&gt;リリースブランチ上で行った修正を取り込むため、developブランチに対してもマージを行います。リリースへ向けて最終調整が行われます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;hotfix-&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;masterのバグフィックス用。masterから分岐し、developとmasterへマージする。&lt;/p&gt;
+
+&lt;p&gt;何か緊急のバグが発生し早急に治す必要がある場合これを使い、通常のdevelopと分けます。&lt;/p&gt;
+
+&lt;h2 id=&#34;引用元:22a8f9a59cbc32861b4c14b3e79e9c37&#34;&gt;引用元&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/hayajo/3938098&#34;&gt;ChangeLog を支える英語&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.backlog.jp/git-guide/stepup/stepup1_2.html&#34;&gt;サルでもわかるGit入門&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>20posts!!!!!!!!!</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-30/</link>
+      <pubDate>Fri, 30 Oct 2015 18:35:45 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-30/</guid>
+      <description>&lt;p&gt;20posts!!!!!!!!!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C#でSplashWindow(Screen)を表示させる</title>
+      <link>http://ebxpj6bp.github.io/post/2015-10-28/</link>
+      <pubDate>Wed, 28 Oct 2015 19:39:58 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-10-28/</guid>
+      <description>
+
+&lt;p&gt;スプラッシュ(スプラッシュスクリーン)を特定処理が終わったら自動的に閉じて切り替えたりする。&lt;/p&gt;
+
+&lt;h2 id=&#34;スプラッシュ-スプラッシュスクリーン-とは:b29053ff5e3dc3ee8ed7aab801e3a548&#34;&gt;スプラッシュ(スプラッシュスクリーン)とは&lt;/h2&gt;
+
+&lt;p&gt;スプラッシュ(スプラッシュスクリーン)は起動時に処理のかかるアプリケーションを起動させる場合、ユーザーの不安を無くすために読み込んでます感を出すために表示されることが多い。基本的に画面全体を覆う大きさではなく、中央に表示される。VisualStudio, OfficeなどMSのアプリには大抵あります。&lt;/p&gt;
+
+&lt;p&gt;WPFにはスプラッシュスクリーンという機能がありますが、素早く表示され初期化が終わった時点で自動的に消えます。これは表示タイミングと表示を消すタイミングを作成側が指定することができません。そこでWindowを作成しそれをスプラッシュスクリーンとして扱いApp.xamlからそれを操作します。&lt;/p&gt;
+
+&lt;h2 id=&#34;code:b29053ff5e3dc3ee8ed7aab801e3a548&#34;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;App.xaml.cs&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class App : Application
+{       
+    private SplashWindow _splash;
+    public SplashWindow Splash { get; private set; }
+
+    public App() : base()
+    {
+        Startup += Application_Startup;
+    }
+
+    private void Application_Startup(object sender, StartupEventArgs e){        
+        Splash = new SplashWindow();
+        Splash.Show();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;MainWindow.xaml.cs&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+
+        Loaded += MainWindow_Loaded;
+    }
+
+    public void MainWindow_Loaded(object sender, RoutedEventArgs e)
+    {
+        var app = Application.Current as App;
+        if (app == null || app.Splash == null) return;
+        app.Splash.Close();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;App.xamlでSplashを表示させ、MainWindowがロードし終わった時点でSplashWindowを閉じます。ですがこの閉じる動作は確実に行われるわけではないので不安ならusing等を使うとうまくいくかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&#34;ついで:b29053ff5e3dc3ee8ed7aab801e3a548&#34;&gt;ついで&lt;/h2&gt;
+
+&lt;p&gt;スプラッシュスクリーンを任意のタイミングまで表示させたい場合は&lt;code&gt;System.Threading.Thread.Sleep&lt;/code&gt;を利用しスレッドを無理やり停止させます&lt;/p&gt;
+
+&lt;p&gt;App.xaml&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public partial class App : Application
+{
+    void App_Startup(object sender, StartupEventArgs e)
+    {
+        System.Threading.Thread.Sleep(3000);
+
+        Main = new MainWindow();
+        Main.Show();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>きのこの山とたけのこの里</title>
@@ -729,264 +942,6 @@ background: #fff;
 &lt;p&gt;マウスオーバーで &amp;ldquo;#hoge a:hover&amp;rdquo; の背景色にすると同時にアイコンを白色に変えています&lt;/p&gt;
 
 &lt;p&gt;マウスオーバー後の背景色はそのアイコンの&lt;a href=&#34;http://brandcolors.net/&#34;&gt;BrandColor&lt;/a&gt;にするとわかりやすくなる.?&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>URLが変わった話</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-04-02/</link>
-      <pubDate>Sun, 04 Oct 2015 18:21:13 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-04-02/</guid>
-      <description>
-
-&lt;h1 id=&#34;urlが変わりました:1e9c328162a7f30170a3587d73b18a58&#34;&gt;URLが変わりました&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Github Student Pack まとめ</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-04/</link>
-      <pubDate>Sun, 04 Oct 2015 11:39:54 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-04/</guid>
-      <description>
-
-&lt;p&gt;Github Student Pack まとめ&lt;/p&gt;
-
-&lt;h1 id=&#34;student-developer-pack-https-education-github-com-pack:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;&lt;a href=&#34;https://education.github.com/pack&#34;&gt;Student Developer Pack&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h1 id=&#34;student-developer-pack-とは:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Student Developer Pack とは&lt;/h1&gt;
-
-&lt;p&gt;GitHubが提供する 学生向けに開発ツールパッケージGitHub Student Developer Pack&lt;/p&gt;
-
-&lt;p&gt;Githubアカウントを持ち 学生であることを証明することで入手出来ます&lt;/p&gt;
-
-&lt;h1 id=&#34;ライセンス合計金額:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;ライセンス合計金額&lt;/h1&gt;
-
-&lt;p&gt;14種類すべてのサービスを使うと&lt;strong&gt;$3,032.99(363,624円)/year+$1000(119,930円)&lt;/strong&gt;分が学生のうちは利用可能です&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;student-developer-packから得られる多彩なライセンス詳細:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Student Developer Packから得られる多彩なライセンス詳細&lt;/h1&gt;
-
-&lt;h2 id=&#34;atom:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;ATOM&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-01.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;Gtihub製のテキストエディター&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;none&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A hackable text editor for the 21st Century&lt;/p&gt;
-
-&lt;p&gt;Open Source by GitHub, free for everyone&lt;/p&gt;
-
-&lt;h2 id=&#34;bitnami:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;bitnami&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-02.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;Webアプリケーションや開発環境などをオールインワンでインストール出来るパッケージを配布しているサービス&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Business 3 Plan $49/month が一年分が利用可能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Install cloud applications in a single click&lt;/p&gt;
-
-&lt;p&gt;Business 3 plan (normally $49/month) for one year&lt;/p&gt;
-
-&lt;h2 id=&#34;crowdflower:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;CrowdFlower&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-03.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;タスクをクラウドソースして管理するサービス&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Crowdflower platform $2500/month $50分が利用可能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Crowdsourcing and data enrichment platform&lt;/p&gt;
-
-&lt;p&gt;Access to the Crowdflower platform&lt;/p&gt;
-
-&lt;h2 id=&#34;digitalocean:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;DigitalOcean&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-04.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;デベロッパのためのシンプルなクラウドホスティングするサービス&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$50分が利用可能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Simple cloud hosting, built for developers&lt;/p&gt;
-
-&lt;p&gt;$50 in platform credit for new users&lt;/p&gt;
-
-&lt;h2 id=&#34;dnsimple:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;dnsimple&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-05.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;ワンクリックのサービスと堅牢なAPIでシンプルなDNS管理するサービス&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Bronze $3/month 2年分が利用可能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Simple DNS management with one-click services and a robust API&lt;/p&gt;
-
-&lt;p&gt;Bronze hosted DNS plan (normally $3/month) for two years&lt;/p&gt;
-
-&lt;h2 id=&#34;github:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Github&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-06.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;強力なコラボレーションとコードリビューとコード管理でオープンソースとプライベートプロジェクトを支援するサービス&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$7/month プライベートレジストリ(5つ) が利用可能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Powerful collaboration, code review, and code management&lt;/p&gt;
-
-&lt;p&gt;Micro account (normally $7/month) with five private repositories while you&amp;rsquo;re a student&lt;/p&gt;
-
-&lt;h2 id=&#34;hackhands:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;HACKHANDS&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-07.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;24/7ライブで利用できるプログラミングヘルプ&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$25 が利用可能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Live programming help available &lt;sup&gt;24&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt;&lt;/p&gt;
-
-&lt;p&gt;$25 in platform credit&lt;/p&gt;
-
-&lt;h2 id=&#34;visualstudio:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;VisualStudio&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-08.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;Visual Studio IDE を含むマイクロソフト開発ツールのスイート&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Visual Studio Community 2013 と Dreamspark&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A suite of Microsoft developer tools including the Visual Studio IDE&lt;/p&gt;
-
-&lt;p&gt;Visual Studio Community 2013 and the rest of the DreamSpark collection while you’re a student&lt;/p&gt;
-
-&lt;h2 id=&#34;namecheap:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;namecheap&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-09.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;ドメイン登録とSSL証明&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;.meドメイン$8.99/year, SSL証明$9/year が利用可能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Affordable registration, hosting, and domain management&lt;/p&gt;
-
-&lt;p&gt;One year domain name registration on the .me TLD (normally $8.99/year), One year SSL certificate (normally $9/year)&lt;/p&gt;
-
-&lt;h2 id=&#34;orchestrate:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;ORCHESTRATE&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-10.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;キー/ヴァリュー、グラフなど、各種データベース&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$49/month が利用可能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A complete database portfolio that includes search, time-series events, geolocation and graph queries through an API&lt;/p&gt;
-
-&lt;p&gt;Developer account (normally $49/month) while you&amp;rsquo;re a student&lt;/p&gt;
-
-&lt;h2 id=&#34;sendgrid:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;SendGrid&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-11.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;チームのコラボレーションのためのスクリーン共有&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$49/month が利用可能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Email infrastructure as a service&lt;/p&gt;
-
-&lt;p&gt;Student plan 15K free emails/month (normally limited to 200 free emails/day) while you&amp;rsquo;re a student&lt;/p&gt;
-
-&lt;h2 id=&#34;stripe:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;stripe&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-12.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;Webとモバイルの支払決済、デベロッパ向け&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;最初の売上$1000手数料 が無料&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Web and mobile payments, built for developers&lt;/p&gt;
-
-&lt;p&gt;Waived transaction fees on first $1000 in revenue processed&lt;/p&gt;
-
-&lt;h2 id=&#34;traviscl:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;TravisCL&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-13.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;オープンソースとプライベートプロジェクトのための継続的インテグレーション&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Private builds $69/month が無料&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Continuous integration platform for open source and private projects&lt;/p&gt;
-
-&lt;p&gt;Private builds (normally $69/month) while you&amp;rsquo;re a student&lt;/p&gt;
-
-&lt;h2 id=&#34;unreal-engine:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Unreal Engine&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-14.jpg&#34; alt=&#34;&#34; /&gt;
-
-&lt;strong&gt;Epic Gamesより開発されたゲームエンジン&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$19/month が無料&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A complete suite of game development tools for PC, console, mobile, web and VR&lt;/p&gt;
-
-&lt;p&gt;Unreal Engine while you&amp;rsquo;re a student&lt;/p&gt;
-
-&lt;p&gt;&amp;ndash;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;情報はすべて編集時時点&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Aboutmeを作り直してレスポンシブに対応させる話</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-03-02/</link>
-      <pubDate>Sat, 03 Oct 2015 20:37:29 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-03-02/</guid>
-      <description>
-
-&lt;h2 id=&#34;目的:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;目的&lt;/h2&gt;
-
-&lt;p&gt;CSS練習, レスポンシブ練習&lt;/p&gt;
-
-&lt;h2 id=&#34;前回の反省点と今回の比較:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;前回の反省点と今回の比較&lt;/h2&gt;
-
-&lt;p&gt;CSSコードの統一 → 統一&lt;/p&gt;
-
-&lt;p&gt;スマホ対応 → 非効率的なスマホ,タブレット対応&lt;/p&gt;
-
-&lt;h2 id=&#34;得られたもの:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;得られたもの&lt;/h2&gt;
-
-&lt;p&gt;レスポンシブの主な書き方, 読み込み速度低下&lt;/p&gt;
-
-&lt;h2 id=&#34;今後の改善点:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;今後の改善点&lt;/h2&gt;
-
-&lt;p&gt;レスポンシブが非効率 → 効率的に書き直す&lt;/p&gt;
-
-&lt;p&gt;CSSの使い方がひどすぎる → 用勉強&lt;/p&gt;
-
-&lt;h2 id=&#34;参考:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;参考&lt;/h2&gt;
-
-&lt;p&gt;作成時間 30分程度&lt;/p&gt;
-
-&lt;h2 id=&#34;画像小さくできなかった-上から-default-tablet-smart:e2030bff8fbd94f4ad2eb919d6d77ab5&#34;&gt;画像小さくできなかった(上から Default, Tablet, Smart)&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-03-01.png&#34; alt=&#34;&#34; /&gt;
-
-&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-03-02.png&#34; alt=&#34;&#34; /&gt;
-
-&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-03-03.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     
