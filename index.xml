@@ -6,8 +6,173 @@
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 30 Oct 2015 20:04:07 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2015 16:03:34 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>C言語による並列処理の勉強をしたかった。</title>
+      <link>http://ebxpj6bp.github.io/post/2015-11-03/</link>
+      <pubDate>Tue, 03 Nov 2015 16:03:34 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-11-03/</guid>
+      <description>
+
+&lt;p&gt;C言語による並列処理の勉強をしたかった。備忘録&lt;/p&gt;
+
+&lt;h2 id=&#34;openmpとは:a0a57c1b6e12579fe764acb009917377&#34;&gt;OpenMPとは&lt;/h2&gt;
+
+&lt;p&gt;OpenMPは、並列コンピューティング環境を利用するために用いられる標準化された基盤。OpenMPは主に共有メモリ型並列計算機で用いられる。&lt;/p&gt;
+
+&lt;p&gt;MPIでは明示的にメッセージの交換をプログラム中に記述しなければならないが、OpenMPはOpenMPが使用できない環境では無視されるディレクティブを挿入することによって並列化を行う。このため並列環境と非並列環境でほぼ同一のソースコードを使用できるという利点がある。 また、プラットフォーム固有のスレッドAPIを使わず、コンパイラによって暗黙的に生成されたスレッドプールを利用してタスクを振り分けることになるため、並列プログラムを簡潔に記述できるだけでなく、複数の環境に移植しやすくなる。&lt;/p&gt;
+
+&lt;p&gt;MPIとの比較では、OpenMPは異なるスレッドが同一のデータを同じアドレスで参照できるのに対して、MPIでは明示的にメッセージ交換を行わなければならない。そのためSMP環境においては大きなデータの移動を行なわずにすむので高い効率が期待できる。ただし並列化の効率はコンパイラに依存するのでチューニングによる性能改善がMPIほど高くならないという問題がある。また、OpenMPはMPIに比べてメモリアクセスのローカリティが低くなる傾向があるので、頻繁なメモリアクセスがあるプログラムでは、MPIの方が高速な場合が多い&lt;/p&gt;
+
+&lt;h2 id=&#34;openmpで使われれる指示文:a0a57c1b6e12579fe764acb009917377&#34;&gt;OpenMPで使われれる指示文&lt;/h2&gt;
+
+&lt;p&gt;OpenMPではプログラム内で並列を行いたい場所に対して&lt;code&gt;#pragma&lt;/code&gt;を記述し&lt;code&gt;#pragma omp&lt;/code&gt;の形をとる&lt;/p&gt;
+
+&lt;h3 id=&#34;並列リージョン指示文:a0a57c1b6e12579fe764acb009917377&#34;&gt;並列リージョン指示文&lt;/h3&gt;
+
+&lt;p&gt;#pragma omp parallel&lt;/p&gt;
+
+&lt;h3 id=&#34;処理分散指示文:a0a57c1b6e12579fe764acb009917377&#34;&gt;処理分散指示文&lt;/h3&gt;
+
+&lt;p&gt;#pragma omp for&lt;/p&gt;
+
+&lt;p&gt;#pragma omp sections&lt;/p&gt;
+
+&lt;h3 id=&#34;同期に関する指示文:a0a57c1b6e12579fe764acb009917377&#34;&gt;同期に関する指示文&lt;/h3&gt;
+
+&lt;p&gt;#pragma omp single&lt;/p&gt;
+
+&lt;p&gt;#pragma omp master&lt;/p&gt;
+
+&lt;p&gt;#pragma omp critical&lt;/p&gt;
+
+&lt;p&gt;#pragma omp atomic&lt;/p&gt;
+
+&lt;p&gt;#pragma omp barrier&lt;/p&gt;
+
+&lt;p&gt;#pragma omp ordered&lt;/p&gt;
+
+&lt;p&gt;#pragma omp flush&lt;/p&gt;
+
+&lt;h2 id=&#34;openmpを用いたコード:a0a57c1b6e12579fe764acb009917377&#34;&gt;OpenMPを用いたコード&lt;/h2&gt;
+
+&lt;h3 id=&#34;pragma-omp-parallelの例:a0a57c1b6e12579fe764acb009917377&#34;&gt;#pragma omp parallelの例&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;studio.h&amp;gt;
+#include &amp;lt;omp.h&amp;gt;
+int main(void)
+{
+    #pragma omp parallel
+    {
+        printf(&amp;quot;Hello World!\n&amp;quot;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;出力結果:&lt;/p&gt;
+
+&lt;p&gt;スレッドの数だけHello Worldを出力する&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;pragma-omp-parralel-forの例:a0a57c1b6e12579fe764acb009917377&#34;&gt;#pragma omp parralel forの例&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;studio.h&amp;gt;
+#include &amp;lt;omp.h&amp;gt;
+
+int main(void)
+{
+    int i, a[100];
+    #pragma omp parallel for
+    for(i = 0; i &amp;lt; 100; i++){
+        a[i]=0;
+    }                   
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;出力結果:&lt;/p&gt;
+
+&lt;p&gt;スレッド0番: for(i = 0; i &amp;lt; 25; i++) a[i]=0;&lt;/p&gt;
+
+&lt;p&gt;スレッド1番: for(i = 25; i &amp;lt; 50; i++) a[i]=0;&lt;/p&gt;
+
+&lt;p&gt;スレッド2番: for(i = 50; i &amp;lt; 75; i++) a[i]=0;&lt;/p&gt;
+
+&lt;p&gt;スレッド3番: for(i = 75; i &amp;lt; 100; i++) a[i]=0;&lt;/p&gt;
+
+&lt;h3 id=&#34;ファイルコピーの例:a0a57c1b6e12579fe764acb009917377&#34;&gt;ファイルコピーの例&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;fcntl.h&amp;gt;
+#include &amp;lt;sys/stat.h&amp;gt;
+#include &amp;lt;sys/types.h&amp;gt;
+#include &amp;lt;sys/uio.h&amp;gt;
+#include &amp;lt;unistd.h&amp;gt;
+#define BUF_SIZE 4096*1024
+char buf1[BUF_SIZE];
+char buf2[BUF_SIZE];
+
+int main(int argc,char *argv[])
+{
+    int file_stc,file_dst;
+    int size1, size2;
+    if( argc != 3){
+        printf(&amp;quot;usage: filecopy source-file dest-file\n&amp;quot;)
+        return 1;
+    }
+    file_src=open(argv[1],O_RDONLY); 
+    file_dst=open(argv[2],O_WRONLY|O_CREAT|O_TRUNC,S_IREAD|S_IWRITE);
+    if( file_src==-1 || file_dst==-1 ){
+        printf(&amp;quot;file read/write error\n&amp;quot;);
+        return 1;
+    }
+    size1=read(file_src,buf1,BUF_SIZE);
+
+    #pragma omp parallel sections num_threads(2)
+    {
+        #pragma omp section
+        while(1){
+            size2=read(file_src,buf2,BUF_SIZE);
+
+            #pragma omp barrier
+            if( size2 &amp;lt;= 0 ) 
+                break;
+            size1=read(file_src,buf1,BUF_SIZE);
+
+            #pragma omp barrier
+            if( size1&amp;lt;=0 ) 
+                break;
+        }
+        #pragma omp section
+        while(1){
+            write(file_dst,buf1,size1);
+
+            #pragma omp barrier
+            if( size2&amp;lt;=0 ) 
+                break;
+            write(file_dst,buf2,size2);
+
+            #pragma omp barrier
+            if( size1&amp;lt;=0 ) break;
+        } 
+    }
+    close(file_src);
+    close(file_dst);
+    return 0;
+}                                                        
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;参考:a0a57c1b6e12579fe764acb009917377&#34;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/OpenMP&#34;&gt;OpenMP - Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.google.co.jp/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=6&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0CD8QFjAFahUKEwj1tLi-1_PIAhUFmJQKHSa_CaA&amp;amp;url=http%3A%2F%2Fwww.cc.u-tokyo.ac.jp%2Fsupport%2Fkosyu%2F03%2Fkosyu-openmp_c.pdf&amp;amp;usg=AFQjCNEJGbKtYlh39Etv42TzJpjyI8jDIQ&amp;amp;sig2=lAaDfPR0eogJo1v_3EuR8A&#34;&gt;C 言語による OpenMP 入門 - 東京大学&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Githubのコミット名とブランチ名を適当に考えてみる</title>
@@ -851,97 +1016,6 @@ RefineFPSでは本格的なゲームをユーザーの皆様方に提供して�
 &lt;h2 id=&#34;参考文章:007242a7141a39204898ccb0f4aa5409&#34;&gt;参考文章&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.lifehacker.jp/2012/11/121128tails.html&#34;&gt;http://www.lifehacker.jp/2012/11/121128tails.html&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>マウスオーバーで色が変わるボタン(Font Awesome)</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-08/</link>
-      <pubDate>Thu, 08 Oct 2015 18:54:25 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-08/</guid>
-      <description>
-
-&lt;p&gt;FontAwesomeとCSSを使ったボタンの一種の例です&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ebxpj6bp.github.io/demo/2015-10-08-demo.html&#34;&gt;デモ&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;fontawesome:1a83f012dd114153cbd367421b34939c&#34;&gt;FontAwesome&lt;/h2&gt;
-
-&lt;p&gt;FontAwesomeを使うための準備&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://fortawesome.github.io/Font-Awesome/icons/&#34;&gt;FontAwesome&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;html:1a83f012dd114153cbd367421b34939c&#34;&gt;HTML&lt;/h2&gt;
-
-&lt;p&gt;HTMLコード&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;hoge&amp;quot;&amp;gt;
-    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-twitter fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;
-    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-github-alt fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;
-    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-bitbucket fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;
-    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-skype fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;
-    &amp;lt;!-- &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-# falg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt; --&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&amp;ldquo;fa-lg&amp;rdquo;はサイズを調整するように入れています&lt;/p&gt;
-
-&lt;h2 id=&#34;css:1a83f012dd114153cbd367421b34939c&#34;&gt;CSS&lt;/h2&gt;
-
-&lt;p&gt;CSSコード&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#hoge a {
-    display: block;
-    float: left;
-    margin: 0 5px 5px 0;
-    padding: 0;
-    color: #fff;
-}
-
-#hoge i {
-    width: 45px;
-    height: 45px;
-    margin: 0;
-    background: #666;
-    line-height: 45px;
-    text-align: center;
-}
-
-    #hoge i:before {
-        padding: 0;
-        line-height: 45px;
-    }
-
-#hoge a:hover .fa-twitter {
-    background: #55acee;
-}
-
-#hoge a:hover .fa-github-alt {
-    background: #ff5722;
-}
-
-#hoge a:hover .fa-bitbucket {
-    background: #205081;
-}
-
-#hoge a:hover .fa-skype {
-    background: #12a5f4;
-}
-
-/*
-#hoge a:hover .fa-# {
-background: #fff;
-}
-*/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;マウスオーバーで &amp;ldquo;#hoge a:hover&amp;rdquo; の背景色にすると同時にアイコンを白色に変えています&lt;/p&gt;
-
-&lt;p&gt;マウスオーバー後の背景色はそのアイコンの&lt;a href=&#34;http://brandcolors.net/&#34;&gt;BrandColor&lt;/a&gt;にするとわかりやすくなる.?&lt;/p&gt;
 </description>
     </item>
     
