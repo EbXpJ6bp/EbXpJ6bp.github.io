@@ -7,10 +7,10 @@ body {
 
 nav a, nav a:visited{ color: #666; }
 
-nav a:hover{ color: @color; }
+nav a:hover{ color: #29abe2; }
 
-/* Pager
---------------------------------------------------*/
+
+ /* Pager */
 nav ul.pagination{
   font-size: 0;
   text-align: center;
@@ -27,14 +27,33 @@ nav ul.pagination li{
 }
 
 nav ul.pagination li.active{
-  border: 2px solid @color;
+  border: 2px solid #29abe2;
 }
 
 nav ul.pagination li:hover{
-  border-color: @color;
+  border-color: #29abe2;
 }
 
- /* SocialIcons*/
+ /* Pagination */
+nav.pagination {
+  padding: 20px 0 20px 0;
+  overflow: hidden;
+}
+nav.pagination span.previous {
+  float:left;
+  padding: 10px 0 10px 0;
+  max-width: 300px;
+}
+nav.pagination span.next {
+  float:right;
+  padding: 10px 0 10px 0;
+  max-width: 300px;
+}
+nav.pagination a {
+  color: #29abe2;
+}
+
+ /*social icon*/
 #social-icon a {
 	display: block;
 	float: left;

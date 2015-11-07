@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/tags/c/</link>
-    <description>Recent content in C on EbXpJ6bp&#39;s Blog</description>
+    <title>C/C on EbXpJ6bp&#39;s Blog</title>
+    <link>http://ebxpj6bp.github.io/tags/c/c/</link>
+    <description>Recent content in C/C on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 03 Nov 2015 16:03:34 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/tags/c/c/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>C言語による並列処理の勉強をしたかった。</title>
