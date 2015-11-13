@@ -6,8 +6,32 @@
     <description>Recent content in Blog on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Nov 2015 16:03:34 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2015 08:14:26 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Frainworksの活動</title>
+      <link>http://ebxpj6bp.github.io/post/2015-11-14/</link>
+      <pubDate>Sat, 14 Nov 2015 08:14:26 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-11-14/</guid>
+      <description>
+
+&lt;h1 id=&#34;toc_0:fff942efbdc9274c7d4216ea574d2de7&#34;&gt;・＿・&lt;/h1&gt;
+
+&lt;h2 id=&#34;nex:fff942efbdc9274c7d4216ea574d2de7&#34;&gt;NEX&lt;/h2&gt;
+
+&lt;p&gt;進捗なし&lt;/p&gt;
+
+&lt;h2 id=&#34;nowcard:fff942efbdc9274c7d4216ea574d2de7&#34;&gt;NowCard&lt;/h2&gt;
+
+&lt;p&gt;進捗なし&lt;/p&gt;
+
+&lt;h2 id=&#34;nowbrowsing:fff942efbdc9274c7d4216ea574d2de7&#34;&gt;NowBrowsing&lt;/h2&gt;
+
+&lt;p&gt;リリース&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>C言語による並列処理の勉強をしたかった。</title>
@@ -991,97 +1015,6 @@ RefineFPSでは本格的なゲームをユーザーの皆様方に提供して�
 &lt;h2 id=&#34;参考文章:007242a7141a39204898ccb0f4aa5409&#34;&gt;参考文章&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.lifehacker.jp/2012/11/121128tails.html&#34;&gt;http://www.lifehacker.jp/2012/11/121128tails.html&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>マウスオーバーで色が変わるボタン(Font Awesome)</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-08/</link>
-      <pubDate>Thu, 08 Oct 2015 18:54:25 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-08/</guid>
-      <description>
-
-&lt;p&gt;FontAwesomeとCSSを使ったボタンの一種の例です&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ebxpj6bp.github.io/demo/2015-10-08-demo.html&#34;&gt;デモ&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;fontawesome:1a83f012dd114153cbd367421b34939c&#34;&gt;FontAwesome&lt;/h2&gt;
-
-&lt;p&gt;FontAwesomeを使うための準備&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://fortawesome.github.io/Font-Awesome/icons/&#34;&gt;FontAwesome&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;html:1a83f012dd114153cbd367421b34939c&#34;&gt;HTML&lt;/h2&gt;
-
-&lt;p&gt;HTMLコード&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;hoge&amp;quot;&amp;gt;
-    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-twitter fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;
-    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-github-alt fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;
-    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-bitbucket fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;
-    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-skype fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;
-    &amp;lt;!-- &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-# falg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt; --&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&amp;ldquo;fa-lg&amp;rdquo;はサイズを調整するように入れています&lt;/p&gt;
-
-&lt;h2 id=&#34;css:1a83f012dd114153cbd367421b34939c&#34;&gt;CSS&lt;/h2&gt;
-
-&lt;p&gt;CSSコード&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#hoge a {
-    display: block;
-    float: left;
-    margin: 0 5px 5px 0;
-    padding: 0;
-    color: #fff;
-}
-
-#hoge i {
-    width: 45px;
-    height: 45px;
-    margin: 0;
-    background: #666;
-    line-height: 45px;
-    text-align: center;
-}
-
-    #hoge i:before {
-        padding: 0;
-        line-height: 45px;
-    }
-
-#hoge a:hover .fa-twitter {
-    background: #55acee;
-}
-
-#hoge a:hover .fa-github-alt {
-    background: #ff5722;
-}
-
-#hoge a:hover .fa-bitbucket {
-    background: #205081;
-}
-
-#hoge a:hover .fa-skype {
-    background: #12a5f4;
-}
-
-/*
-#hoge a:hover .fa-# {
-background: #fff;
-}
-*/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;マウスオーバーで &amp;ldquo;#hoge a:hover&amp;rdquo; の背景色にすると同時にアイコンを白色に変えています&lt;/p&gt;
-
-&lt;p&gt;マウスオーバー後の背景色はそのアイコンの&lt;a href=&#34;http://brandcolors.net/&#34;&gt;BrandColor&lt;/a&gt;にするとわかりやすくなる.?&lt;/p&gt;
 </description>
     </item>
     
