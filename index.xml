@@ -6,8 +6,56 @@
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2015 08:14:26 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2015 15:21:57 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Private</title>
+      <link>http://ebxpj6bp.github.io/private/</link>
+      <pubDate>Sat, 14 Nov 2015 15:21:57 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/private/</guid>
+      <description>
+
+&lt;h3 id=&#34;click-formbutton:d70cd05c04796765b35cd0d9e5747d6b&#34;&gt;Click FormButton&lt;/h3&gt;
+
+&lt;div id=&#34;form-icon&#34; class=&#34;clear&#34;&gt;
+  &lt;a onclick=&#34;gate();&#34;&gt;&lt;i class=&#34;fa fa-pencil fa-2x&#34;&gt;&lt;/i&gt;Open Form&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ex.hogehoge&lt;/p&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+   function gate()
+   {
+      var UserInput = prompt(&#34;Form:&#34;,&#34;&#34;);
+      if( UserInput != null )
+      {
+            location.href = UserInput;
+      }
+   }
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2015 11 14</title>
+      <link>http://ebxpj6bp.github.io/private/2015-11-14/</link>
+      <pubDate>Sat, 14 Nov 2015 15:16:49 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/private/2015-11-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello Private Page</title>
+      <link>http://ebxpj6bp.github.io/private/hogehoge/</link>
+      <pubDate>Sat, 14 Nov 2015 15:16:49 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/private/hogehoge/</guid>
+      <description>&lt;p&gt;簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり簡易なつくり&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Frainworksの活動</title>
@@ -799,201 +847,6 @@ else
 &lt;h2 id=&#34;link:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;Link&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com&#34;&gt;Vscode&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hugo Theme angels-ladder</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-14/</link>
-      <pubDate>Wed, 14 Oct 2015 15:31:33 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-14/</guid>
-      <description>
-
-&lt;p&gt;自分が見たいだけのプレビュー&lt;/p&gt;
-
-&lt;h1 id=&#34;h1:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;H1&lt;/h1&gt;
-
-&lt;h2 id=&#34;h2:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;H2&lt;/h2&gt;
-
-&lt;h3 id=&#34;h3-h4-h5-h6:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;H3,H4,H5,H6&lt;/h3&gt;
-
-&lt;p&gt;default&lt;/p&gt;
-
-&lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Emphasis&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;This is Code!&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This is Code!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;script src=&#34;https://gist.github.com/EbXpJ6bp/0bbc4df5b511f18d8156.js&#34;&gt;&lt;/script&gt;     
- 
-
-&lt;blockquote&gt;
-&lt;p&gt;Blockquotes&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;#&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Left align&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;Right align&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Center align&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;This&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;This&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;This&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;column&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;column&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;column&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;will&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;will&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;will&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;be&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;be&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;be&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;left&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;right&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;center&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;aligned&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;aligned&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;aligned&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;shortcodes:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;Shortcodes&lt;/h2&gt;
-
-&lt;p&gt;本家にはありません&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe class=&#34;nicovideo&#34; type=&#34;text/html&#34; width=&#34;312&#34; height=&#34;200&#34; src=&#34;http://ext.nicovideo.jp/thumb/sm9&#34; scrolling=&#34;no&#34; style=&#34;border:solid 1px #CCC;&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;
-
-
-
-&lt;script class=&#34;nicovideoplayer&#34; type=&#34;text/javascript&#34; src=&#34;http://ext.nicovideo.jp/thumb_watch/sm9?w=500&amp;amp;h=315&#34;&gt;&lt;/script&gt;
-&lt;noscript&gt;&lt;a href=&#34;http://www.nicovideo.jp/watch/sm9&#34;&gt;新・豪血寺一族 -煩悩解放 - レッツゴー！陰陽師&lt;/a&gt;&lt;/noscript&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/SQfmvtO-U18&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;a href=&#34;https://twitter.com/jack/status/20&#34;&gt;&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;link:9f2c9f40a6602cf64ca17552faf5a773&#34;&gt;Link&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://qiita.com/Qiita/items/c686397e4a0f4f11683d&#34;&gt;Markdown記法 チートシート&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tanksuzuki/angels-ladder&#34;&gt;tanksuzuki/angels-ladder&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Minecraftで出来るFPS RefineFPS</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-12/</link>
-      <pubDate>Mon, 12 Oct 2015 09:48:14 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-12/</guid>
-      <description>
-
-&lt;p&gt;RefineFPSについて何が言いたいのかよくわからない記事&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-12.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;refinefpsとは:0ea62ef95db9728c12a858c5f03ce084&#34;&gt;RefineFPSとは&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;RefineFPS Server とは11月3日にオープンβとしてサービス開始した
-Minecraft というサンドボックス型ゲームのマルチサーバーです。
-「洗練されたFPSゲーム」をコンセプトに運営しています(鯖名もその通り)。
-RefineFPSでは本格的なゲームをユーザーの皆様方に提供しております。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;del&gt;運営が働かないクソ鯖&lt;/del&gt;　民度がとてもよく「ha?」「uza」「shine」がよく飛び交う楽しいFPSサーバーです-　&lt;/p&gt;
-
-&lt;p&gt;武器の種類は大きく分けて8種類「AR, SR, SG, SMG, MG, HG, Grende, Knife」 ゲーム中のインベントリには「AR~MG, HG, Grende, Knife」の4種類が入ります&lt;/p&gt;
-
-&lt;h2 id=&#34;refinefpsの現状:0ea62ef95db9728c12a858c5f03ce084&#34;&gt;RefineFPSの現状&lt;/h2&gt;
-
-&lt;p&gt;2014/12/03 - 2014/12/21 に&lt;a href=&#34;http://fps.mcsv.jp/Event/1stAnniversarySlot&#34;&gt;アニバーサリスロット&lt;/a&gt;イベントが行われたのち約5ヵ月更新なし&lt;/p&gt;
-
-&lt;p&gt;2014/05/07 &lt;a href=&#34;http://fps.mcsv.jp/News/Index/57&#34;&gt;ガチャ&lt;/a&gt;の登場 登場し少し回せただけでイベントではなかった&lt;/p&gt;
-
-&lt;p&gt;2015/08/24 &lt;a href=&#34;http://fps.mcsv.jp/Event/Mallon2015&#34;&gt;栗をくりぃ&lt;/a&gt;約8ヵ月ぶりのイベントが行われた しかし本来であれば09/13まで行われるはずだったが08/27までの短縮になりイベントが行われたのは3日間だった&lt;/p&gt;
-
-&lt;p&gt;2015/10/12 更新なし&lt;/p&gt;
-
-&lt;p&gt;運営増やす予定なし&lt;/p&gt;
-
-&lt;h2 id=&#34;link:0ea62ef95db9728c12a858c5f03ce084&#34;&gt;Link&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://fps.mcsv.jp/&#34;&gt;RefineFPS-HP&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/RefineFPS&#34;&gt;RefineFPS-Twitter&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://refinefps.wiki.fc2.com/&#34;&gt;RefineFPS-Wiki&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://ebxpj6bp.github.io/about/</link>
-      <pubDate>Sun, 11 Oct 2015 13:03:07 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/about/</guid>
-      <description>&lt;p&gt;初めまして EbXpJ6bp と申します &lt;a href=&#34;http://frainworks.tk/&#34;&gt;Frainworks&lt;/a&gt;でサークル活動をしています&lt;/p&gt;
-
-&lt;p&gt;IT系全般に興味があります 暗号技術について勉強しようと思っています&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fa fa-code&#34;&gt;&lt;/i&gt;: C / C# +WPF / JavaScript / WEB / and more&amp;hellip; 出来ません&lt;/p&gt;
-
-&lt;p&gt;※発言はすべて個人に帰属し、所属する団体の公式見解ではありません。また、発言に基づく問題においては一切の責任を負いかねます。&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;div id=&#34;social-icon&#34;&gt;
-&lt;a href=&#34;https://twitter.com/EbXpJ6bp&#34;&gt;&lt;i class=&#34;fa fa-twitter fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&#34;https://github.com/EbXpJ6bp&#34;&gt;&lt;i class=&#34;fa fa-github-alt fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&#34;https://bitbucket.org/EbXpJ6bp-/&#34;&gt;&lt;i class=&#34;fa fa-bitbucket fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&#34;skype:syun_0109?chat&#34;&gt;&lt;i class=&#34;fa fa-skype fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&#34;mail:ebxpj6bp@outlook.jp&#34;&gt;&lt;i class=&#34;fa fa-envelope fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&#34;https://www.amazon.co.jp/gp/registry/ref=cm_reg_rd-upd?ie=UTF8&amp;id=19NFR84S4IYA2&amp;type=wishlist&#34;&gt;&lt;i class=&#34;fa fa-amazon fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr /&gt;
 </description>
     </item>
     

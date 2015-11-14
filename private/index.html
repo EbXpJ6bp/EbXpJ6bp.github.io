@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    HugoのShortCodeでTwitterTweetの埋め込みをする | EbXpJ6bp&#39;s Blog
+    Private | EbXpJ6bp&#39;s Blog
   </title>
 
 
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
   
-  <link rel="canonical" href="http://ebxpj6bp.github.io/post/2015-10-17/"/>
+  <link rel="canonical" href="http://ebxpj6bp.github.io/private/"/>
 
   
   <link rel="stylesheet" href="/css/custom.css">
@@ -59,44 +59,33 @@
   
   <main id="single" role="main">
     <div class="article-header">
-      <h1>HugoのShortCodeでTwitterTweetの埋め込みをする</h1>
+      <h1>Private</h1>
       <div class="meta">
-        Oct 17, 2015 &nbsp;
-        
-          #<a href="/tags/blog">Blog</a>&nbsp;
-        
-          #<a href="/tags/programming">Programming</a>&nbsp;
-        
-          #<a href="/tags/hugo">Hugo</a>&nbsp;
+        Nov 14, 2015 &nbsp;
         
       </div>
     </div>
     <article>
       
 
-<p>このシリーズ無駄に3つ目 shortcode使うより埋め込むを利用した方が速い気がします</p>
+<h3 id="click-formbutton:d70cd05c04796765b35cd0d9e5747d6b">Click FormButton</h3>
 
-<p>今回はTwitterのTweetを埋め込みます</p>
+<div id="form-icon" class="clear">
+  <a onclick="gate();"><i class="fa fa-pencil fa-2x"></i>Open Form</a>
+</div>
 
-<h2 id="デモ:ab327018fe4ea958a7b31d6c47785a29">デモ</h2>
+<p>ex.hogehoge</p>
 
-<p><blockquote class="twitter-tweet" lang="ja"><a href="https://twitter.com/jack/status/20"></a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<h2 id="使用方法:ab327018fe4ea958a7b31d6c47785a29">使用方法</h2>
-
-<pre><code>{.{&lt; twittertweet name=&quot;twitter id,name&quot; id=&quot;tweet id&quot; &gt;}}
-</code></pre>
-
-<p>ShortCode対策でピリオドを入れています</p>
-
-<h2 id="ソース:ab327018fe4ea958a7b31d6c47785a29">ソース</h2>
-
-<pre><code>&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;ja&quot;&gt;
-    &lt;a href=&quot;https://twitter.com/{{ .Get &quot;name&quot; }}/status/{{ .Get &quot;id&quot; }}&quot;&gt;&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-</code></pre>
+<script type="text/javascript">
+   function gate()
+   {
+      var UserInput = prompt("Form:","");
+      if( UserInput != null )
+      {
+            location.href = UserInput;
+      }
+   }
+</script>
 
     
  <aside><div id="disqus_thread"></div></aside> 

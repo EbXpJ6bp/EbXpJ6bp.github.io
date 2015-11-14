@@ -111,3 +111,29 @@ nav.pagination a {
 #social-icon a:hover .fa-search {
 	background: #4cb10d
 }
+
+#form-icon a {
+  position: relative;
+  display: block;
+  width:200px;
+  margin: 0 10px 10px 0;
+  padding: 0 0 0 40px;
+  background: #c6bb80;
+  color: #fff;
+  text-decoration: none;
+  text-align:center;
+  line-height: 40px;
+}
+#form-icon i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  background: #bcaf68;
+  line-height: 40px;
+  text-align: center;
+}
+#form-icon i:before { padding: 0; line-height: 40px; }
+#form-icon a:hover i { background: #b2a251; }
