@@ -6,8 +6,55 @@
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2015 15:21:57 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2015 17:13:59 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>簡易なプライベート記事を作る話。</title>
+      <link>http://ebxpj6bp.github.io/post/2015-11-14-02/</link>
+      <pubDate>Sat, 14 Nov 2015 17:13:59 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-11-14-02/</guid>
+      <description>
+
+&lt;p&gt;動的ページを作れないサーバーで、JavaScriptを使ってURLを知らない人しかアクセスできないようにします。ただし、普通に検索エンジンの検索結果に乗ります。&lt;/p&gt;
+
+&lt;p&gt;一次的に見せたいときに置く程度と 聞こえがいいというだけです。&lt;/p&gt;
+
+&lt;h2 id=&#34;ソースコード:16cacab308402d2ade0a7d8c964244c1&#34;&gt;ソースコード&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;//Formを開くためのボタン
+&amp;lt;a onclick=&amp;quot;Form();&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-pencil fa-2x&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;Open Form&amp;lt;/a&amp;gt;
+
+//スクリプト
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+function Form()
+{
+    var UserInput = prompt(&amp;quot;Form:&amp;quot;,&amp;quot;&amp;quot;);
+    //入力フォームに記入されていれば(空でなければ)その書かれたところへ飛ぶ
+    if( UserInput != null )
+    {
+            location.href = UserInput;
+    }
+}
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;仕組み:16cacab308402d2ade0a7d8c964244c1&#34;&gt;仕組み&lt;/h2&gt;
+
+&lt;p&gt;ソースを見ただけでわかると思いますが、ただの子供だましにか過ぎません。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;http://localhost:1313/post/&lt;/code&gt; にこのソースを置いた状態でFormを開き&lt;code&gt;Hoge&lt;/code&gt;と入力すると、&lt;code&gt;http://localhost:1313/post/hoge/&lt;/code&gt;に飛びます&lt;/p&gt;
+
+&lt;p&gt;それだけです。　&lt;/p&gt;
+
+&lt;h2 id=&#34;デモ:16cacab308402d2ade0a7d8c964244c1&#34;&gt;デモ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ebxpj6bp.github.io/private/&#34;&gt;http://ebxpj6bp.github.io/private/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Private</title>
@@ -20,13 +67,13 @@
 &lt;h3 id=&#34;click-openform:d70cd05c04796765b35cd0d9e5747d6b&#34;&gt;Click OpenForm&lt;/h3&gt;
 
 &lt;div id=&#34;form-icon&#34; class=&#34;clear&#34;&gt;
-  &lt;a onclick=&#34;gate();&#34;&gt;&lt;i class=&#34;fa fa-pencil fa-2x&#34;&gt;&lt;/i&gt;Open Form&lt;/a&gt;
+  &lt;a onclick=&#34;Form();&#34;&gt;&lt;i class=&#34;fa fa-pencil fa-2x&#34;&gt;&lt;/i&gt;Open Form&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;ex.hogehoge&lt;/p&gt;
 
 &lt;script type=&#34;text/javascript&#34;&gt;
-   function gate()
+   function Form()
    {
       var UserInput = prompt(&#34;Form:&#34;,&#34;&#34;);
       if( UserInput != null )
@@ -750,103 +797,6 @@ else
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;Shortcodes&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>VSCode v0.9.1</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-14-02/</link>
-      <pubDate>Wed, 14 Oct 2015 19:06:45 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-14-02/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/updates#_debugging-performance&#34;&gt;VSCode V0.9.1&lt;/a&gt;
-10月アップデート 日本語訳まとめ&lt;/p&gt;
-
-&lt;p&gt;ここを見るより本文を読んだ方が速いし正確です&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://code.visualstudio.com/Content/images/0_9_0_summary.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;拡張機能のインストール先の変更:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;拡張機能のインストール先の変更&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;拡張機能のインストール先がユーザーディレクトリの下になった&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Windows &lt;code&gt;%USERPROFILE%\.vscode\extensions&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Mac &lt;code&gt;$HOME/.vscode/extensions&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Linux &lt;code&gt;$HOME/.vscode/extensions&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;yeomanで機能拡張開発:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;Yeomanで機能拡張開発&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;プログラミング言語向けのシンタックスハイライトの設定&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;テーマの開発&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;1.&lt;code&gt;npm install -g yo&lt;/code&gt; 2.&lt;code&gt;npm install -g generator-code&lt;/code&gt; でジェネレーターのインストール&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;デバッグコンソールの拡張-改善:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;デバッグコンソールの拡張,改善&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;視認性の向上&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;コンテキストメニューの拡張&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;要素の拡張がセッション間で保持される&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;typescript-1-6への対応:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;TypeScript 1.6への対応&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-    &amp;quot;version&amp;quot;: &amp;quot;0.1.0&amp;quot;,
-    &amp;quot;command&amp;quot;: &amp;quot;tsc&amp;quot;,
-    &amp;quot;isShellCommand&amp;quot;: true,
-    // define the task to be a watching task
-    &amp;quot;isWatching&amp;quot;: true,
-    // use the standard tsc in watch mode problem matcher to find compile problems in the output.
-    &amp;quot;problemMatcher&amp;quot;: &amp;quot;$tsc-watch&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;markdownのプレビュー機能拡張:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;Markdownのプレビュー機能拡張&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;全体のフォントサイズ,感覚の最適化&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;画像などのプレビューにも対応(?)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;unity-shader-fileでのシンタックスハイライトのサポート:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;Unity Shader Fileでのシンタックスハイライトのサポート&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;シンタックスハイライトのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;新しい設定:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;新しい設定&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;window.openInNewWindow&lt;/code&gt; 新しいファイルを新しいウィンドウで開く or 最後にアクティブになったウィンドウを再利用して開く&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;window.reopenFolders&lt;/code&gt; 前回閉じたフォルダの再展開でスタート or 再展開しないでスタート&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;バグ修正:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;バグ修正&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;18998: newly added files not honored by tsconfig.json&lt;/li&gt;
-&lt;li&gt;18692: Changes to tsconfig.json not updated immediately&lt;/li&gt;
-&lt;li&gt;19239: Detaching from Unity Results in a Unity Crash&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;link:5b2c63018712c011a2c8e39821ecd6ca&#34;&gt;Link&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com&#34;&gt;Vscode&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

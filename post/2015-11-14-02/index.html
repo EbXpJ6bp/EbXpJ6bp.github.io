@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    Private | EbXpJ6bp&#39;s Blog
+    簡易なプライベート記事を作る話。 | EbXpJ6bp&#39;s Blog
   </title>
 
 
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
   
-  <link rel="canonical" href="http://ebxpj6bp.github.io/private/"/>
+  <link rel="canonical" href="http://ebxpj6bp.github.io/post/2015-11-14-02/"/>
 
   
   <link rel="stylesheet" href="/css/custom.css">
@@ -59,33 +59,57 @@
   
   <main id="single" role="main">
     <div class="article-header">
-      <h1>Private</h1>
+      <h1>簡易なプライベート記事を作る話。</h1>
       <div class="meta">
         Nov 14, 2015 &nbsp;
+        
+          #<a href="/tags/blog">Blog</a>&nbsp;
+        
+          #<a href="/tags/programing">Programing</a>&nbsp;
+        
+          #<a href="/tags/javascript">JavaScript</a>&nbsp;
         
       </div>
     </div>
     <article>
       
 
-<h3 id="click-openform:d70cd05c04796765b35cd0d9e5747d6b">Click OpenForm</h3>
+<p>動的ページを作れないサーバーで、JavaScriptを使ってURLを知らない人しかアクセスできないようにします。ただし、普通に検索エンジンの検索結果に乗ります。</p>
 
-<div id="form-icon" class="clear">
-  <a onclick="Form();"><i class="fa fa-pencil fa-2x"></i>Open Form</a>
-</div>
+<p>一次的に見せたいときに置く程度と 聞こえがいいというだけです。</p>
 
-<p>ex.hogehoge</p>
+<h2 id="ソースコード:16cacab308402d2ade0a7d8c964244c1">ソースコード</h2>
 
-<script type="text/javascript">
-   function Form()
-   {
-      var UserInput = prompt("Form:","");
-      if( UserInput != null )
-      {
+<pre><code>//Formを開くためのボタン
+&lt;a onclick=&quot;Form();&quot;&gt;&lt;i class=&quot;fa fa-pencil fa-2x&quot;&gt;&lt;/i&gt;Open Form&lt;/a&gt;
+
+//スクリプト
+&lt;script type=&quot;text/javascript&quot;&gt;
+function Form()
+{
+    var UserInput = prompt(&quot;Form:&quot;,&quot;&quot;);
+    //入力フォームに記入されていれば(空でなければ)その書かれたところへ飛ぶ
+    if( UserInput != null )
+    {
             location.href = UserInput;
-      }
-   }
-</script>
+    }
+}
+&lt;/script&gt;
+</code></pre>
+
+<h2 id="仕組み:16cacab308402d2ade0a7d8c964244c1">仕組み</h2>
+
+<p>ソースを見ただけでわかると思いますが、ただの子供だましにか過ぎません。</p>
+
+<p><code>http://localhost:1313/post/</code> にこのソースを置いた状態でFormを開き<code>Hoge</code>と入力すると、<code>http://localhost:1313/post/hoge/</code>に飛びます</p>
+
+<p>それだけです。　</p>
+
+<h2 id="デモ:16cacab308402d2ade0a7d8c964244c1">デモ</h2>
+
+<ul>
+<li><a href="http://ebxpj6bp.github.io/private/">http://ebxpj6bp.github.io/private/</a></li>
+</ul>
 
     
  <aside><div id="disqus_thread"></div></aside> 
