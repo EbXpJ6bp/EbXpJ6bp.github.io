@@ -17,7 +17,7 @@
       <guid>http://ebxpj6bp.github.io/private/</guid>
       <description>
 
-&lt;h3 id=&#34;click-formbutton:d70cd05c04796765b35cd0d9e5747d6b&#34;&gt;Click FormButton&lt;/h3&gt;
+&lt;h3 id=&#34;click-openform:d70cd05c04796765b35cd0d9e5747d6b&#34;&gt;Click OpenForm&lt;/h3&gt;
 
 &lt;div id=&#34;form-icon&#34; class=&#34;clear&#34;&gt;
   &lt;a onclick=&#34;gate();&#34;&gt;&lt;i class=&#34;fa fa-pencil fa-2x&#34;&gt;&lt;/i&gt;Open Form&lt;/a&gt;
