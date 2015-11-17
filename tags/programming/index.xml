@@ -6,8 +6,22 @@
     <description>Recent content in Programming on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Nov 2015 16:03:34 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2015 23:35:49 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>stdio.hをすたじおえっちって呼んでた</title>
+      <link>http://ebxpj6bp.github.io/post/2015-11-17/</link>
+      <pubDate>Tue, 17 Nov 2015 23:35:49 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-11-17/</guid>
+      <description>&lt;p&gt;#include &lt;stdio.h&gt;ってすたじおどっとえっちじゃないのに驚きました。&lt;/p&gt;
+
+&lt;p&gt;正確には&lt;code&gt;エスティーディーアイオー&lt;/code&gt;や&lt;code&gt;スタンダードアイオー&lt;/code&gt;と呼ぶそうです。&lt;/p&gt;
+
+&lt;p&gt;すたじおえっちと呼んでた自分は、、&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>C言語による並列処理の勉強をしたかった。</title>
