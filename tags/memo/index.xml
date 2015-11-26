@@ -6,8 +6,106 @@
     <description>Recent content in Memo on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Nov 2015 16:03:34 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2015 17:02:55 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/tags/memo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>備忘録。</title>
+      <link>http://ebxpj6bp.github.io/post/2015-11-26/</link>
+      <pubDate>Thu, 26 Nov 2015 17:02:55 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-11-26/</guid>
+      <description>
+
+&lt;p&gt;C言語でオブジェクト指向したい備忘録。本当にそれだけ&lt;/p&gt;
+
+&lt;h2 id=&#34;オブジェクト指向と手続き型プログラミングの違い:81f2082d0c43803c7b90cee6328c4723&#34;&gt;オブジェクト指向と手続き型プログラミングの違い&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;手続き型プログラミングでは、プログラミングはデータ構造とルーチンの集合に分割される。一方オブジェクト指向プログラミングでは、プログラミングはオブジェクトに分割される。&lt;/p&gt;
+
+&lt;p&gt;一般にオブジェクト指向プログラミングの方が理解しやすいと言われている。その理由として、オブジェクト指向が人間の精神モデルの認知手法に近いからだという説もあるが、心理学が人間の認知モデルを完全には明確化できていない現時点では非常に不確かである。蒸気機関が発明されたとき、人間の精神は蒸気機関と比較された。コンピュータが発明されたとき、人間の精神はそれと比較された。オブジェクト指向プログラミングが発明されると、人間の精神はそれと比較されることになったのである。&lt;/p&gt;
+
+&lt;p&gt;多くの場合、オブジェクト指向の方がプログラムが小さくなり、保守が容易であると考えられている。プログラムはクラス群の定義から構成されている。オブジェクト指向言語と一口に言っても、全てをオブジェクトとみなす純粋なオブジェクト指向言語は少ない。例として最初のオブジェクト指向言語 Smalltalk があるが、商業的に成功したとは言いがたい。多くのオブジェクト指向言語は、手続き型プログラミングとオブジェクト指向を融合させたものである。&lt;/p&gt;
+
+&lt;p&gt;オブジェクト指向と手続き型の重要な違いとして、オブジェクト指向では関係データベースにアクセスするにあたって、データモデルのクラス構造へのマッピングが必要である。&lt;/p&gt;
+
+&lt;p&gt;以下にオブジェクト指向と手続き型の言語要素を比較した表を示す:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;手続き型&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;オブジェクト指向&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;関数&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;メソッド&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;モジュール&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;オブジェクト&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;呼び出し&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;メッセージ&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;変数&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;メンバ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;オブジェクト指向に必要なもの:81f2082d0c43803c7b90cee6328c4723&#34;&gt;オブジェクト指向に必要なもの&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;オブジェクト指向プログラミングとは、オブジェクトと呼ばれる機能の部品でソフトウェアを構成させるものであり、一般的に以下の機能や特徴を活用したプログラミング技法のことをいう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;カプセル化（振る舞いの隠蔽とデータ隠蔽）&lt;/li&gt;
+&lt;li&gt;インヘリタンス（継承） &amp;ndash; クラスベースの言語&lt;/li&gt;
+&lt;li&gt;ポリモフィズム（多態性、多相性） &amp;ndash; 型付きの言語&lt;/li&gt;
+&lt;li&gt;ダイナミックバインディング（動的束縛） &amp;ndash; 動的型付言語&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;この機能を文法的に提供するプログラミング言語は、オブジェクト指向プログラミング言語 (OOPL; object-oriented programming language) と呼ばれる。これらの機能のうち、オブジェクト指向の考え方で不可欠なのは「カプセル化」の機能だけである。&amp;gt;そのため、オブジェクト指向プログラミング言語の中には、カプセル化以外の機能については一部を提供していないものもある。&lt;/p&gt;
+
+&lt;p&gt;ただし、カプセル化（可視性の定義）やポリモフィズムとダイナミックバインディングはオブジェクト指向言語に固有の概念というわけではなく、非オブジェクト指向言語の中にもこの性質を備えるものもある。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;c言語で表す:81f2082d0c43803c7b90cee6328c4723&#34;&gt;C言語で表す&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;カプセル化 ⇒ static変数＆static関数&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;インヘリタンス ⇒ 構造体の中にスーパークラスのオブジェクトを含める&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ポリモフィズム ⇒ インターフェースとなる共通の関数ポインタを格納した構造体を作成し、その構造体に格納する関数ポインタをオブジェクト毎に切り替える&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ダイナミックバンディング ⇒ ポリモフィズムの方法と同じようにその場に応じて、オブジェクトに入れるクラスを変更する&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;c言語でなぜ可能か:81f2082d0c43803c7b90cee6328c4723&#34;&gt;C言語でなぜ可能か&lt;/h2&gt;
+
+&lt;p&gt;変数しかベンバに持つことのできないCの構造体だが、関数ポインタというテクニックを使えば関数の先頭アドレスを示すことができる&lt;/p&gt;
+
+&lt;h2 id=&#34;参考資料:81f2082d0c43803c7b90cee6328c4723&#34;&gt;参考資料&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.livedoor.jp/hiroumauma/archives/1366474.html&#34;&gt;C言語でオブジェクト指向してみる&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://myenigma.hatenablog.com/entry/20141020/1413796816#1-カプセル化&#34;&gt;C言語によるオブジェクト指向プログラミング &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%8C%87%E5%90%91%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0&#34;&gt;オブジェクト指向プログラミング-wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>C言語による並列処理の勉強をしたかった。</title>
