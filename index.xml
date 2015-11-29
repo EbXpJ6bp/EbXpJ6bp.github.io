@@ -6,8 +6,32 @@
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2015 17:02:55 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Nov 2015 21:18:13 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>C-COOLをMarkdownに書き下ろした</title>
+      <link>http://ebxpj6bp.github.io/post/2015-11-29/</link>
+      <pubDate>Sun, 29 Nov 2015 21:18:13 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-11-29/</guid>
+      <description>
+
+&lt;p&gt;ごめんなさい&lt;/p&gt;
+
+&lt;h3 id=&#34;元サイト:5e035f2d61dc09b3e21b31b0970c5394&#34;&gt;元サイト&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.sage-p.com/process/cool.htm&#34;&gt;http://www.sage-p.com/process/cool.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;サイト内:5e035f2d61dc09b3e21b31b0970c5394&#34;&gt;サイト内&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ebxpj6bp.github.io/COOL/&#34;&gt;http://ebxpj6bp.github.io/COOL/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;マークダウン:5e035f2d61dc09b3e21b31b0970c5394&#34;&gt;マークダウン&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/EbXpJ6bp/C-COOL/blob/master/COOL/COOL.md&#34;&gt;https://github.com/EbXpJ6bp/C-COOL/blob/master/COOL/COOL.md&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>備忘録。</title>
@@ -836,40 +860,6 @@ else
 &lt;h2 id=&#34;感想:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;感想&lt;/h2&gt;
 
 &lt;p&gt;ヘリ楽&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>HugoのShortCodeでTwitterTweetの埋め込みをする</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-17/</link>
-      <pubDate>Sat, 17 Oct 2015 16:12:53 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-17/</guid>
-      <description>
-
-&lt;p&gt;このシリーズ無駄に3つ目 shortcode使うより埋め込むを利用した方が速い気がします&lt;/p&gt;
-
-&lt;p&gt;今回はTwitterのTweetを埋め込みます&lt;/p&gt;
-
-&lt;h2 id=&#34;デモ:ab327018fe4ea958a7b31d6c47785a29&#34;&gt;デモ&lt;/h2&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;a href=&#34;https://twitter.com/jack/status/20&#34;&gt;&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;使用方法:ab327018fe4ea958a7b31d6c47785a29&#34;&gt;使用方法&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;{.{&amp;lt; twittertweet name=&amp;quot;twitter id,name&amp;quot; id=&amp;quot;tweet id&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ShortCode対策でピリオドを入れています&lt;/p&gt;
-
-&lt;h2 id=&#34;ソース:ab327018fe4ea958a7b31d6c47785a29&#34;&gt;ソース&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; lang=&amp;quot;ja&amp;quot;&amp;gt;
-    &amp;lt;a href=&amp;quot;https://twitter.com/{{ .Get &amp;quot;name&amp;quot; }}/status/{{ .Get &amp;quot;id&amp;quot; }}&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
-&amp;lt;/blockquote&amp;gt;
-&amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
