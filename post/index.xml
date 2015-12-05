@@ -6,8 +6,37 @@
     <description>Recent content in Posts on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 29 Nov 2015 21:18:13 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 Dec 2015 20:42:30 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2015 12 05</title>
+      <link>http://ebxpj6bp.github.io/post/2015-12-05/</link>
+      <pubDate>Sat, 05 Dec 2015 20:42:30 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-12-05/</guid>
+      <description>
+
+&lt;p&gt;アイコン変えました。&lt;/p&gt;
+
+&lt;h2 id=&#34;おほしさま:18f20a267cdb618b3980302669a8e6e0&#34;&gt;おほしさま&lt;/h2&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/takumin_pro&#34;&gt;@takumin_pro&lt;/a&gt; &lt;a href=&#34;https://t.co/neUV4jRhI6&#34;&gt;pic.twitter.com/neUV4jRhI6&lt;/a&gt;&lt;/p&gt;&amp;mdash; らく (@La_crymaz) &lt;a href=&#34;https://twitter.com/La_crymaz/status/671362050916876288&#34;&gt;2015, 11月 30&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;「たいよう」が生まれて「つき」が生まれました。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/sereusu_tomato&#34;&gt;@sereusu_tomato&lt;/a&gt; &lt;a href=&#34;https://twitter.com/takumin_pro&#34;&gt;@takumin_pro&lt;/a&gt; &lt;a href=&#34;https://t.co/uJuvaPerTJ&#34;&gt;pic.twitter.com/uJuvaPerTJ&lt;/a&gt;&lt;/p&gt;&amp;mdash; らく (@La_crymaz) &lt;a href=&#34;https://twitter.com/La_crymaz/status/671365981139177474&#34;&gt;2015, 11月 30&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;「おほしさま」がうまれました。&lt;/p&gt;
+
+&lt;p&gt;なんやかんやあって&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gyazo.com/938c227f4c0a667f5d4d4bf2bd7ab8ab&#34;&gt;&lt;img src=&#34;https://i.gyazo.com/938c227f4c0a667f5d4d4bf2bd7ab8ab.png&#34; alt=&#34;https://gyazo.com/938c227f4c0a667f5d4d4bf2bd7ab8ab&#34; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;たくさんうまれました。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>C-COOLをMarkdownに書き下ろした</title>
@@ -855,23 +884,6 @@ else
 &amp;lt;/blockquote&amp;gt;
 &amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>HugoのShortCodeでYoutubePlayerの埋め込みをする</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-16/</link>
-      <pubDate>Fri, 16 Oct 2015 18:09:22 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-16/</guid>
-      <description>
-
-&lt;h2 id=&#34;デモ:d0abd677cd519e0eba22ff99135df0aa&#34;&gt;デモ&lt;/h2&gt;
-
-&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/SQfmvtO-U18&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;それだけです&lt;/p&gt;
 </description>
     </item>
     
