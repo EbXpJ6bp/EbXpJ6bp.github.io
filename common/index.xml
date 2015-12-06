@@ -90,83 +90,6 @@
     
     <item>
       <title></title>
-      <link>http://ebxpj6bp.github.io/common/demo/2015-10-08-demo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/common/demo/2015-10-08-demo/</guid>
-      <description>﻿&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-	&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-
-	&lt;!-- font
-	–––––––––––––––––––––––––––––––––––––––––––––––––– --&gt;
-	&lt;link rel=&#34;stylesheet&#34; href=&#34;https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css&#34;&gt;
-	&lt;title&gt;EbXpJ6bp 2015-10-08-demo&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;style type=&#34;text/css&#34;&gt;
-	#hoge a {
-		display: block;
-		float: left;
-		margin: 0 5px 5px 0;
-		padding: 0;
-		color: #fff;
-	}
-	
-	#hoge i {
-		width: 45px;
-		height: 45px;
-		margin: 0;
-		background: #666;
-		line-height: 45px;
-		text-align: center;
-	}
-	
-		#hoge i:before {
-			padding: 0;
-			line-height: 45px;
-		}
-	
-	#hoge a:hover .fa-twitter {
-		background: #55acee;
-	}
-			
-	#hoge a:hover .fa-github-alt {
-		background: #ff5722;
-	}
-	
-	#hoge a:hover .fa-bitbucket {
-		background: #205081;
-	}
-
-	#hoge a:hover .fa-skype {
-		background: #12a5f4;
-	}
-	
-	/*
-	#hoge a:hover .fa-# {
-	background: #fff;
-	}
-	*/
-&lt;/style&gt;
-
-	&lt;div id=&#34;hoge&#34;&gt;
-		&lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-twitter fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-		&lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-github-alt fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-		&lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-bitbucket fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-		&lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-skype fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-		&lt;!-- &lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-# falg&#34;&gt;&lt;/i&gt;&lt;/a&gt; --&gt;
-	&lt;/div&gt;
-	
-&lt;/body&gt;
-&lt;/html&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>http://ebxpj6bp.github.io/common/COOL/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1519,6 +1442,83 @@ Staff_Card クラス
 &lt;hr /&gt;
 
 &lt;p&gt;written by M.Toda Apr.1.2000 from Nov.17.1997&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://ebxpj6bp.github.io/common/demo/2015-10-08-demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/common/demo/2015-10-08-demo/</guid>
+      <description>﻿&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+
+	&lt;!-- font
+	–––––––––––––––––––––––––––––––––––––––––––––––––– --&gt;
+	&lt;link rel=&#34;stylesheet&#34; href=&#34;https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css&#34;&gt;
+	&lt;title&gt;EbXpJ6bp 2015-10-08-demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;style type=&#34;text/css&#34;&gt;
+	#hoge a {
+		display: block;
+		float: left;
+		margin: 0 5px 5px 0;
+		padding: 0;
+		color: #fff;
+	}
+	
+	#hoge i {
+		width: 45px;
+		height: 45px;
+		margin: 0;
+		background: #666;
+		line-height: 45px;
+		text-align: center;
+	}
+	
+		#hoge i:before {
+			padding: 0;
+			line-height: 45px;
+		}
+	
+	#hoge a:hover .fa-twitter {
+		background: #55acee;
+	}
+			
+	#hoge a:hover .fa-github-alt {
+		background: #ff5722;
+	}
+	
+	#hoge a:hover .fa-bitbucket {
+		background: #205081;
+	}
+
+	#hoge a:hover .fa-skype {
+		background: #12a5f4;
+	}
+	
+	/*
+	#hoge a:hover .fa-# {
+	background: #fff;
+	}
+	*/
+&lt;/style&gt;
+
+	&lt;div id=&#34;hoge&#34;&gt;
+		&lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-twitter fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+		&lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-github-alt fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+		&lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-bitbucket fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+		&lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-skype fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+		&lt;!-- &lt;a href=&#34;#&#34;&gt;&lt;i class=&#34;fa fa-# falg&#34;&gt;&lt;/i&gt;&lt;/a&gt; --&gt;
+	&lt;/div&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
 </description>
     </item>
     
