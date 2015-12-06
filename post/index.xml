@@ -6,8 +6,89 @@
     <description>Recent content in Posts on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 06 Dec 2015 11:32:33 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2015 20:09:49 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>C言語のソースの処理時間を適当にソース測定する</title>
+      <link>http://ebxpj6bp.github.io/post/2015-12-06-02/</link>
+      <pubDate>Sun, 06 Dec 2015 20:09:49 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/post/2015-12-06-02/</guid>
+      <description>
+
+&lt;p&gt;適当にtime.hを使って適当に測定する&lt;/p&gt;
+
+&lt;h2 id=&#34;準備:8c4fbe9569544290cb322265850ede40&#34;&gt;準備&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;clock()&lt;/code&gt;関数を使うため &lt;code&gt;#include &amp;lt;time.h&amp;gt;&lt;/code&gt;を使います&lt;/p&gt;
+
+&lt;h2 id=&#34;ソースコード:8c4fbe9569544290cb322265850ede40&#34;&gt;ソースコード&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;time.h&amp;gt;
+
+int main(void)
+{
+    clock_t start, end;
+
+    /* 開始 */
+    start = clock();
+
+    /* 何らかの処理 */
+
+    int i;
+    for (i = 0; i &amp;lt; 10000; i++) {
+        printf(&amp;quot;%d人目の幼女 &amp;quot;, i);
+    }
+
+    /* 終了 */
+    end = clock();
+
+    printf(&amp;quot;\n=========================\n&amp;quot;
+            &amp;quot; 開始時刻:%d\n&amp;quot;
+            &amp;quot; 終了時刻:%d\n&amp;quot; 
+            &amp;quot; 処理時間:%d[ms]\n&amp;quot;, start, end, end - start);
+
+    return 0;
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;実行結果:8c4fbe9569544290cb322265850ede40&#34;&gt;実行結果:&lt;/h3&gt;
+
+&lt;p&gt;=========================&lt;/p&gt;
+
+&lt;p&gt;開始時刻:0&lt;/p&gt;
+
+&lt;p&gt;終了時刻:931&lt;/p&gt;
+
+&lt;p&gt;処理時間:931[ms]&lt;/p&gt;
+
+&lt;h2 id=&#34;どうでもいいこと:8c4fbe9569544290cb322265850ede40&#34;&gt;どうでもいいこと&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;/**
+* 曜日を表示する
+* @param[in] wday 曜日(0を日曜日とする)
+*/
+void DisplayWeek(int wday) {
+    char weeks[][16] = {
+        &amp;quot;日曜日&amp;quot;,
+        &amp;quot;月曜日&amp;quot;,
+        &amp;quot;火曜日&amp;quot;,
+        &amp;quot;水曜日&amp;quot;,
+        &amp;quot;木曜日&amp;quot;,
+        &amp;quot;金曜日&amp;quot;,
+        &amp;quot;土曜日&amp;quot;
+    };
+
+    printf(&amp;quot;%s\n&amp;quot;, weeks[wday]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;この使い方なんでしたっけ&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2015 12 06</title>
@@ -834,36 +915,6 @@ else
     &amp;lt;URL&amp;gt;URL&amp;lt;/URL&amp;gt;
 &amp;lt;/Updata&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BattleField4 リコイルがひどかった</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-18/</link>
-      <pubDate>Sun, 18 Oct 2015 14:31:25 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/post/2015-10-18/</guid>
-      <description>
-
-&lt;p&gt;BF4 の二点バースト日記&lt;/p&gt;
-
-&lt;h2 id=&#34;2015-06-15:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;2015-06-15&lt;/h2&gt;
-
-&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/6xhNgDcPBEk&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;POTATO GRIP(?), HEAVY BARREL&lt;/p&gt;
-
-&lt;h2 id=&#34;2015-10-18:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;2015-10-18&lt;/h2&gt;
-
-&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/uvz5ofWphtM&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;ERGO GRIP, HEAVY BARREL&lt;/p&gt;
-
-&lt;h2 id=&#34;感想:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;感想&lt;/h2&gt;
-
-&lt;p&gt;ヘリ楽&lt;/p&gt;
 </description>
     </item>
     
