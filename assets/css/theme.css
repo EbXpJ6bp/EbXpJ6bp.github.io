@@ -2,10 +2,10 @@
 	font-size: 24px;
 }
 body {
-	color: rgb(102, 102, 102); line-height: 1rem; letter-spacing: 1px; font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; font-size: 0.58rem; background-color: rgb(255, 255, 255);
+	color: rgb(102, 102, 102); line-height: 1rem; letter-spacing: 1px; font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; font-size: 0.58rem; background-color: rgb(245, 245, 245);
 }
 .container {
-	padding: 0px 20px;
+	padding: 0px;
 }
 h1 {
 	font-size: 0.81rem;
@@ -60,6 +60,15 @@ header a:hover {
 }
 article a:hover {
 	color: rgb(41, 171, 226);
+}
+main {
+    text-align:center;
+}
+main h1 {
+    margin-top: 22px; margin-bottom: 11px;font-size: 32px; font-weight: 300; line-height:1.2;
+}
+main img {
+    width:auto; box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
 }
 main#index a:hover {
 	color: rgb(41, 171, 226);
@@ -125,7 +134,7 @@ img {
 	color: rgb(255, 255, 255); background-color: rgb(41, 171, 226);
 }
 header {
-	padding: 1rem 0px; margin-bottom: 1rem;
+	padding: 1rem 0px; margin-bottom: 1rem; background-color: rgb(255, 255, 255);
 }
 header h2 {
 	font-size: 0.5rem;
@@ -134,16 +143,16 @@ header #social {
 	text-align: right;
 }
 header #social ul {
-	margin: 0px; font-size: 0px;
+	margin: 0px; font-size: 0px; text-align: center;
 }
 header #social li {
-	padding: 0px 0.5rem; font-size: 0.5rem; display: inline-block;
+	padding: 0px 0.5rem; font-size: 16px; display: inline-block;
 }
 header #social li:first-child {
 	padding-left: 0px;
 }
 header #social li + li {
-	border-left-color: rgb(204, 204, 204); border-left-width: 1px; border-left-style: solid;
+	/*border-left-color: rgb(204, 204, 204); border-left-width: 1px; border-left-style: solid;*/
 }
 header #social li:last-child {
 	padding-right: 0px;

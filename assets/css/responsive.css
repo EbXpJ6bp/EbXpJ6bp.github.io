@@ -2,7 +2,7 @@
 	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
 }
 .container {
-	margin: 0px auto; max-width: 800px;
+	margin: 0px auto; /*max-width: 800px;*/
 }
 .container::after {
 	clear: both; display: table; content: "";
@@ -20,7 +20,7 @@
 	clear: both; display: table; content: "";
 }
 .row {
-	padding-bottom: 0em;
+	padding-bottom: 0em; text-align: center;
 }
 .col {
 	width: 100%; float: left; display: block;
