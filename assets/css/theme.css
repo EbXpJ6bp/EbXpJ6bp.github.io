@@ -62,13 +62,13 @@ article a:hover {
 	color: rgb(41, 171, 226);
 }
 main {
-    text-align:center;
+	text-align:center;
 }
 main h1 {
-    margin-top: 22px; margin-bottom: 11px;font-size: 32px; font-weight: 300; line-height:1.2;
+	margin-top: 22px; margin-bottom: 11px;font-size: 32px; font-weight: 300; line-height:1.2;
 }
 main img {
-    width:auto; box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+	width:25%; box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
 }
 main#index a:hover {
 	color: rgb(41, 171, 226);
