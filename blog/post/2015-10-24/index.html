@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    C#でUpdateCheckをする :: EbXpJ6bp&#39;s Blog
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ebxpj6bp.github.io/blog/post/2015-10-24/"/>
+
+  
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="/assets/css/sanitize.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/highlight_monokai.css">
+  <link rel="stylesheet" href="/assets/css/theme.css">
+
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+  
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="http://ebxpj6bp.github.io/blog">EbXpJ6bp&#39;s Blog</a></h1>
+        <h2>10を聞いて1も理解できない</h2>
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          <li><a href="/about" target="_blank"><i class="fa fa-smile-o"></i> About</a></li>
+          <li><a href="https://twitter.com/EbXpJ6bp" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+          
+          <li><a href="https://github.com/EbXpJ6bp" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
+          <li><a href="http://ebxpj6bp.github.io/blog/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>C#でUpdateCheckをする</h1>
+      <div class="meta">
+        Oct 24, 2015 &nbsp;
+        
+          #<a href="/tags/blog">Blog</a>&nbsp;
+        
+          #<a href="/tags/programming">Programming</a>&nbsp;
+        
+          #<a href="/tags/csharp">Csharp</a>&nbsp;
+        
+          #<a href="/tags/updater">Updater</a>&nbsp;
+        
+      </div>
+    </div>
+    <article>
+      
+
+<p>初めてまじめかもしれない記事</p>
+
+<p>OneceClickは便利だけどもどうせなら自分で(自動)アップデート機構を作りたいと思い適当に組みました  C#を使っています</p>
+
+<p>また例外に対し何もしていなかったり非同期ではなかったり初心者ソースになります</p>
+
+<p>Usingは適宜指定してください</p>
+
+<h2 id="アップデートチェックだけ:511268231389866b3cfa797c488c371e">アップデートチェックだけ</h2>
+
+<p>起動時にでも仕込ませて置けば十分だと思います。 このバージョンはとりあえず書いてあるファイルをそのまま読み込みその内容がProductVersionと違うかどうかを確認するだけです。</p>
+
+<p>この方式では通知をするだけです</p>
+
+<pre><code>string ver;
+
+WebClient wc = new WebClient();
+
+Stream st = wc.OpenRead(&quot;調べるサイトURL&quot;);
+
+StreamReader sr = new StreamReader( st, Encoding.GetEncoding(51932));
+
+ver = sr.ReadToEnd();
+
+st.Close();
+
+wc.Dispose();
+
+if (ver != Application.ProductVersion)
+
+{
+
+    MessageBox.Show(&quot;アップデートが∩(・＿・)∩あるでwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&quot;);
+
+}
+
+else
+
+{
+    MessageBox.Show(&quot;アップデートが(・＿・)ないwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&quot;);
+}    
+</code></pre>
+
+<h2 id="アップデートチェックをしてその詳細情報を伝える:511268231389866b3cfa797c488c371e">アップデートチェックをしてその詳細情報を伝える</h2>
+
+<p>こちらも起動時にでも仕込ませて置けば十分だと思います。 先ほどと違うのはアップデートチェックを行いその情報を取得,通知できるようにします。</p>
+
+<p>Xml解析を含んでいるのでアップデートチェックを行った後そのままファイルをダウンロードさせることが可能になります。ダウンロードURLが常に同じならこの方式をとる必要はありませんが、Githubにバージョン毎に公開していてそれを利用したい場合はこのようにするのがいいと思います。</p>
+
+<p>Xml解析の部分は特に初心者感が出てると思いますがご了承ください</p>
+
+<ul>
+<li>Version = Version情報</li>
+<li>Date = 更新日時</li>
+<li>Url = ダウンロードURL   としています</li>
+</ul>
+
+<hr />
+
+<pre><code>WebClient wc = new WebClient();
+
+byte[] pagedata = wc.DownloadData(&quot;調べるサイトURL&quot;);
+
+Encoding ec = Encoding.UTF8;
+
+//Console.WriteLine(ec.GetString(pagedata));
+
+XmlDocument xdoc = new XmlDocument();
+
+xdoc.LoadXml(ec.GetString(pagedata));
+
+XmlElement root = xdoc.DocumentElement;
+
+XmlNodeList wc = root.SelectNodes(&quot;Updata&quot;);
+
+var version = root.SelectSingleNode(&quot;Version&quot;).InnerText;
+var date = root.SelectSingleNode(&quot;Date&quot;).InnerText;
+var url = root.SelectSingleNode(&quot;URL&quot;).InnerText;
+
+wc.Dispose();
+
+if (version != Application.ProductVersion)
+
+{
+
+    MessageBox.Show(&quot;アップデートが∩(・＿・)∩あるでwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&quot;);
+    Console.WriteLine(&quot;Version:{0} 更新日時:{1} ダウンロードURL:{2}&quot;, version, date, url);
+    //ダウンロード, 解凍させ上書きする機構
+}
+
+else
+
+{
+    MessageBox.Show(&quot;アップデートが(・＿・)ないwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&quot;);
+}   
+</code></pre>
+
+<hr />
+
+<p>今回解析したXmlの配置</p>
+
+<pre><code>&lt;Updata&gt;
+    &lt;Version&gt;1.0.0&lt;/Version&gt;
+    &lt;Date&gt;2015/0/0&lt;/Date&gt;
+    &lt;URL&gt;URL&lt;/URL&gt;
+&lt;/Updata&gt;
+</code></pre>
+
+  </main>
+  
+  
+
+
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      <img src="/assets/images/profile.png" width="64" height="64"><br>
+      ©Copyright 2015 EbXpJ6bp
+    </div>
+  </footer>
+
+
+</div>
+
+<script src="/assets/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-64047084-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+

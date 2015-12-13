@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on EbXpJ6bp&#39;s Blog</title>
+    <link>http://ebxpj6bp.github.io/blog/tags/javascript/</link>
+    <description>Recent content in Javascript on EbXpJ6bp&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 Nov 2015 17:13:59 +0900</lastBuildDate>
+    <atom:link href="http://ebxpj6bp.github.io/blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>簡易なプライベート記事を作る話。</title>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-14-02/</link>
+      <pubDate>Sat, 14 Nov 2015 17:13:59 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-14-02/</guid>
+      <description>
+
+&lt;p&gt;動的ページを作れないサーバーで、JavaScriptを使ってURLを知らない人しかアクセスできないようにします。ただし、普通に検索エンジンの検索結果に乗ります。&lt;/p&gt;
+
+&lt;p&gt;一次的に見せたいときに置く程度と 聞こえがいいというだけです。&lt;/p&gt;
+
+&lt;h2 id=&#34;ソースコード:16cacab308402d2ade0a7d8c964244c1&#34;&gt;ソースコード&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;//Formを開くためのボタン
+&amp;lt;a onclick=&amp;quot;Form();&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-pencil fa-2x&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;Open Form&amp;lt;/a&amp;gt;
+
+//スクリプト
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+function Form()
+{
+    var UserInput = prompt(&amp;quot;Form:&amp;quot;,&amp;quot;&amp;quot;);
+    //入力フォームに記入されていれば(空でなければ)その書かれたところへ飛ぶ
+    if( UserInput != null )
+    {
+            location.href = UserInput;
+    }
+}
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;仕組み:16cacab308402d2ade0a7d8c964244c1&#34;&gt;仕組み&lt;/h2&gt;
+
+&lt;p&gt;ソースを見ただけでわかると思いますが、ただの子供だましにか過ぎません。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;http://localhost:1313/post/&lt;/code&gt; にこのソースを置いた状態でFormを開き&lt;code&gt;Hoge&lt;/code&gt;と入力すると、&lt;code&gt;http://localhost:1313/post/hoge/&lt;/code&gt;に飛びます&lt;/p&gt;
+
+&lt;p&gt;それだけです。　&lt;/p&gt;
+
+&lt;h2 id=&#34;デモ:16cacab308402d2ade0a7d8c964244c1&#34;&gt;デモ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ebxpj6bp.github.io/common/private/&#34;&gt;http://ebxpj6bp.github.io/common/private/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

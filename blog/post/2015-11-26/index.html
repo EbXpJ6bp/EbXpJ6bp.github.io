@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    備忘録。 :: EbXpJ6bp&#39;s Blog
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ebxpj6bp.github.io/blog/post/2015-11-26/"/>
+
+  
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="/assets/css/sanitize.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/highlight_monokai.css">
+  <link rel="stylesheet" href="/assets/css/theme.css">
+
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+  
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="http://ebxpj6bp.github.io/blog">EbXpJ6bp&#39;s Blog</a></h1>
+        <h2>10を聞いて1も理解できない</h2>
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          <li><a href="/about" target="_blank"><i class="fa fa-smile-o"></i> About</a></li>
+          <li><a href="https://twitter.com/EbXpJ6bp" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+          
+          <li><a href="https://github.com/EbXpJ6bp" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
+          <li><a href="http://ebxpj6bp.github.io/blog/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>備忘録。</h1>
+      <div class="meta">
+        Nov 26, 2015 &nbsp;
+        
+          #<a href="/tags/blog">Blog</a>&nbsp;
+        
+          #<a href="/tags/programming">Programming</a>&nbsp;
+        
+          #<a href="/tags/c">C</a>&nbsp;
+        
+          #<a href="/tags/%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%8C%87%E5%90%91">オブジェクト指向</a>&nbsp;
+        
+          #<a href="/tags/memo">Memo</a>&nbsp;
+        
+      </div>
+    </div>
+    <article>
+      
+
+<p>C言語でオブジェクト指向したい備忘録。本当にそれだけ</p>
+
+<h2 id="オブジェクト指向と手続き型プログラミングの違い:81f2082d0c43803c7b90cee6328c4723">オブジェクト指向と手続き型プログラミングの違い</h2>
+
+<blockquote>
+<p>手続き型プログラミングでは、プログラミングはデータ構造とルーチンの集合に分割される。一方オブジェクト指向プログラミングでは、プログラミングはオブジェクトに分割される。</p>
+
+<p>一般にオブジェクト指向プログラミングの方が理解しやすいと言われている。その理由として、オブジェクト指向が人間の精神モデルの認知手法に近いからだという説もあるが、心理学が人間の認知モデルを完全には明確化できていない現時点では非常に不確かである。蒸気機関が発明されたとき、人間の精神は蒸気機関と比較された。コンピュータが発明されたとき、人間の精神はそれと比較された。オブジェクト指向プログラミングが発明されると、人間の精神はそれと比較されることになったのである。</p>
+
+<p>多くの場合、オブジェクト指向の方がプログラムが小さくなり、保守が容易であると考えられている。プログラムはクラス群の定義から構成されている。オブジェクト指向言語と一口に言っても、全てをオブジェクトとみなす純粋なオブジェクト指向言語は少ない。例として最初のオブジェクト指向言語 Smalltalk があるが、商業的に成功したとは言いがたい。多くのオブジェクト指向言語は、手続き型プログラミングとオブジェクト指向を融合させたものである。</p>
+
+<p>オブジェクト指向と手続き型の重要な違いとして、オブジェクト指向では関係データベースにアクセスするにあたって、データモデルのクラス構造へのマッピングが必要である。</p>
+
+<p>以下にオブジェクト指向と手続き型の言語要素を比較した表を示す:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">手続き型</th>
+<th align="center">オブジェクト指向</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">関数</td>
+<td align="center">メソッド</td>
+</tr>
+
+<tr>
+<td align="center">モジュール</td>
+<td align="center">オブジェクト</td>
+</tr>
+
+<tr>
+<td align="center">呼び出し</td>
+<td align="center">メッセージ</td>
+</tr>
+
+<tr>
+<td align="center">変数</td>
+<td align="center">メンバ</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+
+<h2 id="オブジェクト指向に必要なもの:81f2082d0c43803c7b90cee6328c4723">オブジェクト指向に必要なもの</h2>
+
+<blockquote>
+<p>オブジェクト指向プログラミングとは、オブジェクトと呼ばれる機能の部品でソフトウェアを構成させるものであり、一般的に以下の機能や特徴を活用したプログラミング技法のことをいう。</p>
+
+<ul>
+<li>カプセル化（振る舞いの隠蔽とデータ隠蔽）</li>
+<li>インヘリタンス（継承） &ndash; クラスベースの言語</li>
+<li>ポリモフィズム（多態性、多相性） &ndash; 型付きの言語</li>
+<li>ダイナミックバインディング（動的束縛） &ndash; 動的型付言語</li>
+</ul>
+
+<p>この機能を文法的に提供するプログラミング言語は、オブジェクト指向プログラミング言語 (OOPL; object-oriented programming language) と呼ばれる。これらの機能のうち、オブジェクト指向の考え方で不可欠なのは「カプセル化」の機能だけである。&gt;そのため、オブジェクト指向プログラミング言語の中には、カプセル化以外の機能については一部を提供していないものもある。</p>
+
+<p>ただし、カプセル化（可視性の定義）やポリモフィズムとダイナミックバインディングはオブジェクト指向言語に固有の概念というわけではなく、非オブジェクト指向言語の中にもこの性質を備えるものもある。</p>
+</blockquote>
+
+<h2 id="c言語で表す:81f2082d0c43803c7b90cee6328c4723">C言語で表す</h2>
+
+<ul>
+<li><p>カプセル化 ⇒ static変数＆static関数</p></li>
+
+<li><p>インヘリタンス ⇒ 構造体の中にスーパークラスのオブジェクトを含める</p></li>
+
+<li><p>ポリモフィズム ⇒ インターフェースとなる共通の関数ポインタを格納した構造体を作成し、その構造体に格納する関数ポインタをオブジェクト毎に切り替える</p></li>
+
+<li><p>ダイナミックバンディング ⇒ ポリモフィズムの方法と同じようにその場に応じて、オブジェクトに入れるクラスを変更する</p></li>
+</ul>
+
+<h2 id="c言語でなぜ可能か:81f2082d0c43803c7b90cee6328c4723">C言語でなぜ可能か</h2>
+
+<p>変数しかベンバに持つことのできないCの構造体だが、関数ポインタというテクニックを使えば関数の先頭アドレスを示すことができる</p>
+
+<h2 id="参考資料:81f2082d0c43803c7b90cee6328c4723">参考資料</h2>
+
+<ul>
+<li><a href="http://blog.livedoor.jp/hiroumauma/archives/1366474.html">C言語でオブジェクト指向してみる</a></li>
+<li><a href="http://myenigma.hatenablog.com/entry/20141020/1413796816#1-カプセル化">C言語によるオブジェクト指向プログラミング </a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%8C%87%E5%90%91%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0">オブジェクト指向プログラミング-wiki</a></li>
+</ul>
+
+  </main>
+  
+  
+
+
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      <img src="/assets/images/profile.png" width="64" height="64"><br>
+      ©Copyright 2015 EbXpJ6bp
+    </div>
+  </footer>
+
+
+</div>
+
+<script src="/assets/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-64047084-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
