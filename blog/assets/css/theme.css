@@ -95,7 +95,7 @@ main#index .meta a {
 	color: rgb(153, 153, 153);
 }
 /* #list */
-main#single {
+main#list {
 	max-width: 800px; margin: 0px auto; padding: 0px 20px;
 }
 main#list .meta a {
