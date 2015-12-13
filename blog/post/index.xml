@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/post/</link>
+    <link>http://ebxpj6bp.github.io/blog/post/</link>
     <description>Recent content in Posts on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 13 Dec 2015 13:59:38 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>サイトデザインを変える</title>
-      <link>http://ebxpj6bp.github.io/post/2015-12-13/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-12-13/</link>
       <pubDate>Sun, 13 Dec 2015 13:59:38 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-12-13/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-12-13/</guid>
       <description>
 
 &lt;p&gt;知り合いのデザインが気に入ってそれを基にいろいろ変えました。変えてます。&lt;/p&gt;
@@ -52,10 +52,10 @@ max-width 800px
     
     <item>
       <title>2015 12 06</title>
-      <link>http://ebxpj6bp.github.io/post/2015-12-06/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-12-06/</link>
       <pubDate>Sun, 06 Dec 2015 11:32:33 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-12-06/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-12-06/</guid>
       <description>&lt;p&gt;ゆるゆりにはまった&lt;/p&gt;
 
 &lt;p&gt;がちゆり！&lt;/p&gt;
@@ -66,10 +66,10 @@ max-width 800px
     
     <item>
       <title>2015 12 05</title>
-      <link>http://ebxpj6bp.github.io/post/2015-12-05/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-12-05/</link>
       <pubDate>Sat, 05 Dec 2015 20:42:30 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-12-05/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-12-05/</guid>
       <description>
 
 &lt;p&gt;アイコン変えました。&lt;/p&gt;
@@ -95,10 +95,10 @@ max-width 800px
     
     <item>
       <title>C-COOLをMarkdownに書き下ろした</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-29/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-29/</link>
       <pubDate>Sun, 29 Nov 2015 21:18:13 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-29/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-29/</guid>
       <description>
 
 &lt;p&gt;ごめんなさい&lt;/p&gt;
@@ -119,10 +119,10 @@ max-width 800px
     
     <item>
       <title>備忘録。</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-26/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-26/</link>
       <pubDate>Thu, 26 Nov 2015 17:02:55 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-26/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-26/</guid>
       <description>
 
 &lt;p&gt;C言語でオブジェクト指向したい備忘録。本当にそれだけ&lt;/p&gt;
@@ -217,10 +217,10 @@ max-width 800px
     
     <item>
       <title>azureでhastebinサーバー開いた話</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-25/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-25/</link>
       <pubDate>Wed, 25 Nov 2015 20:00:06 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-25/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-25/</guid>
       <description>&lt;p&gt;dreamsparkのサブスクリプションがあったのでhastebinサーバー開きましたURLは
 &lt;a href=&#34;http://hastebin.azurewebsites.net/&#34;&gt;http://hastebin.azurewebsites.net/&lt;/a&gt;です。&lt;/p&gt;
 
@@ -238,10 +238,10 @@ max-width 800px
     
     <item>
       <title>stdio.hをすたじおえっちって呼んでた</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-17/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-17/</link>
       <pubDate>Tue, 17 Nov 2015 23:35:49 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-17/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-17/</guid>
       <description>&lt;p&gt;#include &lt;stdio.h&gt;ってすたじおどっとえっちじゃないのに驚きました。&lt;/p&gt;
 
 &lt;p&gt;正確には&lt;code&gt;エスティーディーアイオー&lt;/code&gt;や&lt;code&gt;スタンダードアイオー&lt;/code&gt;と呼ぶそうです。&lt;/p&gt;
@@ -252,10 +252,10 @@ max-width 800px
     
     <item>
       <title>簡易なプライベート記事を作る話。</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-14-02/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-14-02/</link>
       <pubDate>Sat, 14 Nov 2015 17:13:59 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-14-02/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-14-02/</guid>
       <description>
 
 &lt;p&gt;動的ページを作れないサーバーで、JavaScriptを使ってURLを知らない人しかアクセスできないようにします。ただし、普通に検索エンジンの検索結果に乗ります。&lt;/p&gt;
@@ -299,10 +299,10 @@ function Form()
     
     <item>
       <title>Frainworksの活動</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-14/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-14/</link>
       <pubDate>Sat, 14 Nov 2015 08:14:26 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-14/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-14/</guid>
       <description>
 
 &lt;h1 id=&#34;toc_0:fff942efbdc9274c7d4216ea574d2de7&#34;&gt;・＿・&lt;/h1&gt;
@@ -323,10 +323,10 @@ function Form()
     
     <item>
       <title>C言語による並列処理の勉強をしたかった。</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-03/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-03/</link>
       <pubDate>Tue, 03 Nov 2015 16:03:34 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-03/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-03/</guid>
       <description>
 
 &lt;p&gt;C言語による並列処理の勉強をしたかった。備忘録&lt;/p&gt;
@@ -488,10 +488,10 @@ int main(int argc,char *argv[])
     
     <item>
       <title>Githubのコミット名とブランチ名を適当に考えてみる</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-30-02/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-10-30-02/</link>
       <pubDate>Fri, 30 Oct 2015 20:04:07 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-10-30-02/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-30-02/</guid>
       <description>
 
 &lt;p&gt;英語の場合のコミット名ブランチ名を適当に考えます。&lt;/p&gt;
@@ -612,20 +612,20 @@ int main(int argc,char *argv[])
     
     <item>
       <title>20posts!!!!!!!!!</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-30/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-10-30/</link>
       <pubDate>Fri, 30 Oct 2015 18:35:45 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-10-30/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-30/</guid>
       <description>&lt;p&gt;20posts!!!!!!!!!&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>C#でSplashWindow(Screen)を表示させる</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-28/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-10-28/</link>
       <pubDate>Wed, 28 Oct 2015 19:39:58 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-10-28/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-28/</guid>
       <description>
 
 &lt;p&gt;スプラッシュ(スプラッシュスクリーン)を特定処理が終わったら自動的に閉じて切り替えたりする。&lt;/p&gt;
@@ -701,10 +701,10 @@ int main(int argc,char *argv[])
     
     <item>
       <title>きのこの山とたけのこの里</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-25/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-10-25/</link>
       <pubDate>Sun, 25 Oct 2015 20:31:48 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-10-25/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-25/</guid>
       <description>
 
 &lt;p&gt;きのこたけのこ戦争とは、1980年から現在にかけて、チョコレート分離主義・ハンマー族・ビスケット派を中心とするきのこの山陣営と、チョコレート混合主義・ドリル族・クッキー派を中心とするたけのこの里陣営との間で戦われている日本国最大級の内戦。1979年にたけのこの里が発足して以来、翌80年頃から小規模な派閥戦争が国内各地で頻発していたが、21世紀前後のインターネット普及により、戦火は瞬く間に日本全土へと拡大した。&lt;/p&gt;
@@ -762,10 +762,10 @@ int main(int argc,char *argv[])
     
     <item>
       <title>C#でUpdateCheckをする</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-24/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-10-24/</link>
       <pubDate>Sat, 24 Oct 2015 21:07:25 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-10-24/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-24/</guid>
       <description>
 
 &lt;p&gt;初めてまじめかもしれない記事&lt;/p&gt;

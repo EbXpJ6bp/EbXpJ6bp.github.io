@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opoenmp on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/tags/opoenmp/</link>
+    <link>http://ebxpj6bp.github.io/blog/tags/opoenmp/</link>
     <description>Recent content in Opoenmp on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 03 Nov 2015 16:03:34 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/tags/opoenmp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/blog/tags/opoenmp/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>C言語による並列処理の勉強をしたかった。</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-03/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-03/</link>
       <pubDate>Tue, 03 Nov 2015 16:03:34 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-03/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-03/</guid>
       <description>
 
 &lt;p&gt;C言語による並列処理の勉強をしたかった。備忘録&lt;/p&gt;

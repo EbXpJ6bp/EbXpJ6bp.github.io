@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/tags/c/</link>
+    <link>http://ebxpj6bp.github.io/blog/tags/c/</link>
     <description>Recent content in C on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 29 Nov 2015 21:18:13 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>C-COOLをMarkdownに書き下ろした</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-29/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-29/</link>
       <pubDate>Sun, 29 Nov 2015 21:18:13 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-29/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-29/</guid>
       <description>
 
 &lt;p&gt;ごめんなさい&lt;/p&gt;
@@ -35,10 +35,10 @@
     
     <item>
       <title>備忘録。</title>
-      <link>http://ebxpj6bp.github.io/post/2015-11-26/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-11-26/</link>
       <pubDate>Thu, 26 Nov 2015 17:02:55 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-11-26/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-26/</guid>
       <description>
 
 &lt;p&gt;C言語でオブジェクト指向したい備忘録。本当にそれだけ&lt;/p&gt;

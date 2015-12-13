@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/tags/windows/</link>
+    <link>http://ebxpj6bp.github.io/blog/tags/windows/</link>
     <description>Recent content in Windows on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 08 Sep 2015 14:25:29 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/blog/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Windows環境でHugoを使ってサイトを開く</title>
-      <link>http://ebxpj6bp.github.io/post/2015-09-08/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-09-08/</link>
       <pubDate>Tue, 08 Sep 2015 14:25:29 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-09-08/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-09-08/</guid>
       <description>
 
 &lt;p&gt;Windows環境でHugoを使ってサイトを開く WindowsでLocalにサイトを開くまでの方法です  とても簡単なので知識がなくても簡単にできます&lt;/p&gt;

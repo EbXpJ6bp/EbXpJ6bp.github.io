@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vscode on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/tags/vscode/</link>
+    <link>http://ebxpj6bp.github.io/blog/tags/vscode/</link>
     <description>Recent content in Vscode on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 14 Oct 2015 19:06:45 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/blog/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>VSCode v0.9.1</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-14-02/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-10-14-02/</link>
       <pubDate>Wed, 14 Oct 2015 19:06:45 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-10-14-02/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-14-02/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/updates#_debugging-performance&#34;&gt;VSCode V0.9.1&lt;/a&gt;

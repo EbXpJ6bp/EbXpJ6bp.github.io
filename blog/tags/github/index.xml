@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/tags/github/</link>
+    <link>http://ebxpj6bp.github.io/blog/tags/github/</link>
     <description>Recent content in Github on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 30 Oct 2015 20:04:07 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/blog/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Githubのコミット名とブランチ名を適当に考えてみる</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-30-02/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-10-30-02/</link>
       <pubDate>Fri, 30 Oct 2015 20:04:07 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-10-30-02/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-30-02/</guid>
       <description>
 
 &lt;p&gt;英語の場合のコミット名ブランチ名を適当に考えます。&lt;/p&gt;
@@ -135,17 +135,17 @@
     
     <item>
       <title>Github Student Pack まとめ</title>
-      <link>http://ebxpj6bp.github.io/post/2015-10-04/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-10-04/</link>
       <pubDate>Sun, 04 Oct 2015 11:39:54 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-10-04/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-04/</guid>
       <description>
 
 &lt;p&gt;Github Student Pack まとめ&lt;/p&gt;
 
 &lt;h1 id=&#34;student-developer-pack-https-education-github-com-pack:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;&lt;a href=&#34;https://education.github.com/pack&#34;&gt;Student Developer Pack&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04.png&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04.png&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h1 id=&#34;student-developer-pack-とは:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Student Developer Pack とは&lt;/h1&gt;
@@ -164,7 +164,7 @@
 
 &lt;h2 id=&#34;atom:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;ATOM&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-01.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-01.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;Gtihub製のテキストエディター&lt;/strong&gt;&lt;/p&gt;
 
@@ -176,7 +176,7 @@
 
 &lt;h2 id=&#34;bitnami:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;bitnami&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-02.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-02.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;Webアプリケーションや開発環境などをオールインワンでインストール出来るパッケージを配布しているサービス&lt;/strong&gt;&lt;/p&gt;
 
@@ -188,7 +188,7 @@
 
 &lt;h2 id=&#34;crowdflower:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;CrowdFlower&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-03.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-03.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;タスクをクラウドソースして管理するサービス&lt;/strong&gt;&lt;/p&gt;
 
@@ -200,7 +200,7 @@
 
 &lt;h2 id=&#34;digitalocean:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;DigitalOcean&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-04.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-04.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;デベロッパのためのシンプルなクラウドホスティングするサービス&lt;/strong&gt;&lt;/p&gt;
 
@@ -212,7 +212,7 @@
 
 &lt;h2 id=&#34;dnsimple:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;dnsimple&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-05.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-05.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;ワンクリックのサービスと堅牢なAPIでシンプルなDNS管理するサービス&lt;/strong&gt;&lt;/p&gt;
 
@@ -224,7 +224,7 @@
 
 &lt;h2 id=&#34;github:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Github&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-06.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-06.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;強力なコラボレーションとコードリビューとコード管理でオープンソースとプライベートプロジェクトを支援するサービス&lt;/strong&gt;&lt;/p&gt;
 
@@ -236,7 +236,7 @@
 
 &lt;h2 id=&#34;hackhands:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;HACKHANDS&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-07.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-07.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;24/7ライブで利用できるプログラミングヘルプ&lt;/strong&gt;&lt;/p&gt;
 
@@ -248,7 +248,7 @@
 
 &lt;h2 id=&#34;visualstudio:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;VisualStudio&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-08.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-08.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;Visual Studio IDE を含むマイクロソフト開発ツールのスイート&lt;/strong&gt;&lt;/p&gt;
 
@@ -260,7 +260,7 @@
 
 &lt;h2 id=&#34;namecheap:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;namecheap&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-09.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-09.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;ドメイン登録とSSL証明&lt;/strong&gt;&lt;/p&gt;
 
@@ -272,7 +272,7 @@
 
 &lt;h2 id=&#34;orchestrate:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;ORCHESTRATE&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-10.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-10.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;キー/ヴァリュー、グラフなど、各種データベース&lt;/strong&gt;&lt;/p&gt;
 
@@ -284,7 +284,7 @@
 
 &lt;h2 id=&#34;sendgrid:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;SendGrid&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-11.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-11.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;チームのコラボレーションのためのスクリーン共有&lt;/strong&gt;&lt;/p&gt;
 
@@ -296,7 +296,7 @@
 
 &lt;h2 id=&#34;stripe:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;stripe&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-12.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-12.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;Webとモバイルの支払決済、デベロッパ向け&lt;/strong&gt;&lt;/p&gt;
 
@@ -308,7 +308,7 @@
 
 &lt;h2 id=&#34;traviscl:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;TravisCL&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-13.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-13.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;オープンソースとプライベートプロジェクトのための継続的インテグレーション&lt;/strong&gt;&lt;/p&gt;
 
@@ -320,7 +320,7 @@
 
 &lt;h2 id=&#34;unreal-engine:d2b62fcb4c96ccacb09fb0f17f3da1fa&#34;&gt;Unreal Engine&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/images/2015-10-04-14.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://ebxpj6bp.github.io/blog/images/2015-10-04-14.jpg&#34; alt=&#34;&#34; /&gt;
 
 &lt;strong&gt;Epic Gamesより開発されたゲームエンジン&lt;/strong&gt;&lt;/p&gt;
 
@@ -338,10 +338,10 @@
     
     <item>
       <title>FrainworksのComittRule</title>
-      <link>http://ebxpj6bp.github.io/post/2015-09-05-2/</link>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-09-05-2/</link>
       <pubDate>Sat, 05 Sep 2015 16:53:09 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/post/2015-09-05-2/</guid>
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-09-05-2/</guid>
       <description>
 
 &lt;h3 id=&#34;frainworks内で決めたコミット時のルール:24ca34c955601a39ce5626c0e461bfe4&#34;&gt;Frainworks内で決めたコミット時のルール&lt;/h3&gt;
