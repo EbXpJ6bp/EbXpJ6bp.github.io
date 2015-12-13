@@ -6,8 +6,49 @@
     <description>Recent content in Blog on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 06 Dec 2015 11:32:33 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 13 Dec 2015 13:59:38 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>サイトデザインを変える</title>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-12-13/</link>
+      <pubDate>Sun, 13 Dec 2015 13:59:38 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-12-13/</guid>
+      <description>
+
+&lt;p&gt;知り合いのデザインが気に入ってそれを基にいろいろ変えました。変えてます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://snowhite.tk/&#34;&gt;http://snowhite.tk/&lt;/a&gt; が元デザインです。&lt;/p&gt;
+
+&lt;p&gt;過去のデザインをほぼ継承して、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;margin: 0 auto;
+padding: 0 20px
+max-width 800px
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を基本として作成してます。&lt;/p&gt;
+
+&lt;p&gt;再編集くわえたのでライセンス表示&lt;/p&gt;
+
+&lt;h2 id=&#34;license:2c2693ab3533ae0224f868624ae5e0b7&#34;&gt;LICENSE&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The MIT License (MIT)&lt;/p&gt;
+
+&lt;p&gt;Copyright &amp;copy; 2015 Asuka Suzuki&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;用途:&lt;/strong&gt; CSS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ライセンス:&lt;/strong&gt; The MIT License (MIT)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ライセンス全文:&lt;/strong&gt; &lt;a href=&#34;https://github.com/tanksuzuki/angels-ladder/blob/master/LICENSE.md&#34;&gt;LICENSE.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CSSにつけられたライセンスってどう扱えばいいのでしょうか&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2015 12 06</title>
@@ -834,36 +875,6 @@ else
     &amp;lt;URL&amp;gt;URL&amp;lt;/URL&amp;gt;
 &amp;lt;/Updata&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BattleField4 リコイルがひどかった</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-18/</link>
-      <pubDate>Sun, 18 Oct 2015 14:31:25 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-18/</guid>
-      <description>
-
-&lt;p&gt;BF4 の二点バースト日記&lt;/p&gt;
-
-&lt;h2 id=&#34;2015-06-15:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;2015-06-15&lt;/h2&gt;
-
-&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/6xhNgDcPBEk&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;POTATO GRIP(?), HEAVY BARREL&lt;/p&gt;
-
-&lt;h2 id=&#34;2015-10-18:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;2015-10-18&lt;/h2&gt;
-
-&lt;p&gt;&lt;iframe class=&#34;youtubeplayer&#34; type=&#34;text/html&#34; width=&#34;500&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/uvz5ofWphtM&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;ERGO GRIP, HEAVY BARREL&lt;/p&gt;
-
-&lt;h2 id=&#34;感想:b1e43995edba1bdef111c49c3e3de23a&#34;&gt;感想&lt;/h2&gt;
-
-&lt;p&gt;ヘリ楽&lt;/p&gt;
 </description>
     </item>
     
