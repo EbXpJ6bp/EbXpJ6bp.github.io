@@ -71,6 +71,13 @@ main#user h1 {
 main#user img {
 	width:auto; box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
 }
+/* #about */
+main#about {
+	max-width: 800px; margin: 0px auto; padding: 0px 20px;
+}
+main#about h1 {
+	margin-top: 22px; margin-bottom: 11px;font-size: 32px; font-weight: 300; line-height:1.2;
+}
 /* #error */
 main#error {
 	text-align: center;
