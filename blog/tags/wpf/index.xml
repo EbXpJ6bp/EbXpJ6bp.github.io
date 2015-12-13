@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wpf on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/blog/tags/wpf/</link>
+    <link>http://ebxpj6bp.github.io/tags/wpf/</link>
     <description>Recent content in Wpf on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 28 Oct 2015 19:39:58 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/blog/tags/wpf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/tags/wpf/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>C#でSplashWindow(Screen)を表示させる</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-28/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-10-28/</link>
       <pubDate>Wed, 28 Oct 2015 19:39:58 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-28/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-10-28/</guid>
       <description>
 
 &lt;p&gt;スプラッシュ(スプラッシュスクリーン)を特定処理が終わったら自動的に閉じて切り替えたりする。&lt;/p&gt;

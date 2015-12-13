@@ -259,3 +259,6 @@ article blockquote {
 .summary .meta {
 	margin-bottom: 0.5rem;
 }
+.underline {
+	text-decoration: underline;
+}

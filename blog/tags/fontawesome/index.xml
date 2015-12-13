@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fontawesome on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/blog/tags/fontawesome/</link>
+    <link>http://ebxpj6bp.github.io/tags/fontawesome/</link>
     <description>Recent content in Fontawesome on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 08 Oct 2015 18:54:25 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/blog/tags/fontawesome/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/tags/fontawesome/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>マウスオーバーで色が変わるボタン(Font Awesome)</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-08/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-10-08/</link>
       <pubDate>Thu, 08 Oct 2015 18:54:25 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-08/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-10-08/</guid>
       <description>
 
 &lt;p&gt;FontAwesomeとCSSを使ったボタンの一種の例です&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://ebxpj6bp.github.io/blog/demo/2015-10-08-demo.html&#34;&gt;デモ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://ebxpj6bp.github.io/demo/2015-10-08-demo.html&#34;&gt;デモ&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;fontawesome:1a83f012dd114153cbd367421b34939c&#34;&gt;FontAwesome&lt;/h2&gt;
 

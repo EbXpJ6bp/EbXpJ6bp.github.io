@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programing on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/blog/tags/programing/</link>
+    <link>http://ebxpj6bp.github.io/tags/programing/</link>
     <description>Recent content in Programing on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 14 Nov 2015 17:13:59 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/blog/tags/programing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/tags/programing/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>簡易なプライベート記事を作る話。</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-11-14-02/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-11-14-02/</link>
       <pubDate>Sat, 14 Nov 2015 17:13:59 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-14-02/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-11-14-02/</guid>
       <description>
 
 &lt;p&gt;動的ページを作れないサーバーで、JavaScriptを使ってURLを知らない人しかアクセスできないようにします。ただし、普通に検索エンジンの検索結果に乗ります。&lt;/p&gt;

@@ -2,24 +2,38 @@
 <html lang="ja">
 <head>
 
-
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="UTF-8">
 	<title>
 		About :: EbXpJ6bp
 	</title>
 
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
-	<link rel="canonical" href="http://ebxpj6bp.github.io/404/" />
+	<!-- HTTPS Canonical URL
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="canonical" href="http://ebxpj6bp.github.io/" />
 
+	<!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="/assets/css/custom.css">
 	<link rel="stylesheet" href="/assets/css/sanitize.css">
 	<link rel="stylesheet" href="/assets/css/responsive.css">
 	<link rel="stylesheet" href="/assets/css/highlight_monokai.css">
 	<link rel="stylesheet" href="/assets/css/theme.css">
+	<link rel="stylesheet" href="/assets/css/nprogress.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Font
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+	<!-- Javascript
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script rel="javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script rel="javascript" src='/assets/js/nprogress.js'></script>
 
 </head>
 
@@ -46,7 +60,8 @@
 		</header>
 
 		<main id="about" role="main">
-			<div class="light-gray"><h1>編集中です!</h1></div>
+			<div class="light-gray"><h1>EbXpJ6bp</h1></div>
+
 		</main>
 
 		<footer role="contentinfo">
@@ -57,6 +72,18 @@
 		</footer>
 
 	</div>
+
+	<script>
+		$('body').show();
+
+		$(window).load(function () {
+			NProgress.done();
+		});
+
+		$(document).ready(function () {
+			NProgress.start();
+		});
+	</script>
 
 	<script>
 		(function (i, s, o, g, r, a, m) {

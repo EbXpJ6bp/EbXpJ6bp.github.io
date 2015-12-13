@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on EbXpJ6bp&#39;s Blog</title>
-    <link>http://ebxpj6bp.github.io/blog/tags/programming/</link>
+    <link>http://ebxpj6bp.github.io/tags/programming/</link>
     <description>Recent content in Programming on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 13 Dec 2015 13:59:38 +0900</lastBuildDate>
-    <atom:link href="http://ebxpj6bp.github.io/blog/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ebxpj6bp.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>サイトデザインを変える</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-12-13/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-12-13/</link>
       <pubDate>Sun, 13 Dec 2015 13:59:38 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-12-13/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-12-13/</guid>
       <description>
 
 &lt;p&gt;知り合いのデザインが気に入ってそれを基にいろいろ変えました。変えてます。&lt;/p&gt;
@@ -52,10 +52,10 @@ max-width 800px
     
     <item>
       <title>C-COOLをMarkdownに書き下ろした</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-11-29/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-11-29/</link>
       <pubDate>Sun, 29 Nov 2015 21:18:13 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-29/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-11-29/</guid>
       <description>
 
 &lt;p&gt;ごめんなさい&lt;/p&gt;
@@ -76,10 +76,10 @@ max-width 800px
     
     <item>
       <title>備忘録。</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-11-26/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-11-26/</link>
       <pubDate>Thu, 26 Nov 2015 17:02:55 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-26/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-11-26/</guid>
       <description>
 
 &lt;p&gt;C言語でオブジェクト指向したい備忘録。本当にそれだけ&lt;/p&gt;
@@ -174,10 +174,10 @@ max-width 800px
     
     <item>
       <title>azureでhastebinサーバー開いた話</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-11-25/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-11-25/</link>
       <pubDate>Wed, 25 Nov 2015 20:00:06 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-25/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-11-25/</guid>
       <description>&lt;p&gt;dreamsparkのサブスクリプションがあったのでhastebinサーバー開きましたURLは
 &lt;a href=&#34;http://hastebin.azurewebsites.net/&#34;&gt;http://hastebin.azurewebsites.net/&lt;/a&gt;です。&lt;/p&gt;
 
@@ -195,10 +195,10 @@ max-width 800px
     
     <item>
       <title>stdio.hをすたじおえっちって呼んでた</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-11-17/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-11-17/</link>
       <pubDate>Tue, 17 Nov 2015 23:35:49 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-17/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-11-17/</guid>
       <description>&lt;p&gt;#include &lt;stdio.h&gt;ってすたじおどっとえっちじゃないのに驚きました。&lt;/p&gt;
 
 &lt;p&gt;正確には&lt;code&gt;エスティーディーアイオー&lt;/code&gt;や&lt;code&gt;スタンダードアイオー&lt;/code&gt;と呼ぶそうです。&lt;/p&gt;
@@ -209,10 +209,10 @@ max-width 800px
     
     <item>
       <title>C言語による並列処理の勉強をしたかった。</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-11-03/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-11-03/</link>
       <pubDate>Tue, 03 Nov 2015 16:03:34 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-11-03/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-11-03/</guid>
       <description>
 
 &lt;p&gt;C言語による並列処理の勉強をしたかった。備忘録&lt;/p&gt;
@@ -374,10 +374,10 @@ int main(int argc,char *argv[])
     
     <item>
       <title>Githubのコミット名とブランチ名を適当に考えてみる</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-30-02/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-10-30-02/</link>
       <pubDate>Fri, 30 Oct 2015 20:04:07 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-30-02/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-10-30-02/</guid>
       <description>
 
 &lt;p&gt;英語の場合のコミット名ブランチ名を適当に考えます。&lt;/p&gt;
@@ -498,10 +498,10 @@ int main(int argc,char *argv[])
     
     <item>
       <title>C#でSplashWindow(Screen)を表示させる</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-28/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-10-28/</link>
       <pubDate>Wed, 28 Oct 2015 19:39:58 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-28/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-10-28/</guid>
       <description>
 
 &lt;p&gt;スプラッシュ(スプラッシュスクリーン)を特定処理が終わったら自動的に閉じて切り替えたりする。&lt;/p&gt;
@@ -577,10 +577,10 @@ int main(int argc,char *argv[])
     
     <item>
       <title>C#でUpdateCheckをする</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-24/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-10-24/</link>
       <pubDate>Sat, 24 Oct 2015 21:07:25 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-24/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-10-24/</guid>
       <description>
 
 &lt;p&gt;初めてまじめかもしれない記事&lt;/p&gt;
@@ -695,10 +695,10 @@ else
     
     <item>
       <title>HugoのShortCodeでTwitterTweetの埋め込みをする</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-17/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-10-17/</link>
       <pubDate>Sat, 17 Oct 2015 16:12:53 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-17/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-10-17/</guid>
       <description>
 
 &lt;p&gt;このシリーズ無駄に3つ目 shortcode使うより埋め込むを利用した方が速い気がします&lt;/p&gt;
@@ -729,10 +729,10 @@ else
     
     <item>
       <title>HugoのShortCodeでYoutubePlayerの埋め込みをする</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-16/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-10-16/</link>
       <pubDate>Fri, 16 Oct 2015 18:09:22 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-16/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-10-16/</guid>
       <description>
 
 &lt;h2 id=&#34;デモ:d0abd677cd519e0eba22ff99135df0aa&#34;&gt;デモ&lt;/h2&gt;
@@ -746,10 +746,10 @@ else
     
     <item>
       <title>Hugoのshortcodesでnicovideoの埋め込みを簡単にする</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-15/</link>
+      <link>http://ebxpj6bp.github.io/post/2015-10-15/</link>
       <pubDate>Thu, 15 Oct 2015 19:15:34 +0900</pubDate>
       
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-15/</guid>
+      <guid>http://ebxpj6bp.github.io/post/2015-10-15/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://qiita.com/kounoike/items/cdbfaa2dab9bd3393a84&#34;&gt;Hugoのshortcodesでnicovideoの埋め込みを簡単にする&lt;/a&gt; Qiitaで面白い記事を見つけたので早速使ってみました Hugoの&lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;機能を利用して埋め込みを簡単にするようです&lt;/p&gt;

@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
   
-  <link rel="canonical" href="http://ebxpj6bp.github.io/blog/tags/frainworks/"/>
+  <link rel="canonical" href="http://ebxpj6bp.github.io/tags/frainworks/"/>
 
   
   <link rel="stylesheet" href="/assets/css/custom.css">
@@ -22,18 +22,22 @@
   <link rel="stylesheet" href="/assets/css/responsive.css">
   <link rel="stylesheet" href="/assets/css/highlight_monokai.css">
   <link rel="stylesheet" href="/assets/css/theme.css">
+  <link rel="stylesheet" href="/assets/css/nprogress.css">
 
     
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+	
+	<script rel="javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script rel="javascript" src='/assets/js/nprogress.js'></script>  
     
   
 
-  <link href="http://ebxpj6bp.github.io/blog/tags/frainworks/index.xml" rel="alternate" type="application/rss+xml" title="EbXpJ6bp&#39;s Blog" />
-  <link href="http://ebxpj6bp.github.io/blog/tags/frainworks/index.xml" rel="feed" type="application/rss+xml" title="EbXpJ6bp&#39;s Blog" />
+  <link href="http://ebxpj6bp.github.io/tags/frainworks/index.xml" rel="alternate" type="application/rss+xml" title="EbXpJ6bp&#39;s Blog" />
+  <link href="http://ebxpj6bp.github.io/tags/frainworks/index.xml" rel="feed" type="application/rss+xml" title="EbXpJ6bp&#39;s Blog" />
 
 
 </head>
-
 
 
 <body>
@@ -43,7 +47,7 @@
   <header role="banner">
     <div class="row gutters">
       <div id="site-title" class="col span_6">
-        <h1><a href="http://ebxpj6bp.github.io/blog">EbXpJ6bp&#39;s Blog</a></h1>
+        <h1><a href="http://ebxpj6bp.github.io/">EbXpJ6bp&#39;s Blog</a></h1>
         <h2>10を聞いて1も理解できない</h2>
       </div>
       <div id="social" class="col span_6">
@@ -52,19 +56,18 @@
           <li><a href="https://twitter.com/EbXpJ6bp" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
           
           <li><a href="https://github.com/EbXpJ6bp" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
-          <li><a href="http://ebxpj6bp.github.io/blog/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS</a></li>
+          <li><a href="http://ebxpj6bp.github.io//index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS</a></li>
         </ul>
       </div>
     </div>
   </header>
-
 
   
   <main id="list" role="main">
     <div class="article-header light-gray"><h1>#Frainworks</h1></div>
     
     <div class="summary">
-      <h2><a href="http://ebxpj6bp.github.io/blog/post/2015-11-14/">Frainworksの活動 </a></h2>
+      <h2><a href="http://ebxpj6bp.github.io/post/2015-11-14/">Frainworksの活動 </a></h2>
       <div class="meta">
         Nov 14, 2015 &nbsp;
         
@@ -79,7 +82,6 @@
     
   </main>
 
-
   
   <footer role="contentinfo">
     <div style="text-align:center;">
@@ -88,8 +90,19 @@
     </div>
   </footer>
 
-
 </div>
+
+<script>
+  $('body').show();
+
+  $(window).load(function(){
+   NProgress.done();
+  });
+
+  $(document).ready(function() {
+   NProgress.start();
+  });
+</script>
 
 <script src="/assets/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
