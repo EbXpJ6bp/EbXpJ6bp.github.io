@@ -6,8 +6,28 @@
     <description>Recent content on EbXpJ6bp&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 13 Dec 2015 13:59:38 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 23 Dec 2015 12:42:29 +0900</lastBuildDate>
     <atom:link href="http://ebxpj6bp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2015 12 23</title>
+      <link>http://ebxpj6bp.github.io/blog/post/2015-12-23/</link>
+      <pubDate>Wed, 23 Dec 2015 12:42:29 +0900</pubDate>
+      
+      <guid>http://ebxpj6bp.github.io/blog/post/2015-12-23/</guid>
+      <description>&lt;p&gt;RefineFPS用のazurewebとった話&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://refinefps.azurewebsites.net/&#34;&gt;http://refinefps.azurewebsites.net/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;何に使いましょう&lt;/p&gt;
+
+&lt;p&gt;背景色:#2b3e50 文字色:#fff&lt;/p&gt;
+
+&lt;p&gt;背景色:#666666 文字色:f5f5f5&lt;/p&gt;
+
+&lt;p&gt;の組み合わせは本当に好きです&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>サイトデザインを変える</title>
@@ -757,124 +777,6 @@ int main(int argc,char *argv[])
 &lt;/ul&gt;
 
 &lt;p&gt;nani kono nihongo no okashii kizi gomen nasai&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>C#でUpdateCheckをする</title>
-      <link>http://ebxpj6bp.github.io/blog/post/2015-10-24/</link>
-      <pubDate>Sat, 24 Oct 2015 21:07:25 +0900</pubDate>
-      
-      <guid>http://ebxpj6bp.github.io/blog/post/2015-10-24/</guid>
-      <description>
-
-&lt;p&gt;初めてまじめかもしれない記事&lt;/p&gt;
-
-&lt;p&gt;OneceClickは便利だけどもどうせなら自分で(自動)アップデート機構を作りたいと思い適当に組みました  C#を使っています&lt;/p&gt;
-
-&lt;p&gt;また例外に対し何もしていなかったり非同期ではなかったり初心者ソースになります&lt;/p&gt;
-
-&lt;p&gt;Usingは適宜指定してください&lt;/p&gt;
-
-&lt;h2 id=&#34;アップデートチェックだけ:511268231389866b3cfa797c488c371e&#34;&gt;アップデートチェックだけ&lt;/h2&gt;
-
-&lt;p&gt;起動時にでも仕込ませて置けば十分だと思います。 このバージョンはとりあえず書いてあるファイルをそのまま読み込みその内容がProductVersionと違うかどうかを確認するだけです。&lt;/p&gt;
-
-&lt;p&gt;この方式では通知をするだけです&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;string ver;
-
-WebClient wc = new WebClient();
-
-Stream st = wc.OpenRead(&amp;quot;調べるサイトURL&amp;quot;);
-
-StreamReader sr = new StreamReader( st, Encoding.GetEncoding(51932));
-
-ver = sr.ReadToEnd();
-
-st.Close();
-
-wc.Dispose();
-
-if (ver != Application.ProductVersion)
-
-{
-
-    MessageBox.Show(&amp;quot;アップデートが∩(・＿・)∩あるでwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&amp;quot;);
-
-}
-
-else
-
-{
-    MessageBox.Show(&amp;quot;アップデートが(・＿・)ないwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&amp;quot;);
-}    
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;アップデートチェックをしてその詳細情報を伝える:511268231389866b3cfa797c488c371e&#34;&gt;アップデートチェックをしてその詳細情報を伝える&lt;/h2&gt;
-
-&lt;p&gt;こちらも起動時にでも仕込ませて置けば十分だと思います。 先ほどと違うのはアップデートチェックを行いその情報を取得,通知できるようにします。&lt;/p&gt;
-
-&lt;p&gt;Xml解析を含んでいるのでアップデートチェックを行った後そのままファイルをダウンロードさせることが可能になります。ダウンロードURLが常に同じならこの方式をとる必要はありませんが、Githubにバージョン毎に公開していてそれを利用したい場合はこのようにするのがいいと思います。&lt;/p&gt;
-
-&lt;p&gt;Xml解析の部分は特に初心者感が出てると思いますがご了承ください&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Version = Version情報&lt;/li&gt;
-&lt;li&gt;Date = 更新日時&lt;/li&gt;
-&lt;li&gt;Url = ダウンロードURL   としています&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code&gt;WebClient wc = new WebClient();
-
-byte[] pagedata = wc.DownloadData(&amp;quot;調べるサイトURL&amp;quot;);
-
-Encoding ec = Encoding.UTF8;
-
-//Console.WriteLine(ec.GetString(pagedata));
-
-XmlDocument xdoc = new XmlDocument();
-
-xdoc.LoadXml(ec.GetString(pagedata));
-
-XmlElement root = xdoc.DocumentElement;
-
-XmlNodeList wc = root.SelectNodes(&amp;quot;Updata&amp;quot;);
-
-var version = root.SelectSingleNode(&amp;quot;Version&amp;quot;).InnerText;
-var date = root.SelectSingleNode(&amp;quot;Date&amp;quot;).InnerText;
-var url = root.SelectSingleNode(&amp;quot;URL&amp;quot;).InnerText;
-
-wc.Dispose();
-
-if (version != Application.ProductVersion)
-
-{
-
-    MessageBox.Show(&amp;quot;アップデートが∩(・＿・)∩あるでwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&amp;quot;);
-    Console.WriteLine(&amp;quot;Version:{0} 更新日時:{1} ダウンロードURL:{2}&amp;quot;, version, date, url);
-    //ダウンロード, 解凍させ上書きする機構
-}
-
-else
-
-{
-    MessageBox.Show(&amp;quot;アップデートが(・＿・)ないwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&amp;quot;);
-}   
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;今回解析したXmlの配置&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;Updata&amp;gt;
-    &amp;lt;Version&amp;gt;1.0.0&amp;lt;/Version&amp;gt;
-    &amp;lt;Date&amp;gt;2015/0/0&amp;lt;/Date&amp;gt;
-    &amp;lt;URL&amp;gt;URL&amp;lt;/URL&amp;gt;
-&amp;lt;/Updata&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
