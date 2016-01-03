@@ -104,37 +104,6 @@ header {
 			padding: 0 30px;
 		}
 
-.fixed#top-head {
-	top: 0;
-	height: 55px;
-	margin-top: 0;
-	padding-top: 10px;
-	-webkit-transition: top .65s ease-in;
-	-moz-transition: top .65s ease-in;
-	-o-transition: top .65s ease-in;
-	transition: top .65s ease-in;
-	background: rgba(255, 255, 255, .7);
-}
-
-	.fixed#top-head .logo {
-		font-size: 20px;
-		color: rgb(51, 51, 51);
-	}
-
-	.fixed#top-head #global-nav ul li a {
-		padding: 0 20px;
-		color: rgb(51, 51, 51);
-	}
-
-	.fixed#top-head #global-nav ul li::after {
-		bottom: -10px;
-	}
-
-	.fixed#top-head #global-nav ul li:hover::after {
-		bottom: -20px;
-		background: rgb(0, 98, 184);
-	}
-
 #nav-toggle {
 	position: absolute;
 	z-index: 101;
@@ -184,10 +153,6 @@ header {
 	#global-nav ul li a {
 		padding: 0 20px;
 	}
-
-	.fixed#top-head #global-nav ul li a {
-		padding: 0 15px;
-	}
 }
 
 @media screen and (max-width:640px) {
@@ -203,23 +168,12 @@ header {
 		padding: 0;
 	}
 
-	.fixed#top-head {
-		padding-top: 0;
-		background: none;
-	}
-
 	#mobile-head {
 		position: relative;
 		z-index: 999;
 		width: 100%;
 		height: 56px;
 		background: rgb(255, 255, 255);
-	}
-
-	.fixed#top-head .logo {
-		position: absolute;
-		top: 13px;
-		left: 13px;
 	}
 
 	#top-head .logo {
@@ -264,14 +218,7 @@ header {
 		display: block;
 		width: 100%;
 		/*Ç±Ç±navÇÃçÇÇ≥*/
-		padding: 17px 0;
-	}
-
-	.fixed#top-head #global-nav ul li a {
-		display: block;
-		width: 100%;
-		padding: 18px 0;
-		color: rgb(102, 102, 102);
+		padding: 14px 0;
 	}
 
 	#nav-toggle {
@@ -321,8 +268,9 @@ header {
 	section-header
 ----------------------*/
 section#section-header {
-	padding: 20px 0;
+	padding: 20px 0 19px;
 	color: rgb(255, 255, 255);
+	font-family: My-font;
 }
 
 h1.section-header-title {
@@ -342,7 +290,6 @@ h1.section-header-title {
 	}
 
 p.section-header-msg {
-	font-family: My-font;
 	font-size: 22px;
 	text-align: left;
 }
@@ -411,7 +358,7 @@ footer {
 .content {
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 10px 20px 12px;
+	padding: 0 20px;
 }
 
 .blue {
