@@ -358,6 +358,7 @@ p#profile-bio {
 	works frainworks
 ----------------------*/
 #frainworks {
+	margin-bottom: 1.5rem;
 }
 
 div#frainworks h2 {
@@ -377,6 +378,56 @@ div#frainworks img {
 	}
 
 	div#frainworks img {
+		width: 180px;
+	}
+}
+
+/*----------------------
+	works oauthio demo
+----------------------*/
+#oauthio {
+	margin-bottom: 1.5rem;
+}
+
+div#oauthio h2 {
+	font-family: My-font;
+	font-size: 23px;
+	font-weight: 300;
+}
+
+div#oauthio img {
+	margin: 5px 0;
+	max-width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width:520px) {
+	div#oauthio img {
+		width: 180px;
+	}
+}
+
+/*----------------------
+	works hastebin clone
+----------------------*/
+#hastebin {
+	margin-bottom: 1.5rem;
+}
+
+div#hastebin h2 {
+	font-family: My-font;
+	font-size: 23px;
+	font-weight: 300;
+}
+
+div#hastebin img {
+	margin: 5px 0;
+	max-width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width:520px) {
+	div#hastebin img {
 		width: 180px;
 	}
 }
