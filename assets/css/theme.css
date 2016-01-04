@@ -366,7 +366,6 @@ div#frainworks h2 {
 	font-size: 23px;
 	font-weight: 300;
 	margin-bottom: 10px;
-	text-decoration: underline;
 }
 
 div#frainworks img {
@@ -396,7 +395,6 @@ div#oauthio h2 {
 	font-size: 23px;
 	font-weight: 300;
 	margin-bottom: 10px;
-	text-decoration: underline;
 }
 
 div#oauthio img {
@@ -423,7 +421,6 @@ div#hastebin h2 {
 	font-size: 23px;
 	font-weight: 300;
 	margin-bottom: 10px;
-	text-decoration: underline;
 }
 
 div#hastebin img {
@@ -466,12 +463,48 @@ footer {
 	padding: 0 20px;
 }
 
+.red {
+	background-color: rgb(214, 117, 128);
+}
+
+.pink {
+	background-color: rgb(214, 117, 177);
+}
+
+.orange {
+	background-color: rgb(214, 154, 117);
+}
+
+.light-blue {
+	background-color: rgb(117, 214, 203);
+}
+
+.dark-blue {
+	background-color: rgb(117, 128, 214);
+}
+
 .blue {
-	background-color: rgb(117,177, 214);
+	background-color: rgb(117, 177, 214);
+}
+
+.purple {
+	background-color: rgb(154, 117, 214);
+}
+
+.light-green {
+	background-color: rgb(177, 214, 117);
+}
+
+.green {
+	background-color: rgb(128, 214, 117);
 }
 
 .white {
 	background-color: rgb(255, 255, 255);
+}
+
+.light-black {
+	background-color: rgb(90, 90, 90);
 }
 
 .social-icon {
