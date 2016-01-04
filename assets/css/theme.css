@@ -366,6 +366,7 @@ div#frainworks h2 {
 	font-size: 23px;
 	font-weight: 300;
 	margin-bottom: 10px;
+	text-decoration: underline;
 }
 
 div#frainworks img {
@@ -395,6 +396,7 @@ div#oauthio h2 {
 	font-size: 23px;
 	font-weight: 300;
 	margin-bottom: 10px;
+	text-decoration: underline;
 }
 
 div#oauthio img {
@@ -421,6 +423,7 @@ div#hastebin h2 {
 	font-size: 23px;
 	font-weight: 300;
 	margin-bottom: 10px;
+	text-decoration: underline;
 }
 
 div#hastebin img {
@@ -469,10 +472,6 @@ footer {
 
 .white {
 	background-color: rgb(255, 255, 255);
-}
-
-.gray {
-	background-color: rgb(245, 245, 245);
 }
 
 .social-icon {
