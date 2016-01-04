@@ -365,6 +365,7 @@ div#frainworks h2 {
 	font-family: My-font;
 	font-size: 23px;
 	font-weight: 300;
+	margin-bottom: 10px;
 }
 
 div#frainworks img {
@@ -393,6 +394,7 @@ div#oauthio h2 {
 	font-family: My-font;
 	font-size: 23px;
 	font-weight: 300;
+	margin-bottom: 10px;
 }
 
 div#oauthio img {
@@ -418,6 +420,7 @@ div#hastebin h2 {
 	font-family: My-font;
 	font-size: 23px;
 	font-weight: 300;
+	margin-bottom: 10px;
 }
 
 div#hastebin img {
