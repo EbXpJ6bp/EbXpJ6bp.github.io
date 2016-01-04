@@ -543,3 +543,25 @@ footer {
 .social-icon a:hover .fa-github{
 	background: rgb(255, 153, 51);
 }*/
+h1.hoge-title {
+	font-family: My-font;
+	font-size: 300%;
+	font-weight: 300;
+	margin: 0 0 1em 0;
+	color: rgb(102, 102, 102);
+}
+
+	h1.hoge-title:after {
+		display: block;
+		width: 18px;
+		height: 1px;
+		margin-top: .2em;
+		content: '';
+		background-color: rgb(102, 102, 102);
+	}
+
+p.hoge-msg {
+	font-size: 22px;
+	text-align: left;
+	color: rgb(102, 102, 102);
+}
