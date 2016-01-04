@@ -435,6 +435,30 @@ div#hastebin img {
 	}
 }
 /*----------------------
+		link
+----------------------*/
+.links-content {
+	padding: 20px 0;
+	margin-bottom:20px;
+}
+img#user-img {
+	max-width: 100%;
+	height: 150px;
+	vertical-align: middle;
+	border-radius: 50%;
+	-webkit-border-image: none;
+	-moz-border-image: none;
+	-o-border-image: none;
+	border-image: none;
+}
+
+p#user-name {
+	font-family: Lato-bold;
+	font-size: 23px;
+	font-weight: 300;
+	margin-top: 11px;
+}
+/*----------------------
 		footer
 ----------------------*/
 footer {
