@@ -55,10 +55,10 @@ h6 {
 		header
 ----------------------*/
 .inner {
-	text-align: center;
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 20px;
+	text-align: center;
 }
 
 	.inner::after {
@@ -73,12 +73,12 @@ header {
 }
 
 	header a {
-		font-size: 23px;
+		font-size: 25px;
 	}
 
 	header li:hover {
-		background-color: rgb(238, 238, 238);
 		border-radius: 4px;
+		background-color: rgb(238, 238, 238);
 	}
 
 	header#top-head .logo {
@@ -176,7 +176,7 @@ header {
 		-o-transition: .5s ease-in-out;
 		transition: .5s ease-in-out;
 		text-align: center;
-		background: rgba(233, 235, 235, .9);
+		background: rgba(233, 235, 235, .8);
 	}
 
 		#global-nav ul {
@@ -252,9 +252,9 @@ section a:hover {
 	section-header
 ----------------------*/
 section#section-header {
+	font-family: My-font;
 	padding: 30px 0 32px;
 	color: rgb(255, 255, 255);
-	font-family: My-font;
 }
 
 h1.section-header-title {
@@ -295,8 +295,8 @@ section#section-content {
 img#profile-img {
 	max-width: 100%;
 	height: 180px;
-	margin-bottom: 10px;
 	margin-top: 11px;
+	margin-bottom: 10px;
 	vertical-align: middle;
 	border-radius: 50%;
 	-webkit-border-image: none;
@@ -349,9 +349,9 @@ div#frainworks h2 {
 }
 
 div#frainworks img {
-	margin: 5px 0;
-	max-width: 100%;
 	width: 850px;
+	max-width: 100%;
+	margin: 5px 0;
 }
 
 @media screen and (max-width:520px) {
@@ -378,9 +378,9 @@ div#oauthio h2 {
 }
 
 div#oauthio img {
-	margin: 5px 0;
-	max-width: 100%;
 	width: 850px;
+	max-width: 100%;
+	margin: 5px 0;
 }
 
 @media screen and (max-width:520px) {
@@ -404,9 +404,9 @@ div#hastebin h2 {
 }
 
 div#hastebin img {
-	margin: 5px 0;
-	max-width: 100%;
 	width: 850px;
+	max-width: 100%;
+	margin: 5px 0;
 }
 
 @media screen and (max-width:520px) {
@@ -418,8 +418,8 @@ div#hastebin img {
 		link
 ----------------------*/
 .links-content {
-	padding: 20px 0;
 	margin-bottom: 20px;
+	padding: 20px 0;
 }
 
 img#user-img {
@@ -489,7 +489,7 @@ footer {
 }
 
 .blue {
-	background-color: rgb(117, 177, 214);
+	background-color: rgba(117, 177, 214,.9);
 }
 
 .purple {
@@ -541,13 +541,13 @@ footer {
 	.social-icon a:hover i {
 		background: #f7f7f7;
 	}
-/*.social-icon a:hover .fa-twitter {
-	background: rgb(85, 172, 238);
+.social-icon a:hover .fa-twitter {
+	color: rgb(85, 172, 238);
 }
 
 .social-icon a:hover .fa-github{
-	background: rgb(255, 153, 51);
-}*/
+	color: rgb(255, 153, 51);
+}
 h1.hoge-title {
 	font-family: My-font;
 	font-size: 300%;
