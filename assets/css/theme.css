@@ -320,97 +320,25 @@ p#profile-bio {
 /*----------------------
 		works
 ----------------------*/
-.mobileHidden {
-	display: none;
-}
-
-@media screen and (min-width:520px) {
-	.desktopHidden {
-		display: none;
-	}
-
-	.mobileHidden {
-		display: inline;
-	}
-}
-
-/*----------------------
-	works frainworks
-----------------------*/
-#frainworks {
+.works-content {
 	margin-bottom: 1.5rem;
 }
 
-div#frainworks h2 {
+.works-content h2 {
 	font-family: My-font;
 	font-size: 23px;
 	font-weight: 300;
 	margin-bottom: 10px;
 }
 
-div#frainworks img {
+.works-content img {
 	width: 850px;
 	max-width: 100%;
 	margin: 5px 0;
 }
 
 @media screen and (max-width:520px) {
-	#frainworks {
-	}
-
-	div#frainworks img {
-		width: 180px;
-	}
-}
-
-/*----------------------
-	works oauthio demo
-----------------------*/
-#oauthio {
-	margin-bottom: 1.5rem;
-}
-
-div#oauthio h2 {
-	font-family: My-font;
-	font-size: 23px;
-	font-weight: 300;
-	margin-bottom: 10px;
-}
-
-div#oauthio img {
-	width: 850px;
-	max-width: 100%;
-	margin: 5px 0;
-}
-
-@media screen and (max-width:520px) {
-	div#oauthio img {
-		width: 180px;
-	}
-}
-
-/*----------------------
-	works hastebin clone
-----------------------*/
-#hastebin {
-	margin-bottom: 1.5rem;
-}
-
-div#hastebin h2 {
-	font-family: My-font;
-	font-size: 23px;
-	font-weight: 300;
-	margin-bottom: 10px;
-}
-
-div#hastebin img {
-	width: 850px;
-	max-width: 100%;
-	margin: 5px 0;
-}
-
-@media screen and (max-width:520px) {
-	div#hastebin img {
+	.wroks-content img {
 		width: 180px;
 	}
 }
@@ -422,7 +350,7 @@ div#hastebin img {
 	padding: 20px 0;
 }
 
-img#user-img {
+.links-content img {
 	max-width: 100%;
 	height: 150px;
 	vertical-align: middle;
@@ -433,7 +361,7 @@ img#user-img {
 	border-image: none;
 }
 
-p#user-name {
+.links-content p {
 	font-family: Lato-bold;
 	font-size: 23px;
 	font-weight: 300;
@@ -454,7 +382,7 @@ footer {
 		border-radius: 32px;
 	}
 
-@media all and (max-width:767px) {
+@media all and (max-width:640px) {
 	footer {
 		margin: 2rem 0;
 	}
@@ -466,6 +394,20 @@ footer {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+
+.mobileHidden {
+	display: none;
+}
+
+@media screen and (min-width:520px) {
+	.desktopHidden {
+		display: none;
+	}
+
+	.mobileHidden {
+		display: inline;
+	}
 }
 
 .red {
