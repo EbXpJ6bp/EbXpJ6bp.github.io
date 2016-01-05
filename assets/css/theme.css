@@ -1,4 +1,4 @@
-@font-face {
+Ôªø@font-face {
 	font-family: 'My-font';
 	src: url(/assets/font/Lato-Light.ttf);
 }
@@ -13,7 +13,7 @@
 }
 
 body {
-	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+	font-family: My-font, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 	font-size: .58rem;
 	letter-spacing: 1px;
 	color: rgb(102, 102, 102);
@@ -23,10 +23,6 @@ body {
 a {
 	color: rgb(102, 102, 102);
 }
-
-	a:hover {
-		color: rgb(41, 171, 226);
-	}
 
 .container {
 	padding: 0;
@@ -59,10 +55,10 @@ h6 {
 		header
 ----------------------*/
 .inner {
-	max-width: 800px;
+	text-align: center;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 20px;
-	text-align: center;
 }
 
 	.inner::after {
@@ -78,12 +74,11 @@ header {
 
 	header a {
 		font-size: 23px;
-		text-decoration: none;
 	}
 
-
-	header#top-head .inner {
-		position: relative;
+	header li:hover {
+		background-color: rgb(238, 238, 238);
+		border-radius: 4px;
 	}
 
 	header#top-head .logo {
@@ -91,21 +86,12 @@ header {
 	}
 
 #global-nav ul {
-	position: absolute;
-	right: 0;
-	bottom: 0;
 	list-style: none;
 }
 
-	#global-nav ul li {
-		position: relative;
-		float: left;
+	#global-nav ul li a {
+		padding: 0 30px;
 	}
-
-		#global-nav ul li a {
-			font-size: 16px;
-			padding: 0 30px;
-		}
 
 #nav-toggle {
 	position: absolute;
@@ -147,22 +133,17 @@ header {
 			top: 22px;
 		}
 
-@media screen and (max-width:980px) {
-	.inner {
-		width: 100%;
-		padding: 0 20px;
-	}
 
-	#global-nav ul li a {
-		padding: 0 20px;
+@media screen and (min-width:770px) {
+	#global-nav ul {
+		display: flex;
+		justify-content: flex-end;
 	}
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:770px) {
 	header {
-		top: 0;
 		width: 100%;
-		margin-top: 0;
 		padding: 0;
 	}
 
@@ -180,10 +161,9 @@ header {
 	}
 
 	#top-head .logo {
-		font-size: .81rem;
 		position: absolute;
 		top: 13px;
-		left: 13px;
+		width: 100%;
 	}
 
 	#global-nav {
@@ -220,8 +200,7 @@ header {
 		line-height: 1px;
 		display: block;
 		width: 100%;
-		/*Ç±Ç±navÇÃçÇÇ≥*/
-		padding: 17px 0;
+		padding: 24.5px 0;
 	}
 
 	#nav-toggle {
@@ -266,7 +245,9 @@ header {
 /*----------------------
 		section
 ----------------------*/
-
+section a:hover {
+	color: rgb(41, 171, 226);
+}
 /*----------------------
 	section-header
 ----------------------*/
@@ -370,7 +351,7 @@ div#frainworks h2 {
 div#frainworks img {
 	margin: 5px 0;
 	max-width: 100%;
-	height: auto;
+	width: 850px;
 }
 
 @media screen and (max-width:520px) {
@@ -399,7 +380,7 @@ div#oauthio h2 {
 div#oauthio img {
 	margin: 5px 0;
 	max-width: 100%;
-	height: auto;
+	width: 850px;
 }
 
 @media screen and (max-width:520px) {
@@ -425,7 +406,7 @@ div#hastebin h2 {
 div#hastebin img {
 	margin: 5px 0;
 	max-width: 100%;
-	height: auto;
+	width: 850px;
 }
 
 @media screen and (max-width:520px) {
@@ -438,8 +419,9 @@ div#hastebin img {
 ----------------------*/
 .links-content {
 	padding: 20px 0;
-	margin-bottom:20px;
+	margin-bottom: 20px;
 }
+
 img#user-img {
 	max-width: 100%;
 	height: 150px;
@@ -481,7 +463,7 @@ footer {
 		Other
 ----------------------*/
 .content {
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 20px;
 }

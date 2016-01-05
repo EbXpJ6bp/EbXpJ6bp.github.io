@@ -60,10 +60,10 @@
 
 					<ul>
 
-						<li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-						<li><a href="/works"><i class="fa fa-briefcase"></i> Works</a></li>
-						<li><a href="/blog"><i class="fa fa-rss"></i> Blog</a></li>
-						<li><a href="/links"><i class="fa fa-link"></i> Links</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/works">Works</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/links">Links</a></li>
 
 					</ul>
 
@@ -222,13 +222,6 @@
 		(function ($) {
 			$(function () {
 				var $header = $('#top-head');
-				$(window).scroll(function () {
-					if ($(window).scrollTop() > 350) {
-						$header.addClass('fixed');
-					} else {
-						$header.removeClass('fixed');
-					}
-				});
 				$('#nav-toggle').click(function () {
 					$header.toggleClass('open');
 				});
