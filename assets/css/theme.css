@@ -8,6 +8,10 @@
 	src: url(/assets/font/Lato-Bold.ttf);
 }
 
+html {
+	overflow-y: scroll;
+}
+
 :root {
 	font-size: 24px;
 }
@@ -76,11 +80,6 @@ header {
 		font-size: 25px;
 	}
 
-	header li:hover {
-		border-radius: 4px;
-		background-color: rgb(238, 238, 238);
-	}
-
 	header#top-head .logo {
 		float: left;
 	}
@@ -96,11 +95,11 @@ header {
 #nav-toggle {
 	position: absolute;
 	z-index: 101;
-	top: 14px;
+	top: 18px;
 	right: 12px;
 	display: none;
 	width: 34px;
-	height: 36px;
+	height: 30px;
 	cursor: pointer;
 }
 
@@ -135,6 +134,24 @@ header {
 
 
 @media screen and (min-width:770px) {
+	#global-nav li#active:after {
+		display: block;
+		height: 2px;
+		content: '';
+		background-color: rgb(214, 154, 117);
+		width: 45%;
+		margin: 0 auto;
+	}
+
+	#global-nav li.inactive:hover:after {
+		display: block;
+		height: 2px;
+		content: '';
+		background-color: rgb(214, 154, 117);
+		width: 45%;
+		margin: 0 auto;
+	}
+
 	#global-nav ul {
 		display: flex;
 		justify-content: flex-end;
