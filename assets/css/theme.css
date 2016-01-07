@@ -8,6 +8,7 @@
 	src: url(/assets/font/Lato-Bold.ttf);
 }
 
+
 html {
 	overflow-y: scroll;
 }
@@ -133,22 +134,56 @@ header {
 		}
 
 
+/*#global-nav li#active:after {
+	-moz-animation: show 0.25s both;
+	-o-animation: show 0.25s both;
+	-webkit-animation: show 0.25s both;
+	animation: show 0.25s both;
+}
+
+@-moz-keyframes show {
+	0% {
+		width: 0;
+	}
+}
+
+@-webkit-keyframes show {
+	0% {
+		width: 0;
+	}
+}
+
+@keyframes show {
+	0% {
+		width: 0;
+	}
+}
+	*/
 @media screen and (min-width:770px) {
+
 	#global-nav li#active:after {
 		display: block;
 		height: 2px;
 		content: '';
-		background-color: rgb(214, 154, 117);
+		background-color: rgb(136, 198, 188);
 		width: 45%;
 		margin: 0 auto;
 	}
 
-	#global-nav li.inactive:hover:after {
+	#global-nav li.inactive:after {
 		display: block;
-		height: 2px;
 		content: '';
-		background-color: rgb(214, 154, 117);
+		width: 0;
+		-moz-transition: 0.25s;
+		-o-transition: 0.25s;
+		-webkit-transition: 0.25s;
+		transition: 0.25s;
+	}
+
+	#global-nav li.inactive:hover:after {
+		background-color: rgb(136, 198, 188);
 		width: 45%;
+		height: 2px;
 		margin: 0 auto;
 	}
 
