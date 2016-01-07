@@ -167,7 +167,7 @@ header {
 		content: '';
 		background-color: rgb(136, 198, 188);
 		width: 45%;
-		margin: 0 auto;
+		margin: 0 27.5%;
 	}
 
 	#global-nav li.inactive:after {
@@ -178,13 +178,13 @@ header {
 		-o-transition: 0.25s;
 		-webkit-transition: 0.25s;
 		transition: 0.25s;
+		margin: 0 27.5%;
 	}
 
 	#global-nav li.inactive:hover:after {
 		background-color: rgb(136, 198, 188);
 		width: 45%;
 		height: 2px;
-		margin: 0 auto;
 	}
 
 	#global-nav ul {
