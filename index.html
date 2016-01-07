@@ -93,31 +93,31 @@
 
 			<section id="section-content" class="white">
 
-					<div class="row gutters profile-content">
+				<div class="row gutters profile-content">
 
-						<div class="col span_7">
+					<div class="col span_7">
 
-							<img src="/assets/img/avatar.png" />
-
-						</div>
-
-						<div class="col span_5">
-
-							<p id="name">Name : EbXpJ6bp</p>
-
-							<p id="bio">Hello World!</p>
-							<p id="bio"> <i class="fa fa-code"></i>: C C++ C++++</p>
-
-							<ul class="social-icon">
-
-								<li><a href="https://twitter.com/EbXpJ6bp"><i class="fa fa-twitter fa-4x"></i></a></li>
-								<li><a href="https://github.com/EbXpJ6bp"><i class="fa fa-github fa-4x"></i></a></li>
-
-							</ul>
-
-						</div>
+						<img src="/assets/img/avatar.png" />
 
 					</div>
+
+					<div class="col span_5">
+
+						<p id="name">Name : EbXpJ6bp</p>
+
+						<p id="bio">Hello World!</p>
+						<p id="bio"> <i class="fa fa-code"></i>: C C++ C++++</p>
+
+						<ul class="social-icon">
+
+							<li><a href="https://twitter.com/EbXpJ6bp"><i class="fa fa-twitter fa-4x"></i></a></li>
+							<li><a href="https://github.com/EbXpJ6bp"><i class="fa fa-github fa-4x"></i></a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
 
 			</section>
 
@@ -143,7 +143,17 @@
 		$(document).ready(function () {
 			NProgress.start();
 		});
+	</script>
 
+	<script>
+		(function () {
+			if (window.document.location.host === 'ebxpj6bp.github.io' && window.document.location.protocol === 'http:') {
+				window.document.location.protocol = 'https:';
+			}
+		}());
+	</script>
+
+	<script>
 		(function ($) {
 			$(function () {
 				var $header = $('#top-head');
