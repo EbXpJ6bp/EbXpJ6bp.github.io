@@ -134,11 +134,11 @@ header {
 		}
 
 
-/*#global-nav li#active:after {
-	-moz-animation: show 0.25s both;
-	-o-animation: show 0.25s both;
-	-webkit-animation: show 0.25s both;
-	animation: show 0.25s both;
+#global-nav li#active:after {
+	-moz-animation: show 0.5s both;
+	-o-animation: show 0.5s both;
+	-webkit-animation: show 0.5s both;
+	animation: show 0.5s both;
 }
 
 @-moz-keyframes show {
@@ -158,7 +158,7 @@ header {
 		width: 0;
 	}
 }
-	*/
+
 @media screen and (min-width:770px) {
 
 	#global-nav li#active:after {
@@ -174,10 +174,10 @@ header {
 		display: block;
 		content: '';
 		width: 0;
-		-moz-transition: 0.25s;
-		-o-transition: 0.25s;
-		-webkit-transition: 0.25s;
-		transition: 0.25s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
 		margin: 0 27.5%;
 	}
 
