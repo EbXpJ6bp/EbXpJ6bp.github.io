@@ -134,7 +134,7 @@ header {
 		}
 
 
-#global-nav li#active:after {
+#global-nav li#active-:after {
 	-moz-animation: show 0.5s both;
 	-o-animation: show 0.5s both;
 	-webkit-animation: show 0.5s both;
@@ -170,10 +170,20 @@ header {
 		margin: 0 27.5%;
 	}
 
+	#global-nav li#active-:after {
+		display: block;
+		height: 2px;
+		content: '';
+		background-color: rgb(136, 198, 188);
+		width: 45%;
+		margin: 0 27.5%;
+	}
+
 	#global-nav li.inactive:after {
 		display: block;
 		content: '';
 		width: 0;
+		height: 2px;
 		-moz-transition: 0.5s;
 		-o-transition: 0.5s;
 		-webkit-transition: 0.5s;
@@ -183,8 +193,10 @@ header {
 
 	#global-nav li.inactive:hover:after {
 		background-color: rgb(136, 198, 188);
+	}
+
+	#global-nav li.inactive:hover::after {
 		width: 45%;
-		height: 2px;
 	}
 
 	#global-nav ul {
