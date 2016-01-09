@@ -167,7 +167,7 @@ header {
 		content: '';
 		background-color: rgb(136, 198, 188);
 		width: 45%;
-		margin: 0 27.5%;
+		margin: 0 auto;
 	}
 
 	#global-nav li#active-:after {
@@ -176,7 +176,7 @@ header {
 		content: '';
 		background-color: rgb(136, 198, 188);
 		width: 45%;
-		margin: 0 27.5%;
+		margin: 0 auto;
 	}
 
 	#global-nav li.inactive:after {
@@ -188,7 +188,7 @@ header {
 		-o-transition: 0.5s;
 		-webkit-transition: 0.5s;
 		transition: 0.5s;
-		margin: 0 27.5%;
+		margin: 0 auto;
 	}
 
 	#global-nav li.inactive:hover:after {
