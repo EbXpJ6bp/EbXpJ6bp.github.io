@@ -76,6 +76,8 @@
 
 					</ul>
 
+					<span></span>
+
 				</nav>
 
 			</div>
@@ -88,7 +90,7 @@
 
 				<div class="content">
 
-					<h1>BLOG</h1>
+					<a href="/blog"><h1>BLOG</h1></a>
 
 					<p>blog</p>
 				</div>
@@ -114,14 +116,28 @@
 	</div>
 
 	<script>
-		(function ($) {
-			$(function () {
-				var $header = $('#top-head');
-				$('#nav-toggle').click(function () {
-					$header.toggleClass('open');
-				});
+		$(function () {
+
+			$('#global-nav span')
+				.css({ width: $('#active').outerWidth(), left: $('#active').position().left });
+
+			$('#global-nav li')
+				.mouseover(function () { $('#global-nav span').stop().animate({ width: $(this).outerWidth(), left: $(this).position().left }, 'fast'); })
+				.mouseout(function () { $('#global-nav span').animate({ width: $('#active').outerWidth(), left: $('#active').position().left }, 'fast'); })
+
+			var $header = $('#top-head');
+			$('#nav-toggle').click(function () { $header.toggleClass('open'); });
+
+			var timer = false;
+			$(window).resize(function () {
+				if (timer !== false) {
+					clearTimeout(timer);
+				}
+				timer = setTimeout(function () {
+					$('#global-nav span').animate({ width: $('#active').outerWidth(), left: $('#active').position().left }, 'fast');
+				}, 200);
 			});
-		})(jQuery);
+		});
 	</script>
 
 </body>

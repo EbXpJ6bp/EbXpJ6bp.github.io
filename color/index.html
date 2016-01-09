@@ -75,6 +75,8 @@
 
 					</ul>
 
+					<span></span>
+
 				</nav>
 
 			</div>
@@ -207,14 +209,15 @@
 	</div>
 
 	<script>
-		(function ($) {
-			$(function () {
-				var $header = $('#top-head');
-				$('#nav-toggle').click(function () {
-					$header.toggleClass('open');
-				});
-			});
-		})(jQuery);
+		$(function () {
+
+			$('#global-nav li')
+				.mouseover(function () { $('#global-nav span').stop().animate({ width: $(this).outerWidth(), left: $(this).position().left }, 'fast'); })
+
+			var $header = $('#top-head');
+			$('#nav-toggle').click(function () { $header.toggleClass('open'); });
+
+		});
 	</script>
 
 </body>

@@ -135,10 +135,10 @@ header {
 
 
 #global-nav li#active-:after {
-	-moz-animation: show 0.5s both;
-	-o-animation: show 0.5s both;
-	-webkit-animation: show 0.5s both;
-	animation: show 0.5s both;
+	-webkit-animation: show .5s both;
+	-moz-animation: show .5s both;
+	-o-animation: show .5s both;
+	animation: show .5s both;
 }
 
 @-moz-keyframes show {
@@ -160,35 +160,34 @@ header {
 }
 
 @media screen and (min-width:770px) {
-
 	#global-nav li#active:after {
 		display: block;
+		width: 45%;
 		height: 2px;
+		margin: 0 auto;
 		content: '';
 		background-color: rgb(136, 198, 188);
-		width: 45%;
-		margin: 0 auto;
 	}
 
 	#global-nav li#active-:after {
 		display: block;
+		width: 45%;
 		height: 2px;
+		margin: 0 auto;
 		content: '';
 		background-color: rgb(136, 198, 188);
-		width: 45%;
-		margin: 0 auto;
 	}
 
 	#global-nav li.inactive:after {
 		display: block;
-		content: '';
 		width: 0;
 		height: 2px;
-		-moz-transition: 0.5s;
-		-o-transition: 0.5s;
-		-webkit-transition: 0.5s;
-		transition: 0.5s;
 		margin: 0 auto;
+		content: '';
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+		-o-transition: .5s;
+		transition: .5s;
 	}
 
 	#global-nav li.inactive:hover:after {
@@ -199,10 +198,26 @@ header {
 		width: 45%;
 	}
 
-	#global-nav ul {
-		display: flex;
-		justify-content: flex-end;
+	#global-nav {
+		position: relative;
 	}
+
+		#global-nav ul {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		#global-nav span {
+			position: absolute;
+			/*
+			background-color: rgb(136, 198, 188);
+			height: 2px;
+			position: absolute;*/
+			display: none;
+			width: 0;
+			height: 0;
+			background-color: rgb(136, 198, 188);
+		}
 }
 
 @media screen and (max-width:770px) {
@@ -259,6 +274,14 @@ header {
 				#global-nav ul li::after {
 					display: none;
 				}
+
+		#global-nav span {
+			position: absolute;
+			display: none;
+			width: 0;
+			height: 0;
+			background-color: rgb(136, 198, 188);
+		}
 
 	#top-head #global-nav ul li a {
 		line-height: 1px;
@@ -328,14 +351,22 @@ section#section-header {
 		margin: 0 0 1em 0;
 	}
 
-		section#section-header h1:after {
-			display: block;
-			width: 18px;
-			height: 1px;
-			margin-top: .2em;
-			content: '';
-			background-color: rgb(255, 255, 255);
+	section#section-header a {
+		color: rgb(255, 255, 255);
+	}
+
+		section#section-header a:hover {
+			color: rgb(255, 255, 255);
 		}
+
+	section#section-header h1:after {
+		display: block;
+		width: 18px;
+		height: 1px;
+		margin-top: .2em;
+		content: '';
+		background-color: rgb(255, 255, 255);
+	}
 
 	section#section-header p {
 		font-size: 22px;
@@ -494,7 +525,6 @@ footer {
 }
 
 .blue {
-	/*background-color: rgba(117, 177, 214,.9);*/
 	background-color: rgb(117,177,214);
 }
 

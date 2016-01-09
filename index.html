@@ -71,12 +71,14 @@
 
 					<ul>
 
-						<li id="active-"><a href="/">Home</a></li>
+						<li id="active"><a href="/">Home</a></li>
 						<li class="inactive"><a href="/works">Works</a></li>
 						<li class="inactive"><a href="/blog">Blog</a></li>
 						<li class="inactive"><a href="/links">Links</a></li>
 
 					</ul>
+
+					<span></span>
 
 				</nav>
 
@@ -90,7 +92,7 @@
 
 				<div class="content">
 
-					<h1>PROFILE</h1>
+					<a href="/"><h1>PROFILE</h1></a>
 
 
 					<p>profile</p>
@@ -142,14 +144,28 @@
 	</div>
 
 	<script>
-		(function ($) {
-			$(function () {
-				var $header = $('#top-head');
-				$('#nav-toggle').click(function () {
-					$header.toggleClass('open');
-				});
+		$(function () {
+
+			$('#global-nav span')
+				.css({ width: $('#active').outerWidth(), left: $('#active').position().left });
+
+			$('#global-nav li')
+				.mouseover(function () { $('#global-nav span').stop().animate({ width: $(this).outerWidth(), left: $(this).position().left }, 'fast'); })
+				.mouseout(function () { $('#global-nav span').animate({ width: $('#active').outerWidth(), left: $('#active').position().left }, 'fast'); })
+
+			var $header = $('#top-head');
+			$('#nav-toggle').click(function () { $header.toggleClass('open'); });
+
+			var timer = false;
+			$(window).resize(function () {
+				if (timer !== false) {
+					clearTimeout(timer);
+				}
+				timer = setTimeout(function () {
+					$('#global-nav span').animate({ width: $('#active').outerWidth(), left: $('#active').position().left }, 'fast');
+				}, 200);
 			});
-		})(jQuery);
+		});
 	</script>
 
 </body>
