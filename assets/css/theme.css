@@ -437,7 +437,7 @@ section#section-content {
 	}
 }
 /*----------------------
-		link
+		links
 ----------------------*/
 .links-content {
 	margin-bottom: 20px;
@@ -461,6 +461,14 @@ section#section-content {
 		font-weight: 300;
 		margin-top: 11px;
 	}
+
+/*----------------------
+		error
+----------------------*/
+.error-content {
+	text-align:center;
+	font-size: 25px;
+}
 /*----------------------
 		footer
 ----------------------*/
