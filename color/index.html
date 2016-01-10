@@ -75,8 +75,6 @@
 
 					</ul>
 
-					<span></span>
-
 				</nav>
 
 			</div>
@@ -211,12 +209,16 @@
 	<script>
 		$(function () {
 
-			$('#global-nav li')
-				.mouseover(function () { $('#global-nav span').stop().animate({ width: $(this).outerWidth(), left: $(this).position().left }, 'fast'); })
-
 			var $header = $('#top-head');
 			$('#nav-toggle').click(function () { $header.toggleClass('open'); });
 
+		});
+
+		$.pjax({
+			area: 'body',
+			load: { head: 'base, meta, link', css: true, script: false },
+			link: 'a:not([target])',
+			cache: { click: true, submit: false, popstate: true }
 		});
 	</script>
 

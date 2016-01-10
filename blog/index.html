@@ -37,8 +37,10 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script rel="javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
+	<script rel="text/javascript" src="/assets/js/jquery.pjax.js"></script>
 
 </head>
+
 <body>
 
 	<div class="container">
@@ -76,8 +78,6 @@
 
 					</ul>
 
-					<span></span>
-
 				</nav>
 
 			</div>
@@ -97,11 +97,7 @@
 
 			</section>
 
-			<section id="search" class="white">
-
-
-
-			</section>
+			<section id="search" class="white"></section>
 
 		</main>
 
@@ -118,25 +114,16 @@
 	<script>
 		$(function () {
 
-			$('#global-nav span')
-				.css({ width: $('#active').outerWidth(), left: $('#active').position().left });
-
-			$('#global-nav li')
-				.mouseover(function () { $('#global-nav span').stop().animate({ width: $(this).outerWidth(), left: $(this).position().left }, 'fast'); })
-				.mouseout(function () { $('#global-nav span').animate({ width: $('#active').outerWidth(), left: $('#active').position().left }, 'fast'); })
-
 			var $header = $('#top-head');
 			$('#nav-toggle').click(function () { $header.toggleClass('open'); });
 
-			var timer = false;
-			$(window).resize(function () {
-				if (timer !== false) {
-					clearTimeout(timer);
-				}
-				timer = setTimeout(function () {
-					$('#global-nav span').animate({ width: $('#active').outerWidth(), left: $('#active').position().left }, 'fast');
-				}, 200);
-			});
+		});
+
+		$.pjax({
+			area: 'body',
+			load: { head: 'base, meta, link', css: true, script: false },
+			link: 'a:not([target])',
+			cache: { click: true, submit: false, popstate: true }
 		});
 	</script>
 

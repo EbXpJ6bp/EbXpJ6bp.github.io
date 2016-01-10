@@ -206,18 +206,6 @@ header {
 			display: flex;
 			justify-content: flex-end;
 		}
-
-		#global-nav span {
-			position: absolute;
-			/*
-			background-color: rgb(136, 198, 188);
-			height: 2px;
-			position: absolute;*/
-			display: none;
-			width: 0;
-			height: 0;
-			background-color: rgb(136, 198, 188);
-		}
 }
 
 @media screen and (max-width:770px) {
@@ -274,14 +262,6 @@ header {
 				#global-nav ul li::after {
 					display: none;
 				}
-
-		#global-nav span {
-			position: absolute;
-			display: none;
-			width: 0;
-			height: 0;
-			background-color: rgb(136, 198, 188);
-		}
 
 	#top-head #global-nav ul li a {
 		line-height: 1px;
