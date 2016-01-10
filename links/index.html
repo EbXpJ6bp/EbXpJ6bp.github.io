@@ -36,6 +36,14 @@
 	<!-- Javascript
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script rel="javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script>
+		$(function () {
+
+			var $header = $('#top-head');
+			$('#nav-toggle').click(function () { $header.toggleClass('open'); });
+
+		});
+	</script>
 	<script rel="text/javascript" src="/assets/js/jquery.pjax.js"></script>
 
 </head>
@@ -221,18 +229,9 @@
 	</div>
 
 	<script>
-		$(function () {
-
-			var $header = $('#top-head');
-			$('#nav-toggle').click(function () { $header.toggleClass('open'); });
-
-		});
-
 		$.pjax({
 			area: 'body',
-			load: { head: 'base, meta, link', css: true, script: false },
 			link: 'a:not([target])',
-			cache: { click: true, submit: false, popstate: true }
 		});
 	</script>
 
