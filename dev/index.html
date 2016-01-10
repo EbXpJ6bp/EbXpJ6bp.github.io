@@ -6,7 +6,7 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="UTF-8">
 	<title>
-		Links :: ebxpj6bp
+		Color :: ebxpj6bp dev
 	</title>
 
 	<!-- Mobile Specific Metas
@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="/assets/css/sanitize.css">
 	<link rel="stylesheet" href="/assets/css/responsive.css">
 	<link rel="stylesheet" href="/assets/css/theme.css">
+	<link rel="stylesheet" href="StyleSheet.css" />
 
 	<!-- Font
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -56,7 +57,7 @@
 
 				<div id="mobile-head">
 
-					<h1 class="logo"><a href="/">EbXpJ6bp</a></h1>
+					<h1 class="logo"><a href="/">EbXpJ6bp dev</a></h1>
 
 					<div id="nav-toggle">
 
@@ -76,10 +77,8 @@
 
 					<ul>
 
-						<li><a href="/">Home</a></li>
-						<li><a href="/works">Works</a></li>
-						<li><a href="/blog">Blog</a></li>
-						<li><a href="/links">Links</a></li>
+						<li class="inactive"><a href="/">Home</a></li>
+						<li class="inactive"><a href="/dev">Dev</a></li>
 
 					</ul>
 
@@ -90,114 +89,25 @@
 		</header>
 
 		<main id="index">
-
 			<section id="section-header" class="red">
 
 				<div class="content">
 
-					<h1 class="section-header-title">RED</h1>
+					<a href="color"><h1 class="section-header-title">COLOR</h1></a>
 
-					<p class="section-header-msg">red</p>
+					<p class="section-header-msg">color</p>
 				</div>
 
 			</section>
 
-			<!--IDが重複しているのは面倒だから-->
 			<section id="section-header" class="pink">
 
 				<div class="content">
 
-					<h1 class="section-header-title">PINK</h1>
+					<a href="weather"><h1 class="section-header-title">WEATHER ANIMATION</h1></a>
 
-					<p class="section-header-msg">pink</p>
-				</div>
+					<p class="section-header-msg">weather animation</p>
 
-			</section>
-
-			<section id="section-header" class="orange">
-
-				<div class="content">
-
-					<h1 class="section-header-title">ORANGE</h1>
-
-					<p class="section-header-msg">orange</p>
-				</div>
-
-			</section>
-
-			<section id="section-header" class="light-green">
-
-				<div class="content">
-
-					<h1 class="section-header-title">LIGHTGREEN</h1>
-
-					<p class="section-header-msg">light-green</p>
-				</div>
-
-			</section>
-
-			<section id="section-header" class="green">
-
-				<div class="content">
-
-					<h1 class="section-header-title">GREEN</h1>
-
-					<p class="section-header-msg">green</p>
-				</div>
-
-			</section>
-
-			<section id="section-header" class="blue">
-
-				<div class="content">
-
-					<h1 class="section-header-title">BLUE</h1>
-
-					<p class="section-header-msg">blue</p>
-				</div>
-
-			</section>
-
-			<section id="section-header" class="dark-blue">
-
-				<div class="content">
-
-					<h1 class="section-header-title">DARKBLUE</h1>
-
-					<p class="section-header-msg">dark-blue</p>
-				</div>
-
-			</section>
-
-			<section id="section-header" class="purple">
-
-				<div class="content">
-
-					<h1 class="section-header-title">PURPLE</h1>
-
-					<p class="section-header-msg">purple</p>
-				</div>
-
-			</section>
-
-			<section id="section-header" class="light-black">
-
-				<div class="content">
-
-					<h1 class="section-header-title">BLACK</h1>
-
-					<p class="section-header-msg">black</p>
-				</div>
-
-			</section>
-
-			<section id="section-header" class="white">
-
-				<div class="content">
-
-					<h1 class="hoge-title">WHITE</h1>
-
-					<p class="hoge-msg">white</p>
 				</div>
 
 			</section>
@@ -213,15 +123,6 @@
 		</footer>
 
 	</div>
-
-	<script>
-		$.pjax({
-			area: 'body',
-			load: { head: 'base, meta, link', css: true, script: true },
-			link: 'a:not([target])',
-			cache: { click: true, submit: false, popstate: true }
-		});
-	</script>
 
 </body>
 

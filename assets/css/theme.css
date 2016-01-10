@@ -573,7 +573,9 @@ footer {
 	.social-icon a:hover .fa-github {
 		color: rgb(255, 153, 51);
 	}
-
+/*----------------------
+		Styles
+----------------------*/
 h1.hoge-title {
 	font-family: My-font;
 	font-size: 300%;
