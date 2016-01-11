@@ -271,7 +271,7 @@ a {
 		width: 1px;
 	}
 
-@-moz-keyframes main {
+@-moz-keyframes header {
 	0% {
 		-moz-transform: translate3d(0,1em,0);
 		-webkit-transform: translate3d(0,1em,0);
@@ -291,7 +291,7 @@ a {
 	}
 }
 
-@-webkit-keyframes main {
+@-webkit-keyframes header {
 	0% {
 		-moz-transform: translate3d(0,1em,0);
 		-webkit-transform: translate3d(0,1em,0);
@@ -311,7 +311,7 @@ a {
 	}
 }
 
-@-ms-keyframes main {
+@-ms-keyframes header {
 	0% {
 		-moz-transform: translate3d(0,1em,0);
 		-webkit-transform: translate3d(0,1em,0);
@@ -331,7 +331,7 @@ a {
 	}
 }
 
-@keyframes main {
+@keyframes header {
 	0% {
 		-moz-transform: translate3d(0,1em,0);
 		-webkit-transform: translate3d(0,1em,0);
@@ -431,11 +431,11 @@ a {
 	}
 }
 
-main {
-	-moz-animation: main 1s 2.25s forwards;
-	-webkit-animation: main 1s 2.25s forwards;
-	-o-animation: main 1s 2.25s forwards;
-	animation: main 1s 2.25s forwards;
+header {
+	-moz-animation: header 1s 2.25s forwards;
+	-webkit-animation: header 1s 2.25s forwards;
+	-o-animation: header 1s 2.25s forwards;
+	animation: header 1s 2.25s forwards;
 	-moz-backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -454,24 +454,24 @@ main {
 	width: 90%;
 }
 
-	main h1 {
+	header h1 {
 		font-size: 4.35em;
 		font-weight: 900;
 		letter-spacing: -0.035em;
 		line-height: 1em;
 	}
 
-	main p {
+	header p {
 		font-size: 1.25em;
 		margin: 0.75em 0 0.25em 0;
 		opacity: 0.75;
 	}
 
-	main nav {
+	header nav {
 		margin: 1.5em 0 0 0;
 	}
 
-		main nav li {
+		header nav li {
 			-moz-animation: nav-icons 0.5s ease-in-out forwards;
 			-webkit-animation: nav-icons 0.5s ease-in-out forwards;
 			-o-animation: nav-icons 0.5s ease-in-out forwards;
@@ -493,84 +493,84 @@ main {
 			width: 5.35em;
 		}
 
-			main nav li:nth-child(1) {
+			header nav li:nth-child(1) {
 				-moz-animation-delay: 2.5s;
 				-webkit-animation-delay: 2.5s;
 				-o-animation-delay: 2.5s;
 				animation-delay: 2.5s;
 			}
 
-			main nav li:nth-child(2) {
+			header nav li:nth-child(2) {
 				-moz-animation-delay: 2.75s;
 				-webkit-animation-delay: 2.75s;
 				-o-animation-delay: 2.75s;
 				animation-delay: 2.75s;
 			}
 
-			main nav li:nth-child(3) {
+			header nav li:nth-child(3) {
 				-moz-animation-delay: 3s;
 				-webkit-animation-delay: 3s;
 				-o-animation-delay: 3s;
 				animation-delay: 3s;
 			}
 
-			main nav li:nth-child(4) {
+			header nav li:nth-child(4) {
 				-moz-animation-delay: 3.25s;
 				-webkit-animation-delay: 3.25s;
 				-o-animation-delay: 3.25s;
 				animation-delay: 3.25s;
 			}
 
-			main nav li:nth-child(5) {
+			header nav li:nth-child(5) {
 				-moz-animation-delay: 3.5s;
 				-webkit-animation-delay: 3.5s;
 				-o-animation-delay: 3.5s;
 				animation-delay: 3.5s;
 			}
 
-			main nav li:nth-child(6) {
+			header nav li:nth-child(6) {
 				-moz-animation-delay: 3.75s;
 				-webkit-animation-delay: 3.75s;
 				-o-animation-delay: 3.75s;
 				animation-delay: 3.75s;
 			}
 
-			main nav li:nth-child(7) {
+			header nav li:nth-child(7) {
 				-moz-animation-delay: 4s;
 				-webkit-animation-delay: 4s;
 				-o-animation-delay: 4s;
 				animation-delay: 4s;
 			}
 
-			main nav li:nth-child(8) {
+			header nav li:nth-child(8) {
 				-moz-animation-delay: 4.25s;
 				-webkit-animation-delay: 4.25s;
 				-o-animation-delay: 4.25s;
 				animation-delay: 4.25s;
 			}
 
-			main nav li:nth-child(9) {
+			header nav li:nth-child(9) {
 				-moz-animation-delay: 4.5s;
 				-webkit-animation-delay: 4.5s;
 				-o-animation-delay: 4.5s;
 				animation-delay: 4.5s;
 			}
 
-			main nav li:nth-child(10) {
+			header nav li:nth-child(10) {
 				-moz-animation-delay: 4.75s;
 				-webkit-animation-delay: 4.75s;
 				-o-animation-delay: 4.75s;
 				animation-delay: 4.75s;
 			}
 
-		main nav a {
+		header nav a {
 			-webkit-tap-highlight-color: transparent;
 			-webkit-touch-callout: none;
 			border: 0;
 			display: inline-block;
 		}
 
-			main nav a:before {
+			header nav a:before {
 				-moz-transition: all 0.2s ease-in-out;
 				-webkit-transition: all 0.2s ease-in-out;
 				-o-transition: all 0.2s ease-in-out;
@@ -587,26 +587,26 @@ main {
 				width: 2.5em;
 			}
 
-			main nav a:hover {
+			header nav a:hover {
 				font-size: 1.1em;
 			}
 
-				main nav a:hover:before {
+				header nav a:hover:before {
 					background-color: rgba(255, 255, 255, 0.175);
 					color: #fff;
 				}
 
-			main nav a:active {
+			header nav a:active {
 				font-size: 0.95em;
 				background: none;
 			}
 
-				main nav a:active:before {
+				header nav a:active:before {
 					background-color: rgba(255, 255, 255, 0.35);
 					color: #fff;
 				}
 
-			main nav a span {
+			header nav a span {
 				display: none;
 			}
 
@@ -878,23 +878,23 @@ footer {
 		width: 900px;
 	}
 
-	main h1 {
+	header h1 {
 		font-size: 2.5em;
 	}
 
-	main p {
+	header p {
 		font-size: 1em;
 	}
 
-	main nav {
+	header nav {
 		font-size: 1em;
 	}
 
-		main nav a:hover {
+		header nav a:hover {
 			font-size: 1em;
 		}
 
-		main nav a:active {
+		header nav a:active {
 			font-size: 1em;
 		}
 }
@@ -978,7 +978,7 @@ footer {
 		width: 1237.5px;
 	}
 
-	main nav {
+	header nav {
 		padding: 0 1em;
 	}
 }
