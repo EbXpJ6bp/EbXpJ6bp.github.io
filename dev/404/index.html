@@ -1,11 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
 
 	<!-- Basic Page Needs
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-        <meta charset="UTF-8">
-        <title>404 :: Not Found</title>
+		<meta charset="UTF-8">
+		<title>404 :: Not Found</title>
+
+	<!-- HTTPS Redirect
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script>
+		(function () {
+			if (window.document.location.host === 'ebxpj6bp.github.io' && window.document.location.protocol === 'http:') {
+				window.document.location.protocol = 'https:';
+			}
+		}());
+	</script>
 
 </head>
 <body>
@@ -44,6 +54,6 @@
 	<main class="center" role="main">
 		<p class="title">404</p>
 		<p class="subtitle">Not Found</p>
-	</div>
+	</main>
 </body>
 </html>
