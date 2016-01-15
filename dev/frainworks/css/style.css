@@ -1,6 +1,16 @@
+@font-face {
+	font-family: 'My-font';
+	src: url(/assets/font/Lato-Light.ttf);
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url(/assets/font/Lato-Bold.ttf);
+}
+
 /* -------------------------------- 
 
-Primary style
+Primary style PT Sans
 
 -------------------------------- */
 *, *::after, *::before {
@@ -15,7 +25,7 @@ html {
 
 body {
 	font-size: 1.6rem;
-	font-family: "PT Sans", sans-serif;
+	font-family: "My-Font", sans-serif;
 	color: #83b0b9;
 	background-color: #343943;
 }
@@ -140,6 +150,16 @@ Navigation
 
 .cd-side-navigation li:nth-of-type(4) .selected > svg *,
 .cd-side-navigation li:nth-of-type(4) .selected:hover > svg * {
+	stroke: #d67580;
+}
+
+.cd-side-navigation li:nth-of-type(5) .selected > svg *,
+.cd-side-navigation li:nth-of-type(5) .selected:hover > svg * {
+	stroke: #d69a75;
+}
+
+.cd-side-navigation li:nth-of-type(6) .selected > svg *,
+.cd-side-navigation li:nth-of-type(6) .selected:hover > svg * {
 	stroke: #e4b162;
 }
 
@@ -152,6 +172,14 @@ Navigation
 }
 
 .cd-side-navigation li:nth-of-type(4) a::after {
+	background-color: #d67580;
+}
+
+.cd-side-navigation li:nth-of-type(5) a::after {
+	background-color: #d69a75;
+}
+
+.cd-side-navigation li:nth-of-type(6) a::after {
 	background-color: #e4b162;
 }
 
@@ -220,7 +248,7 @@ Navigation
 	}
 
 	.cd-section.index header {
-		background-color: rgb(245, 245, 245);
+		background-color: #fff;
 	}
 
 	.cd-section.works header {
@@ -229,6 +257,14 @@ Navigation
 
 	.cd-section.staff header {
 		background-color: #343943;
+	}
+
+	.cd-section.donate header {
+		background-color: #d67580;
+	}
+
+	.cd-section.join header {
+		background-color: #d69a75;
 	}
 
 	.cd-section.contact header {
@@ -403,10 +439,6 @@ Navigation
 	-ms-transform: translateZ(0);
 	-o-transform: translateZ(0);
 	opacity: 0;
-	-webkit-transform: translateY(-50%) translateX(-80px);
-	-moz-transform: translateY(-50%) translateX(-80px);
-	-ms-transform: translateY(-50%) translateX(-80px);
-	-o-transform: translateY(-50%) translateX(-80px);
 	transform: translateZ(0);
 	transform: translateY(-50%) translateX(-80px);
 	-webkit-transition: -webkit-transform 0s 0.5s, opacity 0s 0.5s;
@@ -500,6 +532,14 @@ Navigation
 
 	#cd-loading-bar.staff {
 		background-color: #343943;
+	}
+
+	#cd-loading-bar.donate {
+		background-color: #d67580;
+	}
+
+	#cd-loading-bar.join {
+		background-color: #d69a75;
 	}
 
 	#cd-loading-bar.contact {
