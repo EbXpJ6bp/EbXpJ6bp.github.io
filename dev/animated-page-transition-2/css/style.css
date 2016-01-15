@@ -219,6 +219,10 @@ Navigation
 		overflow: hidden;
 	}
 
+	.cd-section.index header {
+		background-color: rgb(245, 245, 245);
+	}
+
 	.cd-section.works header {
 		background-color: #d35657;
 	}
@@ -486,7 +490,7 @@ Navigation
 	transform: translateZ(0);
 }
 
-	#cd-loading-bar.index {
+	#cd-loading-bar.frainworks {
 		background-color: #83b0b9;
 	}
 
