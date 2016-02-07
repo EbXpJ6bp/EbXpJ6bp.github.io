@@ -1,12 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
+
 <head>
 
 	<!-- Basic Page Needs
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="UTF-8">
+
 	<title>
-		404 :: ebxpj6bp
+		Home :: ebxpj6bp
 	</title>
 
 	<!-- Mobile Specific Metas
@@ -25,13 +27,17 @@
 
 	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="/assets/css/sanitize.css">
-	<link rel="stylesheet" href="/assets/css/responsive.css">
-	<link rel="stylesheet" href="/assets/css/theme.css">
+	<link rel="stylesheet" href="/old/assets/css/sanitize.css">
+	<link rel="stylesheet" href="/old/assets/css/responsive.css">
+	<link rel="stylesheet" href="/old/assets/css/theme.css">
+
+	<!-- Font
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- Javascript
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script rel="text/javascript" src="/assets/js/jquery.js"></script>
+	<script rel="text/javascript" src="/old/assets/js/jquery.js"></script>
 	<script>
 		$(function () {
 
@@ -42,6 +48,7 @@
 	</script>
 
 </head>
+
 <body>
 
 	<div class="container">
@@ -52,7 +59,7 @@
 
 				<div id="mobile-head">
 
-					<h1 class="logo"><a href="/">EbXpJ6bp</a></h1>
+					<h1 class="logo"><a href="/old">EbXpJ6bp</a></h1>
 
 					<div id="nav-toggle">
 
@@ -72,12 +79,13 @@
 
 					<ul>
 
-						<li class="inactive"><a href="/">Home</a></li>
-						<li class="inactive"><a href="/works">Works</a></li>
-						<li class="inactive"><a href="/blog">Blog</a></li>
-						<li class="inactive"><a href="/links">Links</a></li>
+						<li id="active-"><a href="/old/">Home</a></li>
+						<li class="inactive"><a href="/old/works">Works</a></li>
+						<li class="inactive"><a href="/old/blog">Blog</a></li>
+						<li class="inactive"><a href="/old/links">Links</a></li>
 
 					</ul>
+
 
 				</nav>
 
@@ -85,15 +93,16 @@
 
 		</header>
 
-		<main id="index">
+		<main id="index" role="main">
 
-			<section id="section-header" class="red">
+			<section id="section-header" class="blue">
 
 				<div class="content">
 
-					<a href="/"><h1>404 ERROR</h1></a>
+					<a href="/"><h1>PROFILE</h1></a>
 
-					<p>NotFound</p>
+
+					<p>profile</p>
 
 				</div>
 
@@ -101,9 +110,29 @@
 
 			<section id="section-content" class="white">
 
-				<div class="content error-content">
+				<div class="row gutters profile-content">
 
-					・<a href="javascript:history.back()">BackPage</a>
+					<div class="col span_7">
+
+						<img src="/old/assets/img/avatar.png" />
+
+					</div>
+
+					<div class="col span_5">
+
+						<p id="name">Name : EbXpJ6bp</p>
+
+						<p id="bio">Hello World!</p>
+						<p id="bio"> <i class="fa fa-code"></i>: C C++ C++++</p>
+
+						<ul class="social-icon">
+
+							<li><a href="https://twitter.com/EbXpJ6bp"><i class="fa fa-twitter fa-4x"></i></a></li>
+							<li><a href="https://github.com/EbXpJ6bp"><i class="fa fa-github fa-4x"></i></a></li>
+
+						</ul>
+
+					</div>
 
 				</div>
 

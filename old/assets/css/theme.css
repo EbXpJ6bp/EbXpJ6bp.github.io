@@ -1,11 +1,11 @@
 ﻿@font-face {
 	font-family: 'My-font';
-	src: url(/assets/font/Lato-Light.ttf);
+	src: url(/old/assets/font/Lato-Light.ttf);
 }
 
 @font-face {
 	font-family: 'Lato-Bold';
-	src: url(/assets/font/Lato-Bold.ttf);
+	src: url(/old/assets/font/Lato-Bold.ttf);
 }
 
 
@@ -391,6 +391,7 @@ section#section-content {
 	font-family: My-font;
 	font-size: 20px;
 	margin-top: 10px;
+	height: 70px;
 }
 /*----------------------
 		works

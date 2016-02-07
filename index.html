@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="ja">
 
 <head>
@@ -6,14 +6,13 @@
 	<!-- Basic Page Needs
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="UTF-8">
-
 	<title>
-		Home :: ebxpj6bp
+		EbXpJ6bp
 	</title>
 
 	<!-- Mobile Specific Metas
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- HTTPS Redirect
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,128 +26,119 @@
 
 	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="/assets/css/sanitize.css">
-	<link rel="stylesheet" href="/assets/css/responsive.css">
-	<link rel="stylesheet" href="/assets/css/theme.css">
+	<link rel="stylesheet" href="/assets/css/reset.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
 
 	<!-- Font
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<!-- Javascript
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script rel="text/javascript" src="/assets/js/jquery.js"></script>
-	<script>
-		$(function () {
-
-			var $header = $('#top-head');
-			$('#nav-toggle').click(function () { $header.toggleClass('open'); });
-
-		});
-	</script>
-
 </head>
 
 <body>
 
-	<div class="container">
+	<header style="background-color:#333; color:#fff; padding:10px 20px; font-size:25px; text-align:right">
+		編集中
+		 →<a href="/old">OLD</a>
+	</header>
 
-		<header id="top-head" role="banner" class="white">
+	<main id="index" role="main">
 
-			<div class="inner">
-
-				<div id="mobile-head">
-
-					<h1 class="logo"><a href="/">EbXpJ6bp</a></h1>
-
-					<div id="nav-toggle">
-
-						<div>
-
-							<span></span>
-							<span></span>
-							<span></span>
-
-						</div>
-
-					</div>
-
+		<section id="head">
+			<div class="head-wrapper">
+				<img src="/assets/img/avatar.png" />
+				<h2>EbXpJ6bp</h2>
+				<div class="vio">
+					<p>こんにちはせかい</p>
 				</div>
-
-				<nav id="global-nav">
-
-					<ul>
-
-						<li id="active-"><a href="/">Home</a></li>
-						<li class="inactive"><a href="/works">Works</a></li>
-						<li class="inactive"><a href="/blog">Blog</a></li>
-						<li class="inactive"><a href="/links">Links</a></li>
-
-					</ul>
-
-
-				</nav>
-
+				<ul>
+					<li><a href="https://twitter.com/EbXpJ6bp"><i class="fa fa-twitter fa-3x"></i></a></li>
+					<li><a href="https://github.com/EbXpJ6bp"><i class="fa fa-github fa-3x"></i></a></li>
+				</ul>
 			</div>
+		</section>
 
-		</header>
-
-		<main id="index" role="main">
-
-			<section id="section-header" class="blue">
-
-				<div class="content">
-
-					<a href="/"><h1>PROFILE</h1></a>
-
-
-					<p>profile</p>
-
+		<section id="skills">
+			<div class="skills-wrapper">
+				<h2>Skills</h2>
+				<div class="skills-card">
+					<div class="chart easyPieChart" data-percent="30">C / C++<canvas></canvas></div>
+					<div class="chart easyPieChart" data-percent="10">C#<canvas></canvas></div>
+					<div class="chart easyPieChart" data-percent="50">HTML/CSS<canvas></canvas></div>
+					<div class="chart easyPieChart" data-percent="05">Electron<canvas></canvas></div>
+					<div class="chart easyPieChart" data-percent="03">Security<canvas></canvas></div>
 				</div>
-
-			</section>
-
-			<section id="section-content" class="white">
-
-				<div class="row gutters profile-content">
-
-					<div class="col span_7">
-
-						<img src="/assets/img/avatar.png" />
-
-					</div>
-
-					<div class="col span_5">
-
-						<p id="name">Name : EbXpJ6bp</p>
-
-						<p id="bio">Hello World!</p>
-						<p id="bio"> <i class="fa fa-code"></i>: C C++ C++++</p>
-
-						<ul class="social-icon">
-
-							<li><a href="https://twitter.com/EbXpJ6bp"><i class="fa fa-twitter fa-4x"></i></a></li>
-							<li><a href="https://github.com/EbXpJ6bp"><i class="fa fa-github fa-4x"></i></a></li>
-
-						</ul>
-
-					</div>
-
-				</div>
-
-			</section>
-
-		</main>
-
-		<footer role="contentinfo">
-
-			<div style="text-align:center;">
-				©Copyright 2015-2016 EbXpJ6bp.
 			</div>
+		</section>
 
-		</footer>
+		<section id="about1">
+			<div class="about1-wrapper">
+				<p>はじめまして。</p>
+				<p>高専に通っていて、frainworksで活動してます。</p>
+				<p>最近はCTFに興味があります。</p>
+			</div>
+		</section>
 
-	</div>
+		<section id="history">
+			<div class="history-wrapper">
+				<h2>History</h2>
+				<ul class="timeline">
+					<li class="event" data-date="2013 Apr.">
+						<h3>PCと出会う</h3>
+						<p>きっかけは、Minecraft</p>
+					</li>
+					<li class="event" data-date="2015 Mar.">
+						<h3>frainworksに出会う</h3>
+						<p>なぜか、勢いで入った</p>
+					</li>
+					<li class="event" data-date="2015 Apr.">
+						<h3>いろいろな言語と出会う</h3>
+						<p>C/C++などいろいろな言語と出会う。</p>
+					</li>
+					<li class="event" data-date="2016 Jan.">
+						<h3>いろいろな暗号と出会う</h3>
+						<p>暗号技術入門 秘密の国のアリスに出会い勉強を始める。</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="about2">
+			<div class="about2-wrapper">
+				<p>何かしらやってます。</p>
+			</div>
+		</section>
+
+		<section id="portfolio">
+			<div class="portfolio-wrapper">
+				<h2>Works</h2>
+				<p>未編集</p>
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="footer" role="contentinfo" style="background-color: #304767;">
+		<div style="text-align: center">©Copyright 2015-2016 EbXpJ6bp.</div>
+	</footer>
+
+	<script rel="text/javascript" src="/assets/js/jquery.js"></script>
+
+	<script rel="text/javascript" src="/assets/js/jquery.easypiechart.js"></script>
+
+	<script>
+		$(function () {
+			$('.chart').easyPieChart({
+				scaleColor: '#e2e6e6',
+				lineWidth: 20,
+				lineCap: 'butt',
+				barColor: '#88c6bc',
+				trackColor: '#e2e6e6',
+				size: 160,
+				animate: 500
+			});
+		});
+	</script>
 
 </body>
 
