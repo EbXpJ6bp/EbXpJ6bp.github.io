@@ -33,13 +33,54 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+
+	<script rel="text/javascript" src="/assets/js/jquery.js"></script>
+
+	<script rel="text/javascript" src="/assets/js/jquery.scrollInTurn.js"></script>
+
+	<script rel="text/javascript" src="/assets/js/jquery.easypiechart.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+			$('.about1-animation').scrollInTurn({
+				selector: 'p',
+				delayHeight: '900',
+				delaySpeed: '300',
+			});
+			$('.history-animation').scrollInTurn({
+				selector: 'h2, li',
+				delayHeight: '800',
+				delaySpeed: '300',
+			});
+			$('.about2-animation').scrollInTurn({
+				selector: 'p',
+				delaySpeed: '300',
+			});
+			$('.works-animation').scrollInTurn({
+				selector: 'section',
+				delaySpeed: '200',
+			});
+			$('.chart').easyPieChart({
+				scaleColor: '#e2e6e6',
+				lineWidth: 20,
+				lineCap: 'butt',
+				barColor: '#88c6bc',
+				trackColor: '#e2e6e6',
+				size: 160,
+				animate: 500
+			});
+		});
+
+	</script>
+
 </head>
 
 <body>
 
 	<header style="background-color:#333; color:#fff; padding:10px 20px; font-size:25px; text-align:right">
 		編集中
-		 →<a href="/old">OLD</a>
+		→<a href="/old">OLD</a>
 	</header>
 
 	<main id="index" role="main">
@@ -51,9 +92,10 @@
 				<div class="vio">
 					<p>こんにちはせかい</p>
 				</div>
-				<ul>
+				<ul class="sns">
 					<li><a href="https://twitter.com/EbXpJ6bp"><i class="fa fa-twitter fa-3x"></i></a></li>
 					<li><a href="https://github.com/EbXpJ6bp"><i class="fa fa-github fa-3x"></i></a></li>
+					<li><a href="mailto:ebxpj6bp@outlook.jp"><i class="fa fa-envelope-o fa-3x"></i></a></li>
 				</ul>
 			</div>
 		</section>
@@ -72,7 +114,7 @@
 		</section>
 
 		<section id="about1">
-			<div class="about1-wrapper">
+			<div class="about1-wrapper about1-animation">
 				<p>はじめまして。</p>
 				<p>高専に通っていて、frainworksで活動してます。</p>
 				<p>最近はCTFに興味があります。</p>
@@ -80,7 +122,7 @@
 		</section>
 
 		<section id="history">
-			<div class="history-wrapper">
+			<div class="history-wrapper history-animation">
 				<h2>History</h2>
 				<ul class="timeline">
 					<li class="event" data-date="2013 Apr.">
@@ -104,41 +146,70 @@
 		</section>
 
 		<section id="about2">
-			<div class="about2-wrapper">
-				<p>何かしらやってます。</p>
+			<div class="about2-wrapper about2-animation">
+				<p>何かしらやります。</p>
 			</div>
 		</section>
 
-		<section id="portfolio">
-			<div class="portfolio-wrapper">
+		<section id="works">
+			<div class="works-wrapper works-animation">
 				<h2>Works</h2>
-				<p>未編集</p>
+
+				<div class="works-card">
+
+					<section id="blog">
+						<img src="/assets/img/works/mydesign.jpg" />
+						<h2>blog</h2>
+						<div class="vio">
+							<p>ブログです。</p>
+						</div>
+					</section>
+
+					<section id="frainworks">
+						<a href="http://frainworks.tk/" target="_blank">
+							<img src="/assets/img/works/frainworks.png" />
+						</a>
+						<a href="http://frainworks.tk/" target="_blank">
+							<h2>frainworks</h2>
+						</a>
+						<div class="vio">
+							<p>所属しているサークルです。</p>
+						</div>
+					</section>
+
+					<section id="oauth">
+						<a href="http://oauthio.azurewebsites.net/" target="_blank">
+							<img src="/assets/img/works/oauthio.png" />
+						</a>
+						<a href="http://oauthio.azurewebsites.net/" target="_blank">
+							<h2>oauth.io</h2>
+						</a>
+						<div class="vio">
+							<p>oauth.ioのデモです。</p>
+						</div>
+					</section>
+
+					<section id="hastebin">
+						<a href="http://hastebin.azurewebsites.net/" target="_blank">
+							<img src="/assets/img/works/hastebin.png" />
+						</a>
+						<a href="http://hastebin.azurewebsites.net/" target="_blank">
+							<h2>hastebin</h2>
+						</a>
+						<div class="vio">
+							<p>hastebinのクローンです。</p>
+						</div>
+					</section>
+				</div>
+
 			</div>
 		</section>
 
 	</main>
 
-	<footer id="footer" role="contentinfo" style="background-color: #304767;">
+	<footer id="footer" role="contentinfo">
 		<div style="text-align: center">©Copyright 2015-2016 EbXpJ6bp.</div>
 	</footer>
-
-	<script rel="text/javascript" src="/assets/js/jquery.js"></script>
-
-	<script rel="text/javascript" src="/assets/js/jquery.easypiechart.js"></script>
-
-	<script>
-		$(function () {
-			$('.chart').easyPieChart({
-				scaleColor: '#e2e6e6',
-				lineWidth: 20,
-				lineCap: 'butt',
-				barColor: '#88c6bc',
-				trackColor: '#e2e6e6',
-				size: 160,
-				animate: 500
-			});
-		});
-	</script>
 
 </body>
 
