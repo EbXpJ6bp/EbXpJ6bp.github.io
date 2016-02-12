@@ -8,7 +8,7 @@
 	<meta charset="UTF-8">
 	<link rel="icon" href="/assets/img/avatar.png" type="image/png" />
 	<title>
-		C/C++ CTF ebxpj6bp
+		C/C++ Developer
 	</title>
 
 	<!-- Mobile Specific Metas
@@ -25,45 +25,90 @@
 		}());
 	</script>
 
+	<!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+	<!-- Font
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- JavaScript
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script rel="text/javascript" src="/assets/js/jquery.js"></script>
+	<script rel="text/javascript" src="/assets/js/jquery.pjax.min.js"></script>
+	<script>
+		$.pjax({
+			area: 'body',
+			load: { css: true },
+			cache: { click: true, popstate: true }
+		});
+	</script>
+
 </head>
 
 <body>
 
-	<main id="me" role="main">
-
-		<article>
-
-			<p>Hello I am ebxpj6bp...</p>
-
-		</article>
-
-	</main>
-
 	<style>
-		html {
-			-ms-text-size-adjust: 100%;
-			-webkit-text-size-adjust: 100%;
-			-moz-text-size-adjust: 100%;
-			text-size-adjust: 100%;
+		@font-face {
+			font-family: 'My-font';
+			src: url(/assets/font/Lato-Light.ttf);
 		}
+
 		body {
+			font-family: 'My-font';
 			margin: 0;
-			font: 20px Helvetica, Arial, sans-serif;
+			text-align: center;
 			color: #333;
 		}
+
 		main#me {
 			position: absolute;
 			top: 30%;
-			left: 50%;
 			width: 100%;
-			-webkit-transform: translate(-50%,-50%);
-			-moz-transform: translate(-50%,-50%);
-			-ms-transform: translate(-50%,-50%);
-			-o-transform: translate(-50%,-50%);
-			transform: translate(-50%,-50%);
-			text-align: center;
+			margin: 0 auto;
+		}
+
+		#title {
+			font-size: 28px;
+		}
+
+		a {
+			color: #fff;
+		}
+
+			a :hover {
+				color: #333;
+			}
+
+		.flex {
+			display: flex;
+			justify-content: center;
+		}
+
+		ul {
+			padding-left: 0;
+			list-style-type: none;
+		}
+
+		li {
+			margin: 7px;
 		}
 	</style>
+
+	<main id="me" role="main">
+
+		<p id="title">Hello, My name is EbXpJ6bp.</p>
+
+		<ul class="flex">
+			<li><a href="https://twitter.com/EbXpJ6bp"><i class="fa fa-twitter fa-3x"></i></a></li>
+			<li><a href="https://github.com/EbXpJ6bp"><i class="fa fa-github fa-3x"></i></a></li>
+			<li><a href="mailto:ebxpj6bp@outlook.jp"><i class="fa fa-envelope-o fa-3x"></i></a></li>
+		</ul>
+
+		<a href="/me/index2.html">other design</a>
+
+	</main>
 
 </body>
 
