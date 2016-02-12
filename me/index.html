@@ -25,76 +25,17 @@
 		}());
 	</script>
 
-	<!-- CSS
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
 	<!-- Font
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<!-- JavaScript
+	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script rel="text/javascript" src="/assets/js/jquery.js"></script>
-	<script rel="text/javascript" src="/assets/js/jquery.pjax.min.js"></script>
-	<script>
-		$.pjax({
-			area: 'body',
-			load: { css: true },
-			cache: { click: true, popstate: true }
-		});
-	</script>
+	<link rel="stylesheet" href="/assets/css/style02.css">
 
 </head>
 
 <body>
-
-	<style>
-		@font-face {
-			font-family: 'My-font';
-			src: url(/assets/font/Lato-Light.ttf);
-		}
-
-		body {
-			font-family: 'My-font';
-			margin: 0;
-			text-align: center;
-			color: #333;
-		}
-
-		main#me {
-			position: absolute;
-			top: 30%;
-			width: 100%;
-			margin: 0 auto;
-		}
-
-		#title {
-			font-size: 28px;
-		}
-
-		a {
-			color: #fff;
-		}
-
-			a :hover {
-				color: #333;
-			}
-
-		.flex {
-			display: flex;
-			justify-content: center;
-		}
-
-		ul {
-			padding-left: 0;
-			list-style-type: none;
-		}
-
-		li {
-			margin: 7px;
-		}
-	</style>
 
 	<main id="me" role="main">
 
@@ -109,6 +50,18 @@
 		<a href="/me/index2.html">other design</a>
 
 	</main>
+
+	<!-- JavaScript
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script rel="text/javascript" src="/assets/js/jquery.js"></script>
+	<script rel="text/javascript" src="/assets/js/jquery.pjax.min.js"></script>
+	<script>
+		$.pjax({
+			area: 'body',
+			load: { css: true },
+			cache: { click: true, popstate: true }
+		});
+	</script>
 
 </body>
 
