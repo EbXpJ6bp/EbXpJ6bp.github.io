@@ -1,1 +1,0 @@
-﻿@font-face{font-family: 'My-font';src: url(/assets/font/Lato-Light.ttf);}body{font-family: 'My-font';margin: 0;text-align: center;color: #333;}main#me{position: absolute;top: 30%;width: 100%;margin: 0 auto;}#title{font-size: 25px;}a{color: #fff;}a :hover{color: #333;}.flex{display: flex;justify-content: center;}ul{padding-left: 0;list-style-type: none;}li{margin: 7px;}
