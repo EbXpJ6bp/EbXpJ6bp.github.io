@@ -47,7 +47,36 @@
 			<li><a href="mailto:ebxpj6bp@outlook.jp"><i class="fa fa-envelope-o fa-3x"></i></a></li>
 		</ul>
 
+		<section>
+			<a href="" class="button b1">BIO</a>
+			<div class="bio">
+				<p>Hi, I am C/C++ Developer</p>
+				<p><i class="fa fa-map-marker"></i>: Japan</p>
+				<p><i class="fa fa-users"></i>: frainworks</p>
+				<p><i class="fa fa-birthday-cake"></i>: Jan. 9th, 2000 </p>
+				<p><i class="fa fa-graduation-cap"></i>: National Institute of Techenology</p>
+			</div>
+		</section>
+
 	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.b1').on('click', function (event) {
+				event.stopPropagation();
+				event.preventDefault();
+				if ($(this).closest('section').find(".bio").is(":hidden")) {
+					$(this).addClass("highlight");
+					$(this).closest('section').find(".bio").show("slow");
+				}
+				else {
+					$(this).closest('section').find(".bio").hide("slow");
+					$(this).removeClass("highlight");
+				}
+			});
+		});
+	</script>
 
 </body>
 
