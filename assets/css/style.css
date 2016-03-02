@@ -1,11 +1,11 @@
 ﻿body {
-	font-family: 'Lato',sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0;
 	text-align: center;
 	color: #333;
 }
 
-main#me {
+main {
 	position: absolute;
 	top: 30%;
 	width: 100%;
@@ -35,14 +35,15 @@ li {
 	margin: 7px;
 }
 
-.flex {
-	display: flex;
-	justify-content: center;
-}
-
 section {
 	max-width: 800px;
 	margin: 0 auto;
+}
+
+
+.flex {
+	display: flex;
+	justify-content: center;
 }
 
 .button {
