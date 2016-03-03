@@ -7,13 +7,13 @@
 
 main {
 	position: absolute;
-	top: 25%;
+	top: 30%;
 	width: 100%;
 	margin: 0 auto;
 }
 
 h1 {
-	font-size: 42px;
+	font-size: 25px;
 	font-weight: 100;
 }
 
@@ -28,7 +28,7 @@ ul {
 }
 
 li {
-	margin: 0 7px 20px;
+	margin: 7px;
 }
 
 section {
@@ -46,7 +46,6 @@ section {
 	padding: 4px 20px;
 	border: 1px solid #333;
 	border-radius: 3px;
-	font-size: 22px
 }
 
 .bio {
@@ -58,7 +57,7 @@ section {
 }
 
 	.bio p {
-		font-size: 22px;
+		font-size: 16px;
 	}
 
 .highlight {
