@@ -48,12 +48,12 @@
 		</ul>
 
 		<section>
-			<a href="" class="button b1">BIO</a>
+			<a href="" class="button b">BIO</a>
 			<div class="bio">
+				<p><i class="fa fa-user"></i>: EbXpJ6bp</p>
 				<p><i class="fa fa-map-marker"></i>: Japan</p>
-				<p><i class="fa fa-users"></i>: frainworks</p>
+				<p><i class="fa fa-users"></i>: <a href="https://frainworks.tk/">frainworks</a></p>
 				<p><i class="fa fa-graduation-cap"></i>: National Institute of Techenology</p>
-				<p>yuruyurihaiizo</p>
 			</div>
 		</section>
 
@@ -62,7 +62,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			$('.b1').on('click', function (event) {
+			$('.b').on('click', function (event) {
 				event.stopPropagation();
 				event.preventDefault();
 				if ($(this).closest('section').find(".bio").is(":hidden")) {

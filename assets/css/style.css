@@ -19,12 +19,8 @@ h1 {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: #333;
 }
-
-	a:hover {
-		color: #333;
-	}
 
 ul {
 	padding-left: 0;
@@ -48,13 +44,9 @@ section {
 
 .button {
 	padding: 4px 20px;
-	border: 1px solid #fff;
+	border: 1px solid #333;
 	border-radius: 3px;
 }
-
-	.button:hover {
-		border-color: #333;
-	}
 
 .bio {
 	display: none;
