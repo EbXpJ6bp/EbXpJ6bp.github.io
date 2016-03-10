@@ -12,9 +12,19 @@ main {
 	margin: 0 auto;
 }
 
+h1,
+h2 {
+	font-weight: normal;
+	display: inline;
+	margin: 0;
+}
+
 h1 {
 	font-size: 25px;
-	font-weight: 100;
+}
+
+h2 {
+	font-size: 16px;
 }
 
 a {
@@ -22,25 +32,22 @@ a {
 	color: #333;
 }
 
-ul {
-	padding-left: 0;
-	list-style-type: none;
-}
-
-li {
-	margin: 7px;
-}
-
 section {
 	max-width: 800px;
 	margin: 0 auto;
 }
 
-
-.flex {
+.conect {
 	display: flex;
+	padding-left: 0;
+	list-style-type: none;
 	justify-content: center;
 }
+
+	.conect li {
+		margin: 7px;
+	}
+
 
 .button {
 	padding: 4px 20px;
@@ -54,10 +61,12 @@ section {
 	max-width: 500px;
 	margin: 0 auto;
 	padding-left: 0;
+	list-style-type: none;
 }
 
-	.bio p {
+	.bio li {
 		font-size: 16px;
+		margin: 18px 0;
 	}
 
 .highlight {
