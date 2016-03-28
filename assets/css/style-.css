@@ -80,6 +80,7 @@ a {
 
 	.section1-content .text {
 		margin-top: 30px;
+		padding: 0 10px;
 	}
 
 		.section1-content .text p {
@@ -195,7 +196,7 @@ a {
 	}
 
 	.section1 {
-		margin-top: 20px;
+		margin-top: 15px;
 	}
 
 	.section1-content h2 {
@@ -208,5 +209,23 @@ a {
 
 	.section1-content .text p {
 		font-size: 15px;
+		margin-top: 10px;
+	}
+
+	.section2 {
+		margin-top: 15px;
+	}
+
+	.section2-content h2 {
+		font-size: 31px;
+	}
+
+	.section2-content h3 {
+		font-size: 20px;
+	}
+
+	.section2-content .text p {
+		font-size: 15px;
+		margin-top: 10px;
 	}
 }
