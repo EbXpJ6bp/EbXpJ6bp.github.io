@@ -150,9 +150,13 @@ a {
 		justify-content: center;
 	}
 
-	.footer-content li:nth-child(2n) {
-		margin: 0 15px;
+	.footer-content li {
+		font-size: 3em;
 	}
+
+		.footer-content li:nth-child(2n) {
+			margin: 0 15px;
+		}
 
 @media screen and (min-width: 1020px) {
 	.header {
@@ -239,5 +243,9 @@ a {
 
 	.footer-content small {
 		font-size: 14px;
+	}
+
+	.footer-content li {
+		font-size: 2.5em;
 	}
 }
