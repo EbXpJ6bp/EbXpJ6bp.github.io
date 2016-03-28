@@ -163,25 +163,32 @@ a {
 
 
 @media screen and (max-width:640px) {
-
-	.navbar-content h2 {
-		display: none;
+	.navbar-content {
+		padding: 15px 10px;
 	}
 
-	.navbar-content > a.share {
-		display: none;
-	}
+		.navbar-content h1 {
+			font-size: 30px;
+		}
 
-	.navbar-content > a.share- {
-		display: block;
-		font-size: 20px;
-		margin-left: auto;
-		padding: 10px;
-		white-space: nowrap;
-		color: #fff;
-		border-radius: 50%;
-		background-color: #55acee;
-	}
+		.navbar-content h2 {
+			display: none;
+		}
+
+		.navbar-content > a.share {
+			display: none;
+		}
+
+		.navbar-content > a.share- {
+			display: block;
+			font-size: 20px;
+			margin-left: auto;
+			padding: 10px;
+			white-space: nowrap;
+			color: #fff;
+			border-radius: 50%;
+			background-color: #55acee;
+		}
 
 	.header {
 		height: 300px;
