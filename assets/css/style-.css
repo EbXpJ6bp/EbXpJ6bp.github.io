@@ -162,9 +162,9 @@ a {
 			margin: 0 15px;
 		}
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1820px) {
 	.header {
-		height: 700px;
+		height: 600px;
 	}
 }
 
