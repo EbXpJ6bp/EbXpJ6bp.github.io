@@ -141,7 +141,7 @@ a {
 }
 
 	.footer-content small {
-		font-size:18px;
+		font-size: 18px;
 	}
 
 	.footer-content ul {
@@ -231,6 +231,10 @@ a {
 	.section2-content .text p {
 		font-size: 15px;
 		margin-top: 10px;
+	}
+
+	.footer {
+		margin: 20px 0 10px;
 	}
 
 	.footer-content small {
