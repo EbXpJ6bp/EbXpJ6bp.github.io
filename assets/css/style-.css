@@ -1,0 +1,145 @@
+﻿body {
+	font-family: '游ゴシック', sans-serif;
+	color: #5d5d5d;
+}
+
+a {
+	text-decoration: none;
+	color: #5d5d5d;
+}
+
+.navbar {
+	font-family: Calibri, sans-serif;
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: hsla(0, 0%, 100%, .40);
+}
+
+.navbar-content {
+	position: relative;
+	display: flex;
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 25px 10px;
+	align-items: flex-end;
+}
+
+	.navbar-content h1 {
+		font-size: 43px;
+		margin-right: 25px;
+	}
+
+	.navbar-content h2 {
+		font-size: 20px;
+		padding: 10px 0;
+	}
+
+	.navbar-content > a.share {
+		font-size: 20px;
+		margin-left: auto;
+		padding: 10px 18px;
+		white-space: nowrap;
+		color: #fff;
+		border-radius: 1px;
+		background-color: #55acee;
+	}
+
+
+.header {
+	height: 400px;
+	background: url('/assets/img/header.png') no-repeat center top;
+}
+
+.section1 {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.section1-content {
+	padding: 20px 0;
+}
+
+	.section1-content h2 {
+		font-size: 45px;
+		color: #75b1d6;
+	}
+
+	.section1-content h3 {
+		font-size: 30px;
+		margin-top: 15px;
+		color: #75b1d6;
+	}
+
+	.section1-content .text {
+		margin-top: 30px;
+	}
+
+		.section1-content .text p {
+			font-size: 20px;
+			margin-top: 20px;
+		}
+
+.section2 {
+	margin-top: 20px;
+	text-align: center;
+	background-color: #75b1d6;
+}
+
+.section2-content {
+	padding: 40px 0;
+	color: #fff;
+}
+
+	.section2-content a {
+		color: #fff;
+	}
+
+	.section2-content h2 {
+		font-size: 45px;
+	}
+
+	.section2-content h3 {
+		font-size: 30px;
+		margin-top: 15px;
+	}
+
+	.section2-content .text {
+		margin-top: 30px;
+	}
+
+		.section2-content .text p {
+			font-size: 20px;
+			margin-top: 20px;
+		}
+
+		.section2-content .text ul {
+			margin-top: 10px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.section2-content .text li:nth-child(2n) {
+			margin: 0 10px;
+		}
+
+.footer {
+	margin: 40px 0 20px;
+	text-align: center;
+}
+
+.footer-content {
+	padding: 20px 0;
+}
+
+	.footer-content ul {
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer-content li:nth-child(2n) {
+		margin: 0 10px;
+	}
