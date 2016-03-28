@@ -121,18 +121,18 @@ a {
 		}
 
 		.section2-content .text ul {
-			margin: 0 auto;
-			max-width: 500px;
-			margin-top: 30px;
 			display: flex;
+			max-width: 780px;
+			margin: 0 auto;
+			margin-top: 30px;
 			justify-content: space-around;
 		}
 
 		.section2-content .text li i {
-			border-radius: 50%;
 			font-size: 3.5em;
-			border: 4px solid #fff;
 			padding: 18px;
+			border: 4px solid #fff;
+			border-radius: 50%;
 		}
 
 .footer {
@@ -149,8 +149,8 @@ a {
 	}
 
 	.footer-content ul {
-		margin-top: 10px;
 		display: flex;
+		margin-top: 10px;
 		justify-content: center;
 	}
 
@@ -193,8 +193,8 @@ a {
 		}
 
 		.navbar-content > a.share- {
-			display: block;
 			font-size: 20px;
+			display: block;
 			margin-left: auto;
 			padding: 10px;
 			color: #fff;
@@ -241,13 +241,14 @@ a {
 	}
 
 	.section2-content .text ul {
+		max-width: 500px;
 		margin-top: 15px;
 	}
 
 	.section2-content .text li i {
 		font-size: 2.5em;
-		border: 2px solid #fff;
 		padding: 9px;
+		border: 2px solid #fff;
 	}
 
 	.footer {
