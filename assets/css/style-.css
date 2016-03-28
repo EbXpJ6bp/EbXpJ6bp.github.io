@@ -193,4 +193,20 @@ a {
 	.header {
 		height: 300px;
 	}
+
+	.section1 {
+		margin-top: 20px;
+	}
+
+	.section1-content h2 {
+		font-size: 31px;
+	}
+
+	.section1-content h3 {
+		font-size: 20px;
+	}
+
+	.section1-content .text p {
+		font-size: 15px;
+	}
 }
