@@ -140,6 +140,10 @@ a {
 	padding: 20px 0;
 }
 
+	.footer-content small {
+		font-size:18px;
+	}
+
 	.footer-content ul {
 		margin-top: 10px;
 		display: flex;
@@ -147,7 +151,7 @@ a {
 	}
 
 	.footer-content li:nth-child(2n) {
-		margin: 0 10px;
+		margin: 0 15px;
 	}
 
 @media screen and (min-width: 1020px) {
