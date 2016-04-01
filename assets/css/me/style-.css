@@ -1,21 +1,14 @@
 ﻿body {
 	font-family: 'Source Sans Pro', sans-serif;
-	margin: 0;
 	text-align: center;
 	color: #333;
 }
 
 main {
 	position: absolute;
-	top: 30%;
+	top: 25%;
 	width: 100%;
 	margin: 0 auto;
-}
-
-h1, h2 {
-	font-weight: normal;
-	display: inline;
-	margin: 0;
 }
 
 h1 {
@@ -29,7 +22,7 @@ a {
 
 .link {
 	display: flex;
-	padding-left: 0;
+	margin: 20px 0;
 	list-style-type: none;
 	justify-content: center;
 }
@@ -44,13 +37,12 @@ a {
 }
 
 	.bio h2 {
-		font-size: 16px;
+		font-size: 18px;
 	}
-
 
 	.bio a.btn {
 		padding: 4px 20px;
-		border: 1px solid #333;
+		border: 1.2px solid #333;
 		border-radius: 3px;
 	}
 
@@ -64,7 +56,7 @@ a {
 	}
 
 	.bio li {
-		font-size: 17px;
+		font-size: 18px;
 		margin: 18px 0;
 	}
 
