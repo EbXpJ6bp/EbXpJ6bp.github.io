@@ -145,9 +145,6 @@ a {
 }
 
 .loader {
-	position: absolute;
-	right: 35px;
-	display: block;
 	overflow: hidden;
 	width: 150px;
 	height: 150px;
