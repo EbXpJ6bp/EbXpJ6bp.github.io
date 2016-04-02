@@ -23,10 +23,10 @@
 			}
 		}());
 	</script>
-    
+
 	<!-- Twitter
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->    
-    <meta name="twitter:card" content="summary" />
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@ebxpj6bp" />
 	<meta name="twitter:title" content="EbXpJ6bp" />
 	<meta name="twitter:description" content="C/C++ Developer, WEB Designer" />
@@ -45,6 +45,12 @@
 </head>
 
 <body>
+
+	<nav>
+		<noscript>
+			<h2>jsが無効です</h2>
+		</noscript>
+	</nav>
 
 	<header>
 		<div class='loader'>
@@ -74,34 +80,67 @@
 			</li>
 		</ul>
 
-		<section class="bio" id="bio">
-			<h2><a href="" class="btn">BIO</a></h2>
-			<ul class="bio">
-				<li><i class="fa fa-user"></i>: EbXpJ6bp</li>
-				<li><i class="fa fa-map-marker"></i>: Japan</li>
-				<li><i class="fa fa-users"></i>: <a href="https://frainworks.tk/">frainworks</a> - <a href="http://nephy.jp/">nephy project</a></li>
-				<li><i class="fa fa-graduation-cap"></i>: National Institute of Technology</li>
+		<aside class="profile" id="profile">
+
+			<ul>
+				<li class="btn b1"><h2><a href="" style="padding:5px 25px">BIO</a></h2></li>
+				<li class="btn b2"><h2><a href="" style="padding:5px 14px">WORK</a></h2></li>
 			</ul>
-		</section>
+
+			<section class="view v1">
+				<h3>bio</h3>
+				<p><i class="fa fa-user"></i>: EbXpJ6bp</p>
+				<p><i class="fa fa-map-marker"></i>: Japan</p>
+				<p><i class="fa fa-users"></i>: <a href="https://frainworks.tk/">frainworks</a> - <a href="http://nephy.jp/">nephy project</a></p>
+				<p><i class="fa fa-graduation-cap"></i>: National Institute of Technology</p>
+			</section>
+
+			<section class="view v2">
+				<h3>work</h3>
+				<p>C/C++のアプリケーション製作</p>
+				<p>WEBサイト制作</p>
+			</section>
+		</aside>
 
 	</main>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			$('.btn').on('click', function (event) {
+			$('.b1').on('click', function (event) {
 				event.stopPropagation();
 				event.preventDefault();
-				if ($(this).closest('section').find(".bio").is(":hidden")) {
+				if ($(this).closest('aside').find(".v1").is(":hidden")) {
 					$(this).addClass("highlight");
-					$(this).closest('section').find(".bio").show("slow");
+					$(this).closest('aside').find(".v1").show("slow");
 				}
 				else {
-					$(this).closest('section').find(".bio").hide("slow");
+					$(this).closest('aside').find(".v1").hide("slow");
 					$(this).removeClass("highlight");
+				}
+				if ($(this).closest('aside').find(".v2").is(":visible")) {
+					$(this).closest('aside').find(".v2").hide("slow");
+					$(this).next().removeClass("highlight");
+				}
+			});
+			$('.b2').on('click', function (event) {
+				event.stopPropagation();
+				event.preventDefault();
+				if ($(this).closest('aside').find(".v2").is(":hidden")) {
+					$(this).addClass("highlight");
+					$(this).closest('aside').find(".v2").show("slow");
+				}
+				else {
+					$(this).closest('aside').find(".v2").hide("slow");
+					$(this).removeClass("highlight");
+				}
+				if ($(this).closest('aside').find(".v1").is(":visible")) {
+					$(this).closest('aside').find(".v1").hide("slow");
+					$(this).prev().removeClass("highlight");
 				}
 			});
 		});
+
 	</script>
 
 </body>
