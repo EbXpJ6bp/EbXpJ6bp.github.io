@@ -23,9 +23,9 @@
 			}
 		}());
 	</script>
-	
+
 	<!-- Twitter
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->    
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@ebxpj6bp" />
 	<meta name="twitter:title" content="EbXpJ6bp" />
@@ -45,6 +45,12 @@
 </head>
 
 <body>
+
+	<noscript>
+		<nav class="no-js">
+			<strong>javascript disabled!</strong>
+		</nav>
+	</noscript>
 
 	<header>
 		<div class='loader'>
@@ -74,15 +80,18 @@
 			</li>
 		</ul>
 
-		<section class="bio" id="bio">
-			<h2><a href="" class="btn">BIO</a></h2>
-			<ul class="view">
-				<li><i class="fa fa-user"></i>: EbXpJ6bp</li>
-				<li><i class="fa fa-map-marker"></i>: Japan</li>
-				<li><i class="fa fa-users"></i>: <a href="https://frainworks.tk/">frainworks</a> - <a href="http://nephy.jp/">nephy project</a></li>
-				<li><i class="fa fa-graduation-cap"></i>: National Institute of Technology</li>
+		<aside class="profile" id="profile">
+			<ul>
+				<li class="btn b1"><h2><a href="" style="padding:5px 25px">BIO</a></h2></li>
 			</ul>
-		</section>
+			<section class="view v1">
+				<h3>bio</h3>
+				<p><i class="fa fa-user"></i>: EbXpJ6bp</p>
+				<p><i class="fa fa-map-marker"></i>: Japan</p>
+				<p><i class="fa fa-users"></i>: <a href="https://frainworks.tk/">frainworks</a> - <a href="http://nephy.jp/">nephy project</a></p>
+				<p><i class="fa fa-graduation-cap"></i>: National Institute of Technology</p>
+			</section>
+		</aside>
 
 	</main>
 
@@ -92,12 +101,12 @@
 			$('.btn').on('click', function (event) {
 				event.stopPropagation();
 				event.preventDefault();
-				if ($(this).closest('section').find(".view").is(":hidden")) {
+				if ($(this).closest('aside').find(".view").is(":hidden")) {
 					$(this).addClass("highlight");
-					$(this).closest('section').find(".view").show("slow");
+					$(this).closest('aside').find(".view").show("slow");
 				}
 				else {
-					$(this).closest('section').find(".view").hide("slow");
+					$(this).closest('aside').find(".view").hide("slow");
 					$(this).removeClass("highlight");
 				}
 			});

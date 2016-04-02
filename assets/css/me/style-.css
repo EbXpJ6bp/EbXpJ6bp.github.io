@@ -1,8 +1,18 @@
 ﻿body {
 	font-family: 'Muli',sans-serif;
 	text-align: center;
-	color: rgba(0, 0, 0, .8);
+	color: rgba(0,0,0,.8);
 }
+
+.no-js {
+	margin-top: 50px;
+}
+
+	.no-js strong {
+		font-size: 35px;
+		text-decoration: underline;
+		color: #d35657;
+	}
 
 main {
 	position: absolute;
@@ -17,7 +27,7 @@ h1 {
 
 a {
 	text-decoration: none;
-	color: rgba(0, 0, 0, .8);
+	color: rgba(0,0,0,.8);
 }
 
 .link {
@@ -31,39 +41,40 @@ a {
 		margin: 7px;
 	}
 
-.bio {
+.profile {
 	max-width: 800px;
 	margin: 0 auto;
 }
 
-	.bio h2 {
+	.profile h2 {
 		font-size: 18px;
 	}
 
-	.bio a.btn {
-		padding: 4px 20px;
-		border: 1.3px solid rgba(0, 0, 0, .8);
+	.profile .btn {
+		width: 85px;
+		padding: 5px 0;
+		border: 1.3px solid rgba(0,0,0,.8);
 		border-radius: 3px;
 	}
 
-	.bio ul {
-		display: none;
-		overflow: visible;
-		max-width: 500px;
-		margin: 0 auto;
-		padding-left: 0;
-		list-style-type: none;
-	}
-
-	.bio li {
-		font-size: 18px;
+	.profile ul {
+		display: flex;
 		margin: 20px 0;
+		list-style-type: none;
+		justify-content: center;
 	}
 
-.highlight {
-	color: rgba(0, 0, 0, .8);
-	border-color: rgba(0, 0, 0, .8);
+.view {
+	display: none;
 }
+
+	.view p {
+		margin-bottom: 20px;
+	}
+
+	.view h3 {
+		display: none;
+	}
 
 @-moz-keyframes rotate {
 	0% {
@@ -161,11 +172,10 @@ a {
 		-o-animation: rotate linear 3.5s infinite;
 		animation: rotate linear 3.5s infinite;
 		border: 2px solid transparent;
-		border-top-color: rgba(0, 0, 0, .5);
-		border-bottom-color: rgba(0, 0, 255, .5);
+		border-top-color: rgba(0,0,0,.5);
+		border-bottom-color: rgba(0,0,255,.5);
 		border-radius: 50%;
 	}
-
 
 div {
 	-webkit-box-sizing: border-box;
