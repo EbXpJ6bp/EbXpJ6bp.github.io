@@ -51,6 +51,7 @@ a {
 	}
 
 	.profile .btn {
+		display: block;
 		width: 85px;
 		padding: 5px 0;
 		border: 1.3px solid rgba(0,0,0,.8);
@@ -165,8 +166,7 @@ a {
 		height: 100%;
 	}
 
-	.loader,
-	.loader div {
+	.loader, .loader div {
 		padding: 8px;
 		-webkit-animation: rotate linear 3.5s infinite;
 		-moz-animation: rotate linear 3.5s infinite;
