@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<os:openServiceDescription xmlns:os="http://www.microsoft.com/schemas/openservicedescription/1.0"> 
+	<os:homepageUrl>http://twitter.com/</os:homepageUrl> 
+	<os:display> 
+		<os:name>NowBrowsing</os:name> 
+		<os:description>NowBrowsing</os:description> 
+	</os:display> 
+	<os:activity category="Share"> 
+		<os:activityAction context="document">
+			<os:preview action= "http://twitter.com/intent/tweet?text=%23%4e%6f%77%42%72%6f%77%73%69%6e%67%3a%20{documentTitle}%0A{documentUrl}" ></os:preview>
+			<os:execute action= "http://twitter.com/intent/tweet?text=%23%4e%6f%77%42%72%6f%77%73%69%6e%67%3a%20{documentTitle}%0A{documentUrl}" method="get"></os:execute> 
+		</os:activityAction> 
+	</os:activity> 
+</os:openServiceDescription>
