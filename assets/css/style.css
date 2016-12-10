@@ -3,7 +3,7 @@
 	font-style: normal;
 	width: 100%;
 	height: 100%;
-	color: #202020;
+	color: #555;
 	background-color: #f0f0f0;
 }
 
@@ -43,7 +43,7 @@ h1 a {
 	color: transparent;
 	border: 0 solid #39f;
 	border-radius: 50%;
-	background-color: #303132;
+	background-color: #555;
 }
 
 	h1 a:hover, h1 a:focus {
@@ -215,7 +215,6 @@ h1 em {
 		-o-animation: icons .2s ease-out 0s 1 normal forwards;
 		animation: icons .2s ease-out 0s 1 normal forwards;
 		opacity: 0;
-		color: #555;
 		border-radius: 50%;
 	}
 
