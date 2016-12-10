@@ -1,49 +1,89 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
+
 <head>
-	<!-- Basic Page Needs
+    <!-- Basic Page Needs
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<meta charset="UTF-8">
-	<title>
-		WEB Designer & C/C++ Developer
-	</title>
-	<meta name="author" content="ebxpj6bp">
+    <meta charset="UTF-8">
+    <title>
+        WEB Designer & C/C++ Developer
+    </title>
+    <meta name="author" content="ebxpj6bp">
 
-	<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<!-- CSS
+    <!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="/assets/css/reset.css">
-	<link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
-	<!-- Font
+    <!-- Font
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 
-	<!-- JavaScript
+    <!-- JavaScript
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script async defer src="/assets/js/g-a.js"></script>
-	<meta name="google-site-verification" content="cABZVZSSXlbCIulfCT0C8WR9Kzw9xhClgph2aAkIkEA" />
+    <script async defer src="/assets/js/g-a.js"></script>
+    <meta name="google-site-verification" content="cABZVZSSXlbCIulfCT0C8WR9Kzw9xhClgph2aAkIkEA" />
 
 </head>
+
 <body>
 
-	<main>
+    <main>
 
-		<h1><a href=""><em>E</em><em>b</em>xpj6bp</a></h1>
+        <h1><a href=""><em>E</em><em>b</em>xpj6bp</a></h1>
 
-		<p class="slogan"><span>I am EbXpJ6bp.</span></p>
+        <p class="slogan"><span>I am EbXpJ6bp.</span></p>
 
-		<div class="contact">
-			<a href="https://twitter.com/EbXpJ6bp" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-			<a href="https://github.com/EbXpJ6bp" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-			<a href="http://ebxpj6bp.hatenablog.com/" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a>
-		</div>
+        <div class="contact">
+            <a href="https://twitter.com/EbXpJ6bp" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://github.com/EbXpJ6bp" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="http://ebxpj6bp.hatenablog.com/" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a>
+        </div>
 
-	</main>
+    </main>
+
+
+    <script>
+        /*http://qiita.com/garakuta/items/154b7ebf53b1f8d36fe1#_reference-6e84e017942beb46e7c2*/
+        var intervalID = window.setInterval(animateConsole, 2000)
+        var count = 0
+        var LOG_STYLE_GREEN_RED = 'background-color: green; color: red;'
+        var LOG_STYLE_GREEN_YELLW = 'background-color: green; color: yellow;'
+        var LOG_STYLE_YELLOW = 'color: yellow; font-size: 200%;'
+        var LOG_STYLE_BROWN = 'background-color: brown;'
+        var LOG_STYLE_WHITE = 'background-color: white;'
+        var illuminationStyles = [
+            LOG_STYLE_GREEN_RED,
+            LOG_STYLE_GREEN_YELLW
+        ]
+
+        function animateConsole() {
+            console.clear()
+            console.log(
+                '%c      %c★\n' +
+                '%c      %c ●\n' +
+                '%c     %c●   \n' +
+                '%c    %c     ●\n' +
+                '%c   %c    ●   \n' +
+                '%c  %c   ●     ●\n' +
+                '%c %c  ●     ●   \n' +
+                '%c ●     ●      \n' +
+                '%c      %c  \n' +
+                '%c      %c  \n' +
+                '%c      %c  \n', LOG_STYLE_WHITE, LOG_STYLE_YELLOW, LOG_STYLE_WHITE, illuminationStyles[count % 2], LOG_STYLE_WHITE, illuminationStyles[(count + 1) % 2], LOG_STYLE_WHITE, illuminationStyles[count % 2], LOG_STYLE_WHITE, illuminationStyles[(count + 1) % 2], LOG_STYLE_WHITE, illuminationStyles[count % 2], LOG_STYLE_WHITE, illuminationStyles[(count + 1) % 2], illuminationStyles[count % 2], LOG_STYLE_WHITE, LOG_STYLE_BROWN, LOG_STYLE_WHITE, LOG_STYLE_BROWN, LOG_STYLE_WHITE, LOG_STYLE_BROWN)
+            count++
+        }
+        var clearButton = document.getElementById('clear');
+        clearButton.addEventListener('click', function() {
+            clearInterval(intervalID)
+        })
+    </script>
 
 </body>
+
 </html>
