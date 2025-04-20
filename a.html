@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキスト差分比較ツール</title>
+    <style>
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.editor {
+    width: 48%;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box; /* padding and border included in width */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#diff-output {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+    white-space: pre-wrap; /* Preserve whitespace and wrap lines */
+    word-wrap: break-word; /* Break long words */
+    font-family: monospace; /* Use monospace font for diff */
+    line-height: 1.5;
+}
+
+#diff-output .added {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+    text-decoration: none; /* Remove potential strikethrough from removed */
+}
+
+#diff-output .removed {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+    text-decoration: line-through;
+}
+    </style>
+</head>
+<body>
+    <h1>テキスト差分比較ツール</h1>
+
+    <div class="container">
+        <div class="editor">
+            <h2>テキスト1</h2>
+            <textarea id="text1" rows="15" cols="50"></textarea>
+        </div>
+        <div class="editor">
+            <h2>テキスト2</h2>
+            <textarea id="text2" rows="15" cols="50"></textarea>
+        </div>
+    </div>
+
+    <button id="compare-button">比較する</button>
+
+    <h2>比較結果</h2>
+    <div id="diff-output"></div>
+
+    <script>
+const text1Input = document.getElementById('text1');
+const text2Input = document.getElementById('text2');
+const compareButton = document.getElementById('compare-button');
+const diffOutput = document.getElementById('diff-output');
+
+// Longest Common Subsequence (LCS) based diff function
+function calculateDiff(text1, text2) {
+    const m = text1.length;
+    const n = text2.length;
+    const dp = Array(m + 1).fill(0).map(() => Array(n + 1).fill(0));
+
+    // Build DP table for LCS lengths
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            if (text1[i - 1] === text2[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1] + 1;
+            } else {
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+
+    // Backtrack to find the diff
+    const diffResult = [];
+    let i = m;
+    let j = n;
+    let currentPart = { value: '', added: false, removed: false };
+
+    while (i > 0 || j > 0) {
+        if (i > 0 && j > 0 && text1[i - 1] === text2[j - 1]) {
+            // Common character
+            if (currentPart.added || currentPart.removed) {
+                diffResult.unshift(currentPart);
+                currentPart = { value: '', added: false, removed: false };
+            }
+            currentPart.value = text1[i - 1] + currentPart.value;
+            i--;
+            j--;
+        } else if (j > 0 && (i === 0 || dp[i][j - 1] >= dp[i - 1][j])) {
+            // Character added in text2
+            if (!currentPart.added && currentPart.value) {
+                 diffResult.unshift(currentPart);
+                 currentPart = { value: '', added: false, removed: false };
+            }
+             if (!currentPart.added && !currentPart.removed) {
+                 currentPart.added = true;
+             }
+             if (currentPart.removed) { // Switch from removed to added
+                 diffResult.unshift(currentPart);
+                 currentPart = { value: '', added: true, removed: false };
+             }
+            currentPart.value = text2[j - 1] + currentPart.value;
+            j--;
+        } else if (i > 0 && (j === 0 || dp[i][j - 1] < dp[i - 1][j])) {
+            // Character removed from text1
+             if (!currentPart.removed && currentPart.value) {
+                 diffResult.unshift(currentPart);
+                 currentPart = { value: '', added: false, removed: false };
+             }
+             if (!currentPart.added && !currentPart.removed) {
+                 currentPart.removed = true;
+             }
+             if (currentPart.added) { // Switch from added to removed
+                 diffResult.unshift(currentPart);
+                 currentPart = { value: '', added: false, removed: true };
+             }
+            currentPart.value = text1[i - 1] + currentPart.value;
+            i--;
+        }
+    }
+     if (currentPart.value) {
+        diffResult.unshift(currentPart);
+    }
+
+    // Merge consecutive parts of the same type
+    const mergedDiff = [];
+    if (diffResult.length > 0) {
+        let lastPart = { ...diffResult[0] }; // Copy first part
+        for (let k = 1; k < diffResult.length; k++) {
+            const current = diffResult[k];
+            if (current.added === lastPart.added && current.removed === lastPart.removed) {
+                lastPart.value += current.value;
+            } else {
+                mergedDiff.push(lastPart);
+                lastPart = { ...current }; // Copy current part
+            }
+        }
+        mergedDiff.push(lastPart); // Push the last accumulated part
+    }
+
+
+    return mergedDiff;
+}
+
+
+compareButton.addEventListener('click', () => {
+    const text1 = text1Input.value;
+    const text2 = text2Input.value;
+
+    // Clear previous diff output
+    diffOutput.innerHTML = '';
+
+    // Use the custom calculateDiff function
+    const diff = calculateDiff(text1, text2);
+    const fragment = document.createDocumentFragment();
+
+    diff.forEach((part) => {
+        // Create a span for each part of the diff
+        const span = document.createElement('span');
+        span.textContent = part.value;
+
+        // Apply CSS class based on whether the part was added or removed
+        if (part.added) {
+            span.classList.add('added');
+        } else if (part.removed) {
+            span.classList.add('removed');
+        }
+
+        fragment.appendChild(span);
+    });
+
+    // Append the generated diff to the output div
+    diffOutput.appendChild(fragment);
+});
+    </script>
+</body>
+</html>
