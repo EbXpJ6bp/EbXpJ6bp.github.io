@@ -90,6 +90,15 @@ button:hover {
         </div>
     </div>
 
+    <div style="text-align: center; margin-bottom: 15px;">
+        <label for="compare-mode">比較モード:</label>
+        <select id="compare-mode">
+            <option value="word">単語単位</option>
+            <option value="char" selected>文字単位</option>
+            <option value="line">行単位</option>
+        </select>
+    </div>
+
     <button id="compare-button">比較する</button>
 
     <h2>比較結果</h2>
@@ -100,9 +109,10 @@ const text1Input = document.getElementById('text1');
 const text2Input = document.getElementById('text2');
 const compareButton = document.getElementById('compare-button');
 const diffOutput = document.getElementById('diff-output');
+const compareModeSelect = document.getElementById('compare-mode'); // Added
 
-// Longest Common Subsequence (LCS) based diff function
-function calculateDiff(text1, text2) {
+// --- Character-based LCS Diff ---
+function calculateCharDiff(text1, text2) { // Renamed
     const m = text1.length;
     const n = text2.length;
     const dp = Array(m + 1).fill(0).map(() => Array(n + 1).fill(0));
@@ -190,16 +200,171 @@ function calculateDiff(text1, text2) {
     return mergedDiff;
 }
 
+// --- Word-based LCS Diff ---
+function tokenize(text) {
+    // Split by whitespace, but keep punctuation attached to words or as separate tokens
+    // Also captures sequences of whitespace as single tokens
+    return text.split(/(\s+|[^\s\w]+)/g).filter(Boolean); // filter(Boolean) removes empty strings
+}
+
+function calculateWordDiff(text1, text2) {
+    const words1 = tokenize(text1);
+    const words2 = tokenize(text2);
+    const m = words1.length;
+    const n = words2.length;
+    const dp = calculateLcs(words1, words2); // Reuse the LCS helper
+
+    const diffResult = [];
+    let i = m;
+    let j = n;
+
+    while (i > 0 || j > 0) {
+        const word1 = (i > 0) ? words1[i - 1] : null;
+        const word2 = (j > 0) ? words2[j - 1] : null;
+
+        // Use direct comparison for words/tokens
+        if (i > 0 && j > 0 && words1[i - 1] === words2[j - 1]) {
+            // Common word/token
+            diffResult.unshift({ value: word1, added: false, removed: false });
+            i--;
+            j--;
+        } else if (j > 0 && (i === 0 || dp[i][j - 1] >= dp[i - 1][j])) {
+            // Word/token added in text2
+            diffResult.unshift({ value: word2, added: true, removed: false });
+            j--;
+        } else if (i > 0 && (j === 0 || dp[i][j - 1] < dp[i - 1][j])) {
+            // Word/token removed from text1
+            diffResult.unshift({ value: word1, added: false, removed: true });
+            i--;
+        } else {
+             break; // Should not happen
+        }
+    }
+
+    // Merge consecutive parts of the same type
+    const mergedDiff = [];
+     if (diffResult.length > 0) {
+        let lastPart = { ...diffResult[0] };
+        for (let k = 1; k < diffResult.length; k++) {
+            const current = diffResult[k];
+            // Merge only if types are the same AND both are whitespace or both are not whitespace
+            // This prevents merging "word" + " "
+            const lastIsWhitespace = /^\s+$/.test(lastPart.value);
+            const currentIsWhitespace = /^\s+$/.test(current.value);
+            if (current.added === lastPart.added && current.removed === lastPart.removed && lastIsWhitespace === currentIsWhitespace) {
+                 lastPart.value += current.value;
+            } else {
+                mergedDiff.push(lastPart);
+                lastPart = { ...current };
+            }
+        }
+        mergedDiff.push(lastPart);
+    }
+
+    return mergedDiff;
+}
+
+
+// --- Line-based LCS Diff ---
+// (Helper function to perform LCS on arrays)
+function calculateLcs(arr1, arr2) {
+    const m = arr1.length;
+    const n = arr2.length;
+    const dp = Array(m + 1).fill(0).map(() => Array(n + 1).fill(0));
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            // Trim lines for comparison to handle whitespace differences at line ends,
+            // but preserve original lines for the diff output.
+            if (arr1[i - 1].trim() === arr2[j - 1].trim()) {
+                dp[i][j] = dp[i - 1][j - 1] + 1;
+            } else {
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+    return dp;
+}
+
+function calculateLineDiff(text1, text2) {
+    // Handle potential trailing newline issues for split
+    const t1 = text1.endsWith('\n') ? text1.slice(0, -1) : text1;
+    const t2 = text2.endsWith('\n') ? text2.slice(0, -1) : text2;
+    const lines1 = t1.split('\n');
+    const lines2 = t2.split('\n');
+
+    // If the original texts ended with newline, add an empty string element
+    // to represent that final newline in the split array for correct diffing.
+    if (text1.endsWith('\n')) lines1.push('');
+    if (text2.endsWith('\n')) lines2.push('');
+
+
+    const m = lines1.length;
+    const n = lines2.length;
+    const dp = calculateLcs(lines1, lines2);
+
+    const diffResult = [];
+    let i = m;
+    let j = n;
+
+    while (i > 0 || j > 0) {
+        const line1 = (i > 0) ? lines1[i - 1] : null;
+        const line2 = (j > 0) ? lines2[j - 1] : null;
+
+        if (i > 0 && j > 0 && lines1[i - 1].trim() === lines2[j - 1].trim()) {
+            // Common line
+            diffResult.unshift({ value: line1 + '\n', added: false, removed: false });
+            i--;
+            j--;
+        } else if (j > 0 && (i === 0 || dp[i][j - 1] >= dp[i - 1][j])) {
+            // Line added in text2
+            diffResult.unshift({ value: line2 + '\n', added: true, removed: false });
+            j--;
+        } else if (i > 0 && (j === 0 || dp[i][j - 1] < dp[i - 1][j])) {
+            // Line removed from text1
+            diffResult.unshift({ value: line1 + '\n', added: false, removed: true });
+            i--;
+        } else {
+             // Should not happen in standard LCS backtracking
+             break;
+        }
+    }
+
+    // Merge consecutive parts of the same type
+    const mergedDiff = [];
+     if (diffResult.length > 0) {
+        let lastPart = { ...diffResult[0] };
+        for (let k = 1; k < diffResult.length; k++) {
+            const current = diffResult[k];
+            if (current.added === lastPart.added && current.removed === lastPart.removed) {
+                lastPart.value += current.value;
+            } else {
+                mergedDiff.push(lastPart);
+                lastPart = { ...current };
+            }
+        }
+        mergedDiff.push(lastPart);
+    }
+
+    return mergedDiff;
+}
+
 
 compareButton.addEventListener('click', () => {
     const text1 = text1Input.value;
     const text2 = text2Input.value;
+    const selectedMode = compareModeSelect.value; // Get selected mode
 
     // Clear previous diff output
     diffOutput.innerHTML = '';
 
-    // Use the custom calculateDiff function
-    const diff = calculateDiff(text1, text2);
+    let diff; // Declare diff variable
+    if (selectedMode === 'word') {
+        diff = calculateWordDiff(text1, text2); // Call word diff
+    } else if (selectedMode === 'line') {
+        diff = calculateLineDiff(text1, text2); // Call line diff
+    } else { // Default to char if 'char' or unexpected value
+        diff = calculateCharDiff(text1, text2); // Call char diff
+    }
     const fragment = document.createDocumentFragment();
 
     diff.forEach((part) => {
